@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_3fc18PlhEei0xu3Xsej7sQ" name="Rev : Customer Ind First Name Numerals Conformity Dev" supplierDependency="__N3UgDIgEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(cis_frst_nme) is not null and cis_frst_nme REGEXP_LIKE '[0-9]'">
+    <taggedValue xmi:id="_3fc18flhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_3fc18vlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_3fc18_lhEei0xu3Xsej7sQ" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_3fc19PlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Individual First Name Numerals Conformity : Check whether Customer First Name has any numbers"/>
+    <taggedValue xmi:id="_3fc19flhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_3fc19vlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_3fc19_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__N3UgDIgEeqLtr0qyEBgPA" kind="Usage" supplier="_3fc18PlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_UH2YMIliEequY4KwQ76_YQ" name="FBPB Customer Bank Number Validity Dev" supplierDependency="_zpgdAMEZEeq9SuuzRwvbLg" criticalityLevel="1" whereExpression="CUST_BASE_NBR IN  ('422', '508')">
+    <taggedValue xmi:id="_UH2YMYliEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_UH2YMoliEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_UH2YM4liEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_UH2YNIliEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Bank Number Validity : Check that Customer Bank Number is either 422 or 508, , for FBPB Customers"/>
+    <taggedValue xmi:id="_UH2YNYliEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_UH2YNoliEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_UH2YN4liEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_zpgdAMEZEeq9SuuzRwvbLg" kind="Usage" supplier="_UH2YMIliEequY4KwQ76_YQ"/>
+</xmi:XMI>

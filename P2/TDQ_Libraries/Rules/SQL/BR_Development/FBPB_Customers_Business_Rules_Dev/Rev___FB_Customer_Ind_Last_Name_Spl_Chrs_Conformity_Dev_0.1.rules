@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_tvBI4NaAEeqOGOz3OjX5Ng" name="Rev : FB Customer Ind Last Name Spl Chrs Conformity Dev" criticalityLevel="1" whereExpression="(REPLACE(cis_lst_nme,char(39),'')) REGEXP_LIKE '[^A-Z-%/ &quot;!:#0-9&amp;.-]'">
+  <taggedValue xmi:id="_tvBI4daAEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_tvBI4taAEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_tvBI49aAEeqOGOz3OjX5Ng" tag="Purpose" value="Conformity"/>
+  <taggedValue xmi:id="_tvBI5NaAEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual Last Name Special Characters Conformity : Check to see whether Customer Last Name has any special characters, for FB Customers"/>
+  <taggedValue xmi:id="_tvBI5daAEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_tvBI5taAEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_tvBI59aAEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

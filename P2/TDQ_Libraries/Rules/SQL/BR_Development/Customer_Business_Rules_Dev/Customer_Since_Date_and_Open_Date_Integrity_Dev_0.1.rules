@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2IbOEPlgEei0xu3Xsej7sQ" name="Customer Since Date and Open Date Integrity Dev" supplierDependency="_bu5CwPXNEemCt6USiNPfGQ" criticalityLevel="1" whereExpression="cust_snc_dte &lt;= cust_open_dte">
+    <taggedValue xmi:id="_2IbOEflgEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2IbOEvlgEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2IbOE_lgEei0xu3Xsej7sQ" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_2IbOFPlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Since Date and Open Date Integrity : Check to see whether customer since date is valid on comparison with Customer Open Date"/>
+    <taggedValue xmi:id="_2IbOFflgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2IbOFvlgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2IbOF_lgEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_bu5CwPXNEemCt6USiNPfGQ" kind="Usage" supplier="_2IbOEPlgEei0xu3Xsej7sQ"/>
+</xmi:XMI>

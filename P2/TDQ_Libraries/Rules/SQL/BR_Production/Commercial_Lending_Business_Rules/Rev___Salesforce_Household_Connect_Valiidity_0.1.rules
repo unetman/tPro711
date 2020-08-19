@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_jCwhIBUKEeqCq7mdZ8191g" name="Rev : Salesforce Household Connect Valiidity" criticalityLevel="1" whereExpression="linkage_count != 1">
+  <taggedValue xmi:id="_jCwhIRUKEeqCq7mdZ8191g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_jCwhIhUKEeqCq7mdZ8191g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_jCwhIxUKEeqCq7mdZ8191g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_jCwhJBUKEeqCq7mdZ8191g" tag="Description" value="% Salesforce Household Connect Validity : Check that Salesforce Household Connect is not 1"/>
+  <taggedValue xmi:id="_jCwhJRUKEeqCq7mdZ8191g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_jCwhJhUKEeqCq7mdZ8191g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_jCwhJxUKEeqCq7mdZ8191g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

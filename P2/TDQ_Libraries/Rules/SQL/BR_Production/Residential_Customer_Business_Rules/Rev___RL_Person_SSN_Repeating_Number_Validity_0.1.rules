@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_C0rf0L0VEemUt6IHvIMl_w" name="Rev : RL Person SSN Repeating Number Validity" supplierDependency="_nvjasL0WEemUt6IHvIMl_w" criticalityLevel="1" whereExpression="(social_security_number like '%111-11-1111%'&#xD;&#xA;or social_security_number like '%222-22-2222%'&#xD;&#xA;or social_security_number like '%333-33-3333%'&#xD;&#xA;or social_security_number like '%444-44-4444%'&#xD;&#xA;or social_security_number like '%555-55-5555%'&#xD;&#xA;or social_security_number like '%666-66-6666%'&#xD;&#xA;or social_security_number like '%777-77-7777%'&#xD;&#xA;or social_security_number like '%888-88-8888%'&#xD;&#xA;or social_security_number like '%999-99-9999%'&#xD;&#xA;or social_security_number like '%000-00-0000%')">
+    <taggedValue xmi:id="_C0rf0b0VEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_C0rf0r0VEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_C0rf070VEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_C0rf1L0VEemUt6IHvIMl_w" tag="Description" value="% RL Person SSN Repeating Number Validity : Check to see whether Residential Lending Person SSN has repeating numbers, which is Invalid"/>
+    <taggedValue xmi:id="_C0rf1b0VEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_C0rf1r0VEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_C0rf170VEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_nvjasL0WEemUt6IHvIMl_w" kind="Usage" supplier="_C0rf0L0VEemUt6IHvIMl_w"/>
+</xmi:XMI>

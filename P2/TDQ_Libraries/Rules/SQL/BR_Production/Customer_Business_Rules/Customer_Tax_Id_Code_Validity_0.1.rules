@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_iu0qkDuXEem0OtLaJU4itw" name="Customer Tax Id Code Validity" supplierDependency="_Mv5DAEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="TRIM(CIS_TAX_ID_CDE) IS NOT NULL AND CIS_TAX_ID_CDE IN (SELECT TAX_ID_CODE FROM DV_REF_CUST_TAX_ID_CODES)">
+    <taggedValue xmi:id="_iu0qkTuXEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_iu0qkjuXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_iu0qkzuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_iu0qlDuXEem0OtLaJU4itw" tag="Description" value="% Customer Tax Id Code Validity : Check to see whether Customer Tax Id Codes are valid using Reference Table"/>
+    <taggedValue xmi:id="_iu0qlTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_iu0qljuXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_iu0qlzuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Mv5DAEBWEemEnMlxCqUjoA" kind="Usage" supplier="_iu0qkDuXEem0OtLaJU4itw"/>
+</xmi:XMI>

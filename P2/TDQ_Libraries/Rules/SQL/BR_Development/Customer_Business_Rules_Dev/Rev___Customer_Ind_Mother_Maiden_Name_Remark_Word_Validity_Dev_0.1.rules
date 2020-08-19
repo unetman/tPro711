@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_NmbQkOXlEemwAfXbq5nc5A" name="Rev : Customer Ind Mother Maiden Name Remark Word Validity Dev" criticalityLevel="1" whereExpression="mthr_mdn_nme like '%REMARK%'">
+    <taggedValue xmi:id="_NmbQkeXlEemwAfXbq5nc5A" tag="Status" value="development"/>
+    <taggedValue xmi:id="_NmbQkuXlEemwAfXbq5nc5A" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_NmbQk-XlEemwAfXbq5nc5A" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_NmbQlOXlEemwAfXbq5nc5A" tag="Description" value="% Customer Individual Mother Maiden Name Remark Word Validity : Check to see whether Customer Mother Maiden Name has word &quot;REMARKS&quot;"/>
+    <taggedValue xmi:id="_NmbQleXlEemwAfXbq5nc5A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_NmbQluXlEemwAfXbq5nc5A" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_NmbQl-XlEemwAfXbq5nc5A" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Q7vs8OXtEemwAfXbq5nc5A" kind="Usage">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Development/Kadhir/Table_Analysis_-_Individual_-_DV_ALL_CUSTOMER_Dev_0.1.ana#_pQCmUPyVEeiyxIW7f2JvGw"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Production/FBPB_PreIntegration/Table_Analysis_-_FBPB_Ind_Customers_Staging_0.1.ana#_CQ0n4DFgEeqMf6s7I6jokQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Development/Kadhir/FBPB_PreIntegration/Table_Analysis_-_FBPB_Ind_Customers_Staging_Dev_0.1.ana#_UgntQDPeEeqJd9Q195XSEQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_AhDUUDIZEeqLtr0qyEBgPA" kind="Usage">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Production/FBPB_PreIntegration/Table_Analysis_-_FBPB_Ind_Customers_Staging_0.1.ana#_CQ0n4DFgEeqMf6s7I6jokQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Development/Kadhir/FBPB_PreIntegration/Table_Analysis_-_FBPB_Ind_Customers_Staging_Dev_0.1.ana#_UgntQDPeEeqJd9Q195XSEQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

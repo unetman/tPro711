@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_g31hcNaIEeqOGOz3OjX5Ng" name="Rev : FB Customer Secondary Phone Numerals Validity Dev" criticalityLevel="1" whereExpression="trim(scndy_ph_nbr) regexp_like '[^0-9]' and trim(scndy_ph_nbr) is not null">
+  <taggedValue xmi:id="_g31hcdaIEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_g31hctaIEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_g31hc9aIEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_g31hdNaIEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Secondary Phone Numerals Validity : Check to see whether Customer Secondary Phone Number contains Numerals only, , for FB Cusomers"/>
+  <taggedValue xmi:id="_g31hddaIEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_g31hdtaIEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_g31hd9aIEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

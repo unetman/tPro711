@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_UoNgMIbNEemXtvx266iopw" name="Rev : AD Employee Number Duplicates Dev" supplierDependency="_RkeYgIumEemqveVA-Tnyjg" criticalityLevel="1" whereExpression="emp_num in (select distinct emp_num from vdw.dv_active_directory_user where emp_num is not null group by emp_num having count(*) > 1 )">
+    <taggedValue xmi:id="_UoNgMYbNEemXtvx266iopw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_UoNgMobNEemXtvx266iopw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_UoNgM4bNEemXtvx266iopw" tag="Purpose" value="Uniqueness"/>
+    <taggedValue xmi:id="_UoNgNIbNEemXtvx266iopw" tag="Description" value="% AD Employee Number Duplicates : Check to see whether Active Directory has duplicate employee numbers"/>
+    <taggedValue xmi:id="_UoNgNYbNEemXtvx266iopw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_UoNgNobNEemXtvx266iopw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_UoNgN4bNEemXtvx266iopw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_RkeYgIumEemqveVA-Tnyjg" kind="Usage" supplier="_UoNgMIbNEemXtvx266iopw"/>
+</xmi:XMI>

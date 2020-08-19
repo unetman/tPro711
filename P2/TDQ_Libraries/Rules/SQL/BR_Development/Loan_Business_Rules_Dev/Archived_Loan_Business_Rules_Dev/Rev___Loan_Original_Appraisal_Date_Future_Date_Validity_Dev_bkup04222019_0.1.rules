@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_tXUOEGUqEemYn-4n0xSN1g" name="Rev : Loan Original Appraisal Date Future Date Validity Dev bkup04222019" criticalityLevel="1" whereExpression="apprsl_dte > current_date()">
+  <taggedValue xmi:id="_tXUOEWUqEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_tXUOEmUqEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_tXUOE2UqEemYn-4n0xSN1g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_tXUOFGUqEemYn-4n0xSN1g" tag="Description" value="% Loan Original Appraisal Date Future Date Validity : Check to see whether Loan Original Appraisal Date has any Future Dates"/>
+  <taggedValue xmi:id="_tXUOFWUqEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_tXUOFmUqEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_tXUOF2UqEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

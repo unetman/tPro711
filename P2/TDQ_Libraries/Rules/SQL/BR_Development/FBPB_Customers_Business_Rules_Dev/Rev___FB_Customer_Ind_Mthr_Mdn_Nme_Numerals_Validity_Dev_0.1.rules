@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_6W9EUNaBEeqOGOz3OjX5Ng" name="Rev : FB Customer Ind Mthr Mdn Nme Numerals Validity Dev" criticalityLevel="1" whereExpression="trim(mthr_mdn_nme) is not null and MTHR_MDN_NME REGEXP_LIKE '[0-9]'">
+  <taggedValue xmi:id="_6W9EUdaBEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_6W9EUtaBEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_6W9EU9aBEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_6W9EVNaBEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual Mother Maiden Name Numerals Validity : Check to see if Customer Mother's Maiden Name has any numbers in it, for FB Customers"/>
+  <taggedValue xmi:id="_6W9EVdaBEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_6W9EVtaBEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_6W9EV9aBEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

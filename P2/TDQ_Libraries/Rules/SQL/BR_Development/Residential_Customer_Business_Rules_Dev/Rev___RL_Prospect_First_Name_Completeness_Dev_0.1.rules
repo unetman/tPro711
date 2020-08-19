@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_oRlooM31EeqMleRwETqDmQ" name="Rev : RL Prospect First Name Completeness Dev" supplierDependency="_rfPTkM35EeqMleRwETqDmQ" criticalityLevel="1" whereExpression="(first_name is null or first_name = ' ')">
+    <taggedValue xmi:id="_oRlooc31EeqMleRwETqDmQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_oRloos31EeqMleRwETqDmQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_oRloo831EeqMleRwETqDmQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_oRlopM31EeqMleRwETqDmQ" tag="Description" value="% RL Prospect First Name Completeness : Check to see whether Residential Lending - Prospect First Name is missing. "/>
+    <taggedValue xmi:id="_oRlopc31EeqMleRwETqDmQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_oRlops31EeqMleRwETqDmQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_oRlop831EeqMleRwETqDmQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_rfPTkM35EeqMleRwETqDmQ" kind="Usage" supplier="_oRlooM31EeqMleRwETqDmQ"/>
+</xmi:XMI>

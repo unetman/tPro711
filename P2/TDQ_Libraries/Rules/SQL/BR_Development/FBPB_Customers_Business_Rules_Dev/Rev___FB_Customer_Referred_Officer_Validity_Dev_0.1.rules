@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_fpdp0NaIEeqOGOz3OjX5Ng" name="Rev : FB Customer Referred Officer Validity Dev" criticalityLevel="1" whereExpression="trim(ref_offcr_nbr) is not null and ref_offcr_nbr not in (select officer_code from dv_employees where termdate is null and expiration_date is null) and ref_offcr_nbr != 0">
+  <taggedValue xmi:id="_fpdp0daIEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_fpdp0taIEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_fpdp09aIEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_fpdp1NaIEeqOGOz3OjX5Ng" tag="Description" value="% FB Cutomer Referred Officer Validity : Check to see whether Referred Officer Numbers are valid, if present, for FB Customers"/>
+  <taggedValue xmi:id="_fpdp1daIEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_fpdp1taIEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_fpdp19aIEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

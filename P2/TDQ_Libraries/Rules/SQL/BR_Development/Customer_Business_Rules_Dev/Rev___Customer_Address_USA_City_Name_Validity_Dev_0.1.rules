@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_LTh54PlhEei0xu3Xsej7sQ" name="Rev : Customer Address USA City Name Validity Dev" supplierDependency="_sIbaIDFvEeqMf6s7I6jokQ" criticalityLevel="1" whereExpression="trim(cis_ctry_cde) = 'USA' and upper(cis_cty_nme) not in (SELECT distinct upper(city) from dv_ref_us_postal_codes)">
+    <taggedValue xmi:id="_LTh54flhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_LTh54vlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_LTh54_lhEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_LTh55PlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Address USA City Name Validity : Check to see whether USA city name is valid"/>
+    <taggedValue xmi:id="_LTh55flhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_LTh55vlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_LTh55_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_sIbaIDFvEeqMf6s7I6jokQ" kind="Usage" supplier="_LTh54PlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

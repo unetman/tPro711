@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_r_dDQGUqEemYn-4n0xSN1g" name="Rev : Loan High Risk Code and Cost Center Integrity Dev bkup04222019" criticalityLevel="1" whereExpression="cst_cntr_nbr != 0 and high_risk_cde is not null and trim(high_risk_cde) || trim(cst_cntr_nbr) not in (select high_risk_cde || cst_cntr_nbr from dv_ref_ln_cst_cntr_high_risk_codes)">
+  <taggedValue xmi:id="_r_dDQWUqEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_r_dDQmUqEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_r_dDQ2UqEemYn-4n0xSN1g" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_r_dDRGUqEemYn-4n0xSN1g" tag="Description" value="% Loan High Risk Code and Cost Center Integrity : Check to see whether the Hight Risk Code and Cost Center Integrity is valid"/>
+  <taggedValue xmi:id="_r_dDRWUqEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_r_dDRmUqEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_r_dDR2UqEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

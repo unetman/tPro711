@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_9x0PYNaGEeqOGOz3OjX5Ng" name="Rev : FB Customer Phn Rlt Resn Code 5 and Phn Nbr 5 Integrity Dev" criticalityLevel="1" whereExpression="cis_ph_5_rlt_resn_cde is not null and trim(cis_ph_5_full_nbr) is null">
+  <taggedValue xmi:id="_9x0PYdaGEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_9x0PYtaGEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_9x0PY9aGEeqOGOz3OjX5Ng" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_9x0PZNaGEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Phone Rlt Resn Code 5 and Phone Number 5 Integrity : Check to see whether any Phone Rlt Resn Code exists without Phone 5 Number, for FB Customers"/>
+  <taggedValue xmi:id="_9x0PZdaGEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_9x0PZtaGEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_9x0PZ9aGEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_eBVLQDuYEem0OtLaJU4itw" name="Rev : Customer Ind Residency Status Code Validity" supplierDependency="_-QdvkEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(own_rent_cde) is not null and trim(own_rent_cde) not in (select dv_ref_residency_status_codes.residency_status_code from dv_ref_residency_status_codes)">
+    <taggedValue xmi:id="_eBVLQTuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_eBVLQjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_eBVLQzuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_eBVLRDuYEem0OtLaJU4itw" tag="Description" value="% Customer Individual Residency Status Validity : Check to see whether Customer Residency Status Code is valid using Reference Table"/>
+    <taggedValue xmi:id="_eBVLRTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_eBVLRjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_eBVLRzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_-QdvkEBWEemEnMlxCqUjoA" kind="Usage" supplier="_eBVLQDuYEem0OtLaJU4itw"/>
+</xmi:XMI>

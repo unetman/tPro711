@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Kjz0MOoDEem6B9cRfDaYGA" name="Rev : RL Prospect Last Name Preceding and Trailing Blanks Validity Dev" supplierDependency="_V6if0O99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="len(last_name) != len(trim(last_name))">
+    <taggedValue xmi:id="_Kjz0MeoDEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Kjz0MuoDEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Kjz0M-oDEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_Kjz0NOoDEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Last Name Preceding and Trailing Blanks Validity : Check to see whether Residential Lending - Prospect's Last Name has Preceding and Trailing Blank spaces"/>
+    <taggedValue xmi:id="_Kjz0NeoDEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Kjz0NuoDEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Kjz0N-oDEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_V6if0O99EemWeu8zCvaDhg" kind="Usage" supplier="_Kjz0MOoDEem6B9cRfDaYGA"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Jf8UkL0uEemUt6IHvIMl_w" name="Rev : RL Customer Work Number Length Validity" supplierDependency="_HDNx8PG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="len(work_number)!= 10 and work_number is not null and work_number != ' ' ">
+    <taggedValue xmi:id="_Jf8Ukb0uEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Jf8Ukr0uEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Jf8Uk70uEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_Jf8UlL0uEemUt6IHvIMl_w" tag="Description" value="% RL Customer Work Number Length Validity : Check to see whether Residential Customer Work Number Length has valid length. The Valid Length is 10"/>
+    <taggedValue xmi:id="_Jf8Ulb0uEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Jf8Ulr0uEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Jf8Ul70uEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_HDNx8PG8EemeArsjLNyAig" kind="Usage" supplier="_Jf8UkL0uEemUt6IHvIMl_w"/>
+</xmi:XMI>

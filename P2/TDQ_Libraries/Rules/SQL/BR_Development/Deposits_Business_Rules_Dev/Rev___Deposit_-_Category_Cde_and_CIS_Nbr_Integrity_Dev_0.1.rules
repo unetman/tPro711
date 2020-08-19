@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_cVuw0HstEemyHpvMaVu4fA" name="Rev : Deposit - Category Cde and CIS Nbr Integrity Dev" supplierDependency="_dZ2pcPAfEemWB8N1vAcLdw" criticalityLevel="1" whereExpression="dp_cat_cde != 'K' and trim(cust_cis_nbr) is null ">
+    <taggedValue xmi:id="_cVuw0XstEemyHpvMaVu4fA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_cVuw0nstEemyHpvMaVu4fA" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_cVuw03stEemyHpvMaVu4fA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_cVuw1HstEemyHpvMaVu4fA" tag="Description" value="% Deposit - Category Code and CIS Number Integrity : Check to see whether CIS number is missing when Deposit Category Code is not ‘K’"/>
+    <taggedValue xmi:id="_cVuw1XstEemyHpvMaVu4fA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_cVuw1nstEemyHpvMaVu4fA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_cVuw13stEemyHpvMaVu4fA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_dZ2pcPAfEemWB8N1vAcLdw" kind="Usage" supplier="_cVuw0HstEemyHpvMaVu4fA"/>
+</xmi:XMI>

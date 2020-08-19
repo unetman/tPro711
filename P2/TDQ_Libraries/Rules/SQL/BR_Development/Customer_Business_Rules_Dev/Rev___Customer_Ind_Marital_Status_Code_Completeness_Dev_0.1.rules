@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_CVX1sDqUEemyyIFq0r7KKQ" name="Rev : Customer Ind Marital Status Code Completeness Dev" supplierDependency="_BFT-UDIhEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="REC_TYP_CDE = 'I' and TRIM(mrtl_stat_cde) IS NULL">
+    <taggedValue xmi:id="_CVX1sTqUEemyyIFq0r7KKQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_CVX1sjqUEemyyIFq0r7KKQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_CVX1szqUEemyyIFq0r7KKQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_CVX1tDqUEemyyIFq0r7KKQ" tag="Description" value="% Customer Individual Marital Status Code Completeness : Check to see whether Marital Status Code is present for Individual Customers"/>
+    <taggedValue xmi:id="_CVX1tTqUEemyyIFq0r7KKQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_CVX1tjqUEemyyIFq0r7KKQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_CVX1tzqUEemyyIFq0r7KKQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_BFT-UDIhEeqLtr0qyEBgPA" kind="Usage" supplier="_CVX1sDqUEemyyIFq0r7KKQ"/>
+</xmi:XMI>

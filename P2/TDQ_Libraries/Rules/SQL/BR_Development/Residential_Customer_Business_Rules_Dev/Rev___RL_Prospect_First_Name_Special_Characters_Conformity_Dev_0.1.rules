@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_XogPAOoCEem6B9cRfDaYGA" name="Rev : RL Prospect First Name Special Characters Conformity Dev" supplierDependency="_VsRaUO99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="((REPLACE(first_name,char(39),'') LIKE '%[^a-z0-9 -]%'))">
+    <taggedValue xmi:id="_XogPAeoCEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_XogPAuoCEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_XogPA-oCEem6B9cRfDaYGA" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_XogPBOoCEem6B9cRfDaYGA" tag="Description" value="% RL Prospect First Name Special Characters Conformity: Check to see whether Residential Lending - Prospect's First Name has any special characters"/>
+    <taggedValue xmi:id="_XogPBeoCEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_XogPBuoCEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_XogPB-oCEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_VsRaUO99EemWeu8zCvaDhg" kind="Usage" supplier="_XogPAOoCEem6B9cRfDaYGA"/>
+</xmi:XMI>

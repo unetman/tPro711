@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_ndw3YL0nEemUt6IHvIMl_w" name="Rev : RL Customer Cell Length Validity" supplierDependency="_FJdbAPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="len(cell)!= 10 and cell is not null and cell != ' ' ">
+    <taggedValue xmi:id="_ndw3Yb0nEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_ndw3Yr0nEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_ndw3Y70nEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_ndw3ZL0nEemUt6IHvIMl_w" tag="Description" value="% RL Customer Cell Length Validity : Check to see whether Residential Customer Cell Length has valid length. The Valid Length is 10"/>
+    <taggedValue xmi:id="_ndw3Zb0nEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ndw3Zr0nEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_ndw3Z70nEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_FJdbAPG8EemeArsjLNyAig" kind="Usage" supplier="_ndw3YL0nEemUt6IHvIMl_w"/>
+</xmi:XMI>

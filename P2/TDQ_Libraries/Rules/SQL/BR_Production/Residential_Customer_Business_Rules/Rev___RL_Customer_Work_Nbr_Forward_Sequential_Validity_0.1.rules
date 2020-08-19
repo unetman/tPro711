@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_NCdOgL0tEemUt6IHvIMl_w" name="Rev : RL Customer Work Nbr Forward Sequential Validity" supplierDependency="_G3BwEPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="(trim(work_number) is not null) &#xD;&#xA;and TRIM(work_number) != ' ' &#xD;&#xA;and (work_number like '123456789%'&#xD;&#xA;or work_number like '23456789%'&#xD;&#xA;or work_number like '3456789012%'&#xD;&#xA;or work_number like '4567890123%'&#xD;&#xA;or work_number like '5678901234%'&#xD;&#xA;or work_number like '6789012345%'&#xD;&#xA;or work_number like '7890123456%'&#xD;&#xA;or work_number like '8901234567%'&#xD;&#xA;or work_number like '9012345678%') ;">
+    <taggedValue xmi:id="_NCdOgb0tEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_NCdOgr0tEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_NCdOg70tEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_NCdOhL0tEemUt6IHvIMl_w" tag="Description" value="% RL Customer Work Number Forward Sequential Validity : Check to see whether Residential Lending Customer Work Number has Forward Sequential Number, which is Invalid"/>
+    <taggedValue xmi:id="_NCdOhb0tEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_NCdOhr0tEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_NCdOh70tEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_G3BwEPG8EemeArsjLNyAig" kind="Usage" supplier="_NCdOgL0tEemUt6IHvIMl_w"/>
+</xmi:XMI>

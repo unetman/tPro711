@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_P9W54D1UEeqRJNjzeSKO9Q" name="Rev : WT Outgoing Domestic Account Type Code Validity Dev" criticalityLevel="1" whereExpression="account_type_code not in (select acct_typ_cd from dv_ref_dep_acct_types) ">
+    <taggedValue xmi:id="_P9W54T1UEeqRJNjzeSKO9Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_P9W54j1UEeqRJNjzeSKO9Q" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_P9W54z1UEeqRJNjzeSKO9Q" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_P9W55D1UEeqRJNjzeSKO9Q" tag="Description" value="% WT Outgoing Domestic Account Type Code Validity : Check to see whether the Wire Transfer Account Type is valid or not"/>
+    <taggedValue xmi:id="_P9W55T1UEeqRJNjzeSKO9Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_P9W55j1UEeqRJNjzeSKO9Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_P9W55z1UEeqRJNjzeSKO9Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_mze9ED1UEeqRJNjzeSKO9Q" kind="Usage">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Development/Kadhir/Table_Analysis_-_Outgoing-Domestic-DV_WTS_WIRE_TRANSFER_Dev_0.1.ana#_3AyP4PmtEemqVvlSOfSgZQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Production/Wires/Table_Analysis_-_Outgoing-Domestic-DV_WTS_WIRE_TRANSFER_0.1.ana#_P0OscD3rEequm5sdFaVv4g"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

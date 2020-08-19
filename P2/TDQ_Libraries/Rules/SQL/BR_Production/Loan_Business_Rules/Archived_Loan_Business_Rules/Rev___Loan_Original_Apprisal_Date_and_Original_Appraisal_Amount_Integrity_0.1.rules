@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_g8gmMGusEemZT-q9u_n5mQ" name="Rev : Loan Original Apprisal Date and Original Appraisal Amount Integrity" supplierDependency="_oApP8GuvEemZT-q9u_n5mQ" criticalityLevel="1" whereExpression="apprsl_dte &lt;= current_date() and (current_date() - apprsl_dte)/365 &lt;= 100 &#xD;&#xA;and ln_apprsl_val_amt = 0">
+    <taggedValue xmi:id="_g8gmMWusEemZT-q9u_n5mQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_g8gmMmusEemZT-q9u_n5mQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_g8gmM2usEemZT-q9u_n5mQ" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_g8gmNGusEemZT-q9u_n5mQ" tag="Description" value="% Loan Original Appraisal Date and Original Appraisal Amount Integrity : Check to see whether the Original appraisal amount is present and valid when Original appraisal date is present and valid"/>
+    <taggedValue xmi:id="_g8gmNWusEemZT-q9u_n5mQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_g8gmNmusEemZT-q9u_n5mQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_g8gmN2usEemZT-q9u_n5mQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_oApP8GuvEemZT-q9u_n5mQ" kind="Usage" supplier="_g8gmMGusEemZT-q9u_n5mQ"/>
+</xmi:XMI>

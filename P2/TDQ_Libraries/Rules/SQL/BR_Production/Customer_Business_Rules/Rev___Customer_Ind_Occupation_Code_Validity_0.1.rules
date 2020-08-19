@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_dL1tsDuYEem0OtLaJU4itw" name="Rev : Customer Ind Occupation Code Validity" supplierDependency="_-I2rsEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(occpn_cde) is not null and OCCPN_CDE not IN (select occupation_code from dv_ref_occupation_codes where current_flag = 'Y')&#xD;&#xA;">
+    <taggedValue xmi:id="_dL1tsTuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_dL1tsjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_dL1tszuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_dL1ttDuYEem0OtLaJU4itw" tag="Description" value="% Customer Individual Occupation Code Validity : Check to see whether Customer Occupation Code is valid using Reference Table"/>
+    <taggedValue xmi:id="_dL1ttTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_dL1ttjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_dL1ttzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_-I2rsEBWEemEnMlxCqUjoA" kind="Usage" supplier="_dL1tsDuYEem0OtLaJU4itw"/>
+</xmi:XMI>

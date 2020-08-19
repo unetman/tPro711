@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_eqOiEEKmEeqgnoLB8nCZ5Q" name="Rev : Customer Document Id Number 4 and Type 4 Integrity Dev" supplierDependency="_hOVBEEKnEeqgnoLB8nCZ5Q" criticalityLevel="1" whereExpression="id_nbr_04 is null and (id_typ_nme_04 is not null or trim(id_typ_nme_04) != ' ')">
+    <taggedValue xmi:id="_eqOiEUKmEeqgnoLB8nCZ5Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_eqOiEkKmEeqgnoLB8nCZ5Q" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_eqOiE0KmEeqgnoLB8nCZ5Q" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_eqOiFEKmEeqgnoLB8nCZ5Q" tag="Description" value="% Customer Document Id Number 4 and Type 4 Integrity : Check to see whether Customer Document Type 4 is present while Id Number 4 is not present"/>
+    <taggedValue xmi:id="_eqOiFUKmEeqgnoLB8nCZ5Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_eqOiFkKmEeqgnoLB8nCZ5Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_eqOiF0KmEeqgnoLB8nCZ5Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_hOVBEEKnEeqgnoLB8nCZ5Q" kind="Usage" supplier="_eqOiEEKmEeqgnoLB8nCZ5Q"/>
+</xmi:XMI>

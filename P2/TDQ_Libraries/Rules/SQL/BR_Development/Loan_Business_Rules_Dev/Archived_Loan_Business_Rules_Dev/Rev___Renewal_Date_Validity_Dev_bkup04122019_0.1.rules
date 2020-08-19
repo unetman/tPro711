@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_-OgqIGUpEemYn-4n0xSN1g" name="Rev : Renewal Date Validity Dev bkup04122019" criticalityLevel="1" whereExpression="trim(rstrt_ind) is not null and rnwl_dte = '0001-01-01'">
+  <taggedValue xmi:id="_-OgqIWUpEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_-OgqImUpEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_-OgqI2UpEemYn-4n0xSN1g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_-OgqJGUpEemYn-4n0xSN1g" tag="Description" value="% Renewal Date Validity : Check to see whether Renewal Date is valid when Restructure Indicator is present"/>
+  <taggedValue xmi:id="_-OgqJWUpEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_-OgqJmUpEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_-OgqJ2UpEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

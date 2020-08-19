@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_N0084DuXEem0OtLaJU4itw" name="Customer Bank Number Validity" supplierDependency="_L1NjcEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="CUST_BASE_NBR IN  ('422', '508')">
+    <taggedValue xmi:id="_N0084TuXEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_N0084juXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_N0084zuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_N0085DuXEem0OtLaJU4itw" tag="Description" value="% Customer Bank Number Validity : Check that Customer Bank Number is either 422 or 508"/>
+    <taggedValue xmi:id="_N0085TuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_N0085juXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_N0085zuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_L1NjcEBWEemEnMlxCqUjoA" kind="Usage" supplier="_N0084DuXEem0OtLaJU4itw"/>
+</xmi:XMI>

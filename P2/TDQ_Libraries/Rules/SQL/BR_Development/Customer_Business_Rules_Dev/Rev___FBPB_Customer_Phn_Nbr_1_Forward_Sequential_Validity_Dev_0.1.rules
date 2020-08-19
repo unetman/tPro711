@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_fPOGgIloEequY4KwQ76_YQ" name="Rev : FBPB Customer Phn Nbr 1 Forward Sequential Validity Dev" supplierDependency="_yfJUsImMEeqhe5FGsRAHRg" criticalityLevel="1" whereExpression="trim(cis_ph_1_full_nbr) is not null and trim(cis_ph_1_full_nbr) like '%123456789%'">
+    <taggedValue xmi:id="_fPOGgYloEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_fPOGgoloEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_fPOGg4loEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_fPOGhIloEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Phn Nbr 1 Forward Sequential Validity : Check to see whether Customer Phone Number 1 is &quot;1234567890&quot;, for FBPB Customers"/>
+    <taggedValue xmi:id="_fPOGhYloEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_fPOGholoEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_fPOGh4loEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_yfJUsImMEeqhe5FGsRAHRg" kind="Usage" supplier="_fPOGgIloEequY4KwQ76_YQ"/>
+</xmi:XMI>

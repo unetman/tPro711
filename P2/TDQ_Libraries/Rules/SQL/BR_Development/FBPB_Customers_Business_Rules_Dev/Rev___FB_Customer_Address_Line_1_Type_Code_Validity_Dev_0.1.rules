@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_0xBQMNZ5EeqOGOz3OjX5Ng" name="Rev : FB Customer Address Line 1 Type Code Validity Dev" criticalityLevel="1" whereExpression="trim(cis_lne_1_typ_cde) is not null and cis_lne_1_typ_cde not in ('A', 'S', 'C')">
+  <taggedValue xmi:id="_0xBQMdZ5EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_0xBQMtZ5EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_0xBQM9Z5EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_0xBQNNZ5EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Address Line 1 Type Code Validity : Check to see whether Address Line 1 Type Code is valid with the list of ('A', 'S', 'C'), for FB Customers"/>
+  <taggedValue xmi:id="_0xBQNdZ5EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_0xBQNtZ5EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_0xBQN9Z5EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

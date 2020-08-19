@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_8M8TYZsoEeiGoNwGQY9YEg" name="GNDR_CDE BLANK" supplierDependency="__R1uIJswEeiGoNwGQY9YEg" criticalityLevel="1" whereExpression="GNDR_CDE IS NOT NULL AND TRIM(GNDR_CDE) IS NOT NULL">
+    <taggedValue xmi:id="_8M8TYpsoEeiGoNwGQY9YEg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_8M8TY5soEeiGoNwGQY9YEg" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_8M8TZJsoEeiGoNwGQY9YEg" tag="Purpose" value="Business Rule for Customers to check for Blank in Gender Code"/>
+    <taggedValue xmi:id="_8M8TZZsoEeiGoNwGQY9YEg" tag="Description" value="Business Rule for Customers to check for Blank in Gender Code"/>
+    <taggedValue xmi:id="_8M8TZpsoEeiGoNwGQY9YEg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_8M8TZ5soEeiGoNwGQY9YEg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_8M8TaJsoEeiGoNwGQY9YEg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__R1uIJswEeiGoNwGQY9YEg" kind="Usage" supplier="_8M8TYZsoEeiGoNwGQY9YEg"/>
+</xmi:XMI>

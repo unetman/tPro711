@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_VggZYMEqEeq9SuuzRwvbLg" name="Rev : FBPB Customer Ind Ethnicity Code Validity ddd" criticalityLevel="1" whereExpression="TRIM(ETHNC_CDE) IS NOT NULL AND ETHNC_CDE not IN (SELECT ETHNIC_CODE FROM DV_REF_ETHNIC_CODES) ">
+  <taggedValue xmi:id="_VggZYcEqEeq9SuuzRwvbLg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_VggZYsEqEeq9SuuzRwvbLg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_VggZY8EqEeq9SuuzRwvbLg" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_VggZZMEqEeq9SuuzRwvbLg" tag="Description" value="% FBPB Customer Individual Ethnicity Code Validity : Check to see if Ethnicity Code is valid using Reference Table, for FBPB Customers"/>
+  <taggedValue xmi:id="_VggZZcEqEeq9SuuzRwvbLg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_VggZZsEqEeq9SuuzRwvbLg" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_VggZZ8EqEeq9SuuzRwvbLg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

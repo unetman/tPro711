@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_wLgQUGBxEemESPbYofT7Bw" name="Rev : Ln FrClsr Ind and FrClsr Dt Integrity Dev" supplierDependency="_SZLy4LrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="frclsr_dte != '0001-01-01' and trim(frclsr_ind) is null">
+    <taggedValue xmi:id="_wLgQUWBxEemESPbYofT7Bw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_wLgQUmBxEemESPbYofT7Bw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_wLgQU2BxEemESPbYofT7Bw" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_wLgQVGBxEemESPbYofT7Bw" tag="Description" value="% Loan Foreclosure Indicator and Foreclosure Date Integrity : Check to see whether  Foreclosure Date is present and valid when Foreclosure Indicator is present and valid"/>
+    <taggedValue xmi:id="_wLgQVWBxEemESPbYofT7Bw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wLgQVmBxEemESPbYofT7Bw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_wLgQV2BxEemESPbYofT7Bw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_SZLy4LrNEemDOqp3RrQ-hA" kind="Usage" supplier="_wLgQUGBxEemESPbYofT7Bw"/>
+</xmi:XMI>

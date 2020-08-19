@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_QLRhYPlgEei0xu3Xsej7sQ" name="Rev : Customer Ind Mother Maiden Name Numerals Validity Dev" supplierDependency="_K5A6AEKpEeqgnoLB8nCZ5Q" criticalityLevel="1" whereExpression="trim(mthr_mdn_nme) is not null and MTHR_MDN_NME REGEXP_LIKE '[0-9]'">
+    <taggedValue xmi:id="_QLRhYflgEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_QLRhYvlgEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_QLRhY_lgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_QLRhZPlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Individual Mother Maiden Name Numerals Validity : Check to see if Customer Mother's Maiden Name has any numbers in it"/>
+    <taggedValue xmi:id="_QLRhZflgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_QLRhZvlgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_QLRhZ_lgEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_K5A6AEKpEeqgnoLB8nCZ5Q" kind="Usage" supplier="_QLRhYPlgEei0xu3Xsej7sQ"/>
+</xmi:XMI>

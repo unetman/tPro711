@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_iw2YMEc6Eemhuf5XDidYwQ" name="Rev : Note Type Validity for Consumer Loans" supplierDependency="_hs0ZQF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="ln_cat_cde = 'I' and (note_typ_cde not between '100' and '199')">
+    <taggedValue xmi:id="_iw2YMUc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_iw2YMkc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_iw2YM0c6Eemhuf5XDidYwQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_iw2YNEc6Eemhuf5XDidYwQ" tag="Description" value="% Consumer Loans Note Types Validity : Check to see whether Note Type Code is valid for Consumer Loans"/>
+    <taggedValue xmi:id="_iw2YNUc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_iw2YNkc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_iw2YN0c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_hs0ZQF08Eemj9s3KLP4KwA" kind="Usage" supplier="_iw2YMEc6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

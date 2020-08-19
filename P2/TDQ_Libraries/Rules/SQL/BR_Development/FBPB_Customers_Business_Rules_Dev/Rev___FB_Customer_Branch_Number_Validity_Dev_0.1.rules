@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_STy8INZ7EeqOGOz3OjX5Ng" name="Rev : FB Customer Branch Number Validity Dev" criticalityLevel="1" whereExpression="trim(cis_brnch_nbr) is not null and trim(cast(cis_brnch_nbr as integer)) not in (select branch_number from dv_ref_branches where current_flag = 'Y' )">
+  <taggedValue xmi:id="_STy8IdZ7EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_STy8ItZ7EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_STy8I9Z7EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_STy8JNZ7EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Branch Number Validity : Check to see whether Customer Branch Number is valid using Reference Table, for FB Customers"/>
+  <taggedValue xmi:id="_STy8JdZ7EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_STy8JtZ7EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_STy8J9Z7EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

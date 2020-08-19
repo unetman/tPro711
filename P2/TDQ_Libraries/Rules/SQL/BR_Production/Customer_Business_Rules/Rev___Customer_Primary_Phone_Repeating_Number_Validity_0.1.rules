@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_IC_PMDuZEem0OtLaJU4itw" name="Rev : Customer Primary Phone Repeating Number Validity" supplierDependency="_VslRMEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(prmy_ph_nbr) is not null and &#xD;&#xA;(trim(prmy_ph_nbr) = '00000000000' or&#xD;&#xA;trim(prmy_ph_nbr) = '0111111111' or&#xD;&#xA;trim(prmy_ph_nbr) = '02222222222' or&#xD;&#xA;trim(prmy_ph_nbr) = '03333333333' or&#xD;&#xA;trim(prmy_ph_nbr) = '04444444444' or&#xD;&#xA;trim(prmy_ph_nbr) = '05555555555' or&#xD;&#xA;trim(prmy_ph_nbr) = '06666666666' or&#xD;&#xA;trim(prmy_ph_nbr) = '07777777777' or&#xD;&#xA;trim(prmy_ph_nbr) = '08888888888' or&#xD;&#xA;trim(prmy_ph_nbr) = '09999999999' )">
+    <taggedValue xmi:id="_IC_PMTuZEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_IC_PMjuZEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_IC_PMzuZEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_IC_PNDuZEem0OtLaJU4itw" tag="Description" value="% Customer Primary Phone Repeating Number Validity : Check to see whether Customer Primary Phone Number is valid"/>
+    <taggedValue xmi:id="_IC_PNTuZEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_IC_PNjuZEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_IC_PNzuZEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_VslRMEBWEemEnMlxCqUjoA" kind="Usage" supplier="_IC_PMDuZEem0OtLaJU4itw"/>
+</xmi:XMI>

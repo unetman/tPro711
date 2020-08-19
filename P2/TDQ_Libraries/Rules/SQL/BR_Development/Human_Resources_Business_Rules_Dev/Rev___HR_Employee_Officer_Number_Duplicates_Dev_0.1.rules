@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_zOdTEKy9EeqtYreauaMrcw" name="Rev : HR Employee Officer Number Duplicates Dev" criticalityLevel="1" whereExpression="trim(officer_code) in (select trim(officer_code) &#xD;&#xA;                               from dv_employees &#xD;&#xA;                              where officer_code is not null &#xD;&#xA;                              and officer_code != ' ' &#xD;&#xA;                              and trim(officer_code) != '0' &#xD;&#xA;                              and termdate is null and expiration_date is null&#xD;&#xA;                              group by officer_code having count(*) > 1)">
+    <taggedValue xmi:id="_zOdTEay9EeqtYreauaMrcw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_zOdTEqy9EeqtYreauaMrcw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_zOdTE6y9EeqtYreauaMrcw" tag="Purpose" value="Uniqueness"/>
+    <taggedValue xmi:id="_zOdTFKy9EeqtYreauaMrcw" tag="Description" value="% HR Employee Officer Number Duplicates : Check to see whether any officer Number is duplicate"/>
+    <taggedValue xmi:id="_zOdTFay9EeqtYreauaMrcw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_zOdTFqy9EeqtYreauaMrcw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_zOdTF6y9EeqtYreauaMrcw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_xEwwwKy_EeqtYreauaMrcw" kind="Usage">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Development/Kadhir/Table_Analysis_-_DV_EMPLOYEES_Dev_0.1.ana#_SCeK4HABEemC6Oc8srIKXw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

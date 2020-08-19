@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_jj93MEc6Eemhuf5XDidYwQ" name="Rev : Note Type Validity for Mortgage Loans" supplierDependency="_h0g8sF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="ln_cat_cde = 'M' and (note_typ_cde not between '300' and '399' and note_typ_cde not between '720' and '742')">
+    <taggedValue xmi:id="_jj93MUc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_jj93Mkc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_jj93M0c6Eemhuf5XDidYwQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_jj93NEc6Eemhuf5XDidYwQ" tag="Description" value="% Mortgage Loans Note Types Validity : Check to see whether Note Type Code is valid for Mortgage Loans"/>
+    <taggedValue xmi:id="_jj93NUc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_jj93Nkc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_jj93N0c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_h0g8sF08Eemj9s3KLP4KwA" kind="Usage" supplier="_jj93MEc6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

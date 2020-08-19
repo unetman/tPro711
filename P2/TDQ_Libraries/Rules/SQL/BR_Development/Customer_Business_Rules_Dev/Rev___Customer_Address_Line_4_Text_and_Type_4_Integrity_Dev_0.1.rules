@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_FyDeoDk5EemWkPFGSs1pFg" name="Rev : Customer Address Line 4 Text and Type 4 Integrity Dev" supplierDependency="_lgVcADk-EemWkPFGSs1pFg" criticalityLevel="1" whereExpression="trim(cis_lne_4_typ_cde) in ('A', 'S', 'C') and trim(cis_addr_lne_4_txt) is null">
+    <taggedValue xmi:id="_FyDeoTk5EemWkPFGSs1pFg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_FyDeojk5EemWkPFGSs1pFg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_FyDeozk5EemWkPFGSs1pFg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_FyDepDk5EemWkPFGSs1pFg" tag="Description" value="% Customer Address Line 4 Text and Type 4 Integrity : Check to see whether Customer Address Line 4 Text is null or blank if Address Line Type Code has value"/>
+    <taggedValue xmi:id="_FyDepTk5EemWkPFGSs1pFg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_FyDepjk5EemWkPFGSs1pFg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_FyDepzk5EemWkPFGSs1pFg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_lgVcADk-EemWkPFGSs1pFg" kind="Usage" supplier="_FyDeoDk5EemWkPFGSs1pFg"/>
+</xmi:XMI>

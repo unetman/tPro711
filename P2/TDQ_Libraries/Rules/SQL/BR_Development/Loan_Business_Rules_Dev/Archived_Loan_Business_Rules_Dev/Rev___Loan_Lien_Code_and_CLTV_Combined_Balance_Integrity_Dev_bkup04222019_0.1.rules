@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_sqEtkGUqEemYn-4n0xSN1g" name="Rev : Loan Lien Code and CLTV Combined Balance Integrity Dev bkup04222019" criticalityLevel="1" whereExpression="fhlb_mtg_typ_cde > 1 and rc_cltv_comb_bal &lt;= 0.00">
+  <taggedValue xmi:id="_sqEtkWUqEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_sqEtkmUqEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_sqEtk2UqEemYn-4n0xSN1g" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_sqEtlGUqEemYn-4n0xSN1g" tag="Description" value="% Loan Lien Code and CLTV Combined Balance Integrity : Check whether when Lien Code > 1 then CLTV Combined Balance > 0.00"/>
+  <taggedValue xmi:id="_sqEtlWUqEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_sqEtlmUqEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_sqEtl2UqEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__KBEoIlnEequY4KwQ76_YQ" name="Rev : FBPB Customer Ind Occupation Code Completeness Dev" supplierDependency="_0JAOYIpQEeq749sm8FqTxg" criticalityLevel="1" whereExpression="REC_TYP_CDE = 'I' and TRIM(OCCPN_CDE) IS NULL">
+    <taggedValue xmi:id="__KBEoYlnEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="__KBEoolnEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="__KBEo4lnEequY4KwQ76_YQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="__KBEpIlnEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Individual Occupation Code Completeness : Check to see whether Occupation Code is present for Individual Customers, for FBPB Customers"/>
+    <taggedValue xmi:id="__KBEpYlnEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__KBEpolnEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__KBEp4lnEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0JAOYIpQEeq749sm8FqTxg" kind="Usage" supplier="__KBEoIlnEequY4KwQ76_YQ"/>
+</xmi:XMI>

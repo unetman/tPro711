@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_ZyIDoDxkEeqFzZjukxc7rQ" name="Rev : Reference Data Country Country Alpha 2 Code Completeness Dev" supplierDependency="_w32CADxkEeqFzZjukxc7rQ" criticalityLevel="1" whereExpression="trim(country_alpha2_code) = ' ' or country_alpha2_code is null">
+    <taggedValue xmi:id="_ZyIDoTxkEeqFzZjukxc7rQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_ZyIDojxkEeqFzZjukxc7rQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_ZyIDozxkEeqFzZjukxc7rQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_ZyIDpDxkEeqFzZjukxc7rQ" tag="Description" value="% RD Country Country Alpha 2 Code Completeness : Check to see whether Country Alpha 2 Code is missing in Countries Reference Data"/>
+    <taggedValue xmi:id="_ZyIDpTxkEeqFzZjukxc7rQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ZyIDpjxkEeqFzZjukxc7rQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_ZyIDpzxkEeqFzZjukxc7rQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_w32CADxkEeqFzZjukxc7rQ" kind="Usage" supplier="_ZyIDoDxkEeqFzZjukxc7rQ"/>
+</xmi:XMI>

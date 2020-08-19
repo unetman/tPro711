@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_64IjQIloEequY4KwQ76_YQ" name="Rev : FBPB Customer Phone 3 Relationship Reason Code Validity Dev" supplierDependency="_37khIImMEeqhe5FGsRAHRg" criticalityLevel="1" whereExpression="trim(cis_ph_3_rlt_resn_cde) is not null and cis_ph_3_rlt_resn_cde not in (select phone_rlt_resn_code from dv_ref_phone_rlt_resn_codes)">
+    <taggedValue xmi:id="_64IjQYloEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_64IjQoloEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_64IjQ4loEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_64IjRIloEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Phone 3 Rlt Resn Code Validity : Check to see whether Customer Phone 3 Relationship Reason Code is valid using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_64IjRYloEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_64IjRoloEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_64IjR4loEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_37khIImMEeqhe5FGsRAHRg" kind="Usage" supplier="_64IjQIloEequY4KwQ76_YQ"/>
+</xmi:XMI>

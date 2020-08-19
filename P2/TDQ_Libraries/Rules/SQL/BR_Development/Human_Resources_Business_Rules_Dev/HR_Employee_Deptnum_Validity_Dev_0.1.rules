@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_vbQZwIxQEemXCqTWQOVr0Q" name="HR Employee Deptnum Validity Dev" supplierDependency="_zDSXcPQ6EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="deptnum not in (select cost_center from dv_fn_gl_cost_center where lower(cost_center_desc) like '%closed%')">
+    <taggedValue xmi:id="_vbQZwYxQEemXCqTWQOVr0Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_vbQZwoxQEemXCqTWQOVr0Q" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_vbQZw4xQEemXCqTWQOVr0Q" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_vbQZxIxQEemXCqTWQOVr0Q" tag="Description" value="% HR Employee Deptnum Validity : Check to see whether HR Employee Dept Number is valid Cost Center"/>
+    <taggedValue xmi:id="_vbQZxYxQEemXCqTWQOVr0Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_vbQZxoxQEemXCqTWQOVr0Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_vbQZx4xQEemXCqTWQOVr0Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_zDSXcPQ6EemE9v9c8kc5eA" kind="Usage" supplier="_vbQZwIxQEemXCqTWQOVr0Q"/>
+</xmi:XMI>

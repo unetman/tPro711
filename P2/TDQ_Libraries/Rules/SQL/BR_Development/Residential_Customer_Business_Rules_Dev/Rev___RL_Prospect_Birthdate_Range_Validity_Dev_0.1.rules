@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_g1IMEOoBEem6B9cRfDaYGA" name="Rev : RL Prospect Birthdate Range Validity Dev" supplierDependency="_q3cTwM35EeqMleRwETqDmQ" criticalityLevel="1" whereExpression="trim(birthdate) is not null and ((current_date() - birthdate)/365 > 100  or (birthdate - current_date())/365 > 0)">
+    <taggedValue xmi:id="_g1IMEeoBEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_g1IMEuoBEem6B9cRfDaYGA" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_g1IME-oBEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_g1IMFOoBEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Birthdate Range Validity : Check to see whether Residential Lending - Prospect's Birthdates are in range. "/>
+    <taggedValue xmi:id="_g1IMFeoBEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_g1IMFuoBEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_g1IMF-oBEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_q3cTwM35EeqMleRwETqDmQ" kind="Usage" supplier="_g1IMEOoBEem6B9cRfDaYGA"/>
+</xmi:XMI>

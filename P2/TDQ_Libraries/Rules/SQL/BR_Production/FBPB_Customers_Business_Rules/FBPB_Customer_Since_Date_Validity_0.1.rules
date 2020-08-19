@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_7ThvIMEpEeq9SuuzRwvbLg" name="FBPB Customer Since Date Validity" supplierDependency="_ZNPX8MF5EeqwS8SBMO_YRw" criticalityLevel="1" whereExpression="CUST_SNC_DTE >= '01-01-1926'">
+    <taggedValue xmi:id="_7ThvIcEpEeq9SuuzRwvbLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_7ThvIsEpEeq9SuuzRwvbLg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_7ThvI8EpEeq9SuuzRwvbLg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_7ThvJMEpEeq9SuuzRwvbLg" tag="Description" value="% FBPB Customer Since Date Validity : Check to see whether Customer Since Date is valid, for FBPB Customers"/>
+    <taggedValue xmi:id="_7ThvJcEpEeq9SuuzRwvbLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_7ThvJsEpEeq9SuuzRwvbLg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_7ThvJ8EpEeq9SuuzRwvbLg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_ZNPX8MF5EeqwS8SBMO_YRw" kind="Usage" supplier="_7ThvIMEpEeq9SuuzRwvbLg"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_yLbk4I8mEeq3kqhnn5_eCg" name="Rev : FBPB Customer Country Code Validity" supplierDependency="_g_vq0I-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="TRIM(CIS_CTRY_CDE) IS NOT NULL AND trim(CIS_CTRY_CDE) not IN (SELECT COUNTRY_alpha3_CODE FROM DV_REF_COUNTRIES)">
+    <taggedValue xmi:id="_yLbk4Y8mEeq3kqhnn5_eCg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_yLbk4o8mEeq3kqhnn5_eCg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_yLbk448mEeq3kqhnn5_eCg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_yLbk5I8mEeq3kqhnn5_eCg" tag="Description" value="% FBPB Customer Country Code Validity : Check to see whether Country Codes are valid using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_yLbk5Y8mEeq3kqhnn5_eCg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_yLbk5o8mEeq3kqhnn5_eCg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_yLbk548mEeq3kqhnn5_eCg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_g_vq0I-8Eeq6MKifrC4neg" kind="Usage" supplier="_yLbk4I8mEeq3kqhnn5_eCg"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__AsvUDuYEem0OtLaJU4itw" name="Rev : Customer Phone 3 Relationship Reason Code Validity" supplierDependency="_UdF_QEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(cis_ph_3_rlt_resn_cde) is not null and cis_ph_3_rlt_resn_cde not in (select phone_rlt_resn_code from dv_ref_phone_rlt_resn_codes)">
+    <taggedValue xmi:id="__AsvUTuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="__AsvUjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="__AsvUzuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="__AsvVDuYEem0OtLaJU4itw" tag="Description" value="% Customer Phone 3 Rlt Resn Code Validity : Check to see whether Customer Phone 3 Relationship Reason Code is valid using Reference Table"/>
+    <taggedValue xmi:id="__AsvVTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__AsvVjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__AsvVzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_UdF_QEBWEemEnMlxCqUjoA" kind="Usage" supplier="__AsvUDuYEem0OtLaJU4itw"/>
+</xmi:XMI>

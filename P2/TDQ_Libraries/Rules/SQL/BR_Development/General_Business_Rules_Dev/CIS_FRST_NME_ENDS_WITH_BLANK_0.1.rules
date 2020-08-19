@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_SSPLMJZ2Eeik9ud-VJYeow" name="CIS_FRST_NME ENDS WITH BLANK" supplierDependency="_oGrH45Z2Eeik9ud-VJYeow" criticalityLevel="1" whereExpression="CIS_FRST_NME IS NOT NULL AND CIS_FRST_NME NOT LIKE '% '">
+    <taggedValue xmi:id="_SSPLMZZ2Eeik9ud-VJYeow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_SSPLMpZ2Eeik9ud-VJYeow" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_SSPLM5Z2Eeik9ud-VJYeow" tag="Purpose" value="Business Rule on Customer to check for Trailing Blank Characters in CIS First Name "/>
+    <taggedValue xmi:id="_SSPLNJZ2Eeik9ud-VJYeow" tag="Description" value="Business Rule on Customer to check for Trailing Blank Characters in CIS First Name "/>
+    <taggedValue xmi:id="_SSPLNZZ2Eeik9ud-VJYeow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_SSPLNpZ2Eeik9ud-VJYeow" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_SSPLN5Z2Eeik9ud-VJYeow" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_oGrH45Z2Eeik9ud-VJYeow" kind="Usage" supplier="_SSPLMJZ2Eeik9ud-VJYeow"/>
+</xmi:XMI>

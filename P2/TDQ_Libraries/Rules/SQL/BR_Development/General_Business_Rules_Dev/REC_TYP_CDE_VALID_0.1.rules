@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_r4K_IJccEeiN79hDk23PtQ" name="REC_TYP_CDE VALID" supplierDependency="_W1Tz4JcdEeiN79hDk23PtQ" criticalityLevel="1" whereExpression="REC_TYP_CDE IN ('I', 'O')">
+    <taggedValue xmi:id="_r4K_IZccEeiN79hDk23PtQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_r4K_IpccEeiN79hDk23PtQ" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_r4K_I5ccEeiN79hDk23PtQ" tag="Purpose" value="Business Rule for Customers to check for Valid values on Record Type Code"/>
+    <taggedValue xmi:id="_r4K_JJccEeiN79hDk23PtQ" tag="Description" value="Business Rule for Customers to check for Valid values on Record Type Code"/>
+    <taggedValue xmi:id="_r4K_JZccEeiN79hDk23PtQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_r4K_JpccEeiN79hDk23PtQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_r4K_J5ccEeiN79hDk23PtQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_W1Tz4JcdEeiN79hDk23PtQ" kind="Usage" supplier="_r4K_IJccEeiN79hDk23PtQ"/>
+</xmi:XMI>

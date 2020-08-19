@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_J_oPYF01Eemj9s3KLP4KwA" name="Rev : Ln Rnwl Dt Default Dt Validity Dev" supplierDependency="_XaRHILrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="trim(rstrt_ind) is not null  and rstrt_ind not in ('I', 'G', 'H', 'J') and rnwl_dte = '0001-01-01'">
+    <taggedValue xmi:id="_J_oPYV01Eemj9s3KLP4KwA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_J_oPYl01Eemj9s3KLP4KwA" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_J_oPY101Eemj9s3KLP4KwA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_J_oPZF01Eemj9s3KLP4KwA" tag="Description" value="% Loan Renewal Date Default Date Validity : Check to see whether Renewal Date is valid when Restructure Indicator is present"/>
+    <taggedValue xmi:id="_J_oPZV01Eemj9s3KLP4KwA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_J_oPZl01Eemj9s3KLP4KwA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_J_oPZ101Eemj9s3KLP4KwA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_XaRHILrNEemDOqp3RrQ-hA" kind="Usage" supplier="_J_oPYF01Eemj9s3KLP4KwA"/>
+</xmi:XMI>

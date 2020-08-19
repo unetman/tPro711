@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_ykXycNZ5EeqOGOz3OjX5Ng" name="Rev : FB Customer Address All Elements Hierarchy Completeness Dev" criticalityLevel="1" whereExpression="(cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is not null) &#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is null and cis_addr_lne_5_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null &#xD;&#xA;and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is null&#xD;&#xA;and cis_addr_lne_5_txt is null and cis_addr_lne_6_txt is not null)">
+  <taggedValue xmi:id="_ykXycdZ5EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_ykXyctZ5EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_ykXyc9Z5EeqOGOz3OjX5Ng" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_ykXydNZ5EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Address All Elements Hierarchy Completeness : Check to see whether Customer All Elements Hierarchy has missing values (Address Line 2 has value without Address Line 1, etc.), for FB Customers"/>
+  <taggedValue xmi:id="_ykXyddZ5EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_ykXydtZ5EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_ykXyd9Z5EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

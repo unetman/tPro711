@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__14q4DuYEem0OtLaJU4itw" name="Rev : Customer Phone 4 Number Numerals Validity" supplierDependency="_Ulg7cEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(cis_ph_4_full_nbr) regexp_like '[^0-9]' and trim(cis_ph_4_full_nbr) is not null">
+    <taggedValue xmi:id="__14q4TuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="__14q4juYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="__14q4zuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="__14q5DuYEem0OtLaJU4itw" tag="Description" value="% Customer Phone 4 Number Numerals Validity : Check to see whether Customer Phone 4 Number contains Numerals only"/>
+    <taggedValue xmi:id="__14q5TuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__14q5juYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__14q5zuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Ulg7cEBWEemEnMlxCqUjoA" kind="Usage" supplier="__14q4DuYEem0OtLaJU4itw"/>
+</xmi:XMI>

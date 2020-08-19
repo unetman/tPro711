@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_6c9BYKsNEeqBYraiWZruxw" name="Rev : Ln Comm Ln and NAICS Cde Integrity Test Dev" supplierDependency="_S7M_UKsWEeqBYraiWZruxw" criticalityLevel="1" whereExpression="ln_cat_cde = 'C' and ln_naics_cde not in (select rightpad(naics_code, 6,'0') from dv_ref_naics)">
+    <taggedValue xmi:id="_6c9BYasNEeqBYraiWZruxw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_6c9BYqsNEeqBYraiWZruxw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_6c9BY6sNEeqBYraiWZruxw" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_6c9BZKsNEeqBYraiWZruxw" tag="Description" value="% Loan Commercial Loan and NAICS Code Integrity : Check to see whether NAICS code is present and valid for Commercial Loans"/>
+    <taggedValue xmi:id="_6c9BZasNEeqBYraiWZruxw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_6c9BZqsNEeqBYraiWZruxw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_6c9BZ6sNEeqBYraiWZruxw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_S7M_UKsWEeqBYraiWZruxw" kind="Usage" supplier="_6c9BYKsNEeqBYraiWZruxw"/>
+</xmi:XMI>

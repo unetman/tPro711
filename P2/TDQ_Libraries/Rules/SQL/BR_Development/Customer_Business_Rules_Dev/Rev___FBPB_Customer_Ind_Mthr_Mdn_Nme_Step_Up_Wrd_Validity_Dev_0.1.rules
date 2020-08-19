@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_8c-PkIlnEequY4KwQ76_YQ" name="Rev : FBPB Customer Ind Mthr Mdn Nme Step Up Wrd Validity Dev" supplierDependency="_zK61gIpQEeq749sm8FqTxg" criticalityLevel="1" whereExpression="mthr_mdn_nme like '%STEP%UP%'">
+    <taggedValue xmi:id="_8c-PkYlnEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_8c-PkolnEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_8c-Pk4lnEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_8c-PlIlnEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Individual Mother Maiden Name Step Up Word Validity : Check to see whether Customer Mother Maiden Name has word &quot;STEP UP&quot;, for FBPB Customers"/>
+    <taggedValue xmi:id="_8c-PlYlnEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_8c-PlolnEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_8c-Pl4lnEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_zK61gIpQEeq749sm8FqTxg" kind="Usage" supplier="_8c-PkIlnEequY4KwQ76_YQ"/>
+</xmi:XMI>

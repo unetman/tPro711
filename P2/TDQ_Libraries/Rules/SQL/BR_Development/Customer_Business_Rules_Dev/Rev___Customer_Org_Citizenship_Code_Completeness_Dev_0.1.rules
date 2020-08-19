@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_nLXg4DEvEemsRalTDqHnrQ" name="Rev : Customer Org Citizenship Code Completeness Dev" supplierDependency="_WwqQcDIhEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(ctznshp_cde) is not null">
+    <taggedValue xmi:id="_nLXg4TEvEemsRalTDqHnrQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_nLXg4jEvEemsRalTDqHnrQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_nLXg4zEvEemsRalTDqHnrQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_nLXg5DEvEemsRalTDqHnrQ" tag="Description" value="% Customer Organization Citizenship Code Completeness : Check to see whether any Organizational customers have Citizenship Code"/>
+    <taggedValue xmi:id="_nLXg5TEvEemsRalTDqHnrQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_nLXg5jEvEemsRalTDqHnrQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_nLXg5zEvEemsRalTDqHnrQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_WwqQcDIhEeqLtr0qyEBgPA" kind="Usage" supplier="_nLXg4DEvEemsRalTDqHnrQ"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_RFxeUDuZEem0OtLaJU4itw" name="Rev : Customer W8 Certification Date Validity" supplierDependency="_W78nUEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="w8_cert_dte is not null and w8_cert_dte != '0001-01-01' and ((current_date() - w8_cert_dte) /365) > 100">
+    <taggedValue xmi:id="_RFxeUTuZEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_RFxeUjuZEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_RFxeUzuZEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_RFxeVDuZEem0OtLaJU4itw" tag="Description" value="% Customer W8 Certification Date Validity : Check to see whether W8 Certification Date is valid, if present with non default"/>
+    <taggedValue xmi:id="_RFxeVTuZEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_RFxeVjuZEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_RFxeVzuZEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_W78nUEBWEemEnMlxCqUjoA" kind="Usage" supplier="_RFxeUDuZEem0OtLaJU4itw"/>
+</xmi:XMI>

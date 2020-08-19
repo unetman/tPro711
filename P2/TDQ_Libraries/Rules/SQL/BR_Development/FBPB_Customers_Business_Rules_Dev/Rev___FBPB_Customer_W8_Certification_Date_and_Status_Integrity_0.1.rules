@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_pq8wII-rEeq6MKifrC4neg" name="Rev : FBPB Customer W8 Certification Date and Status Integrity" supplierDependency="_sQ7rMI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="W8_CERT_dte IS NOT NULL AND trim(W8_cert_stat_cde) IS NULL &#xD;&#xA;and w8_cert_dte != '0001-01-01'">
+    <taggedValue xmi:id="_pq8wIY-rEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_pq8wIo-rEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_pq8wI4-rEeq6MKifrC4neg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_pq8wJI-rEeq6MKifrC4neg" tag="Description" value="% FBPB Customer W8 Certification Date and Status Integrity : Check to see whether Stauts is not present when the Date is present, for FBPB Customers"/>
+    <taggedValue xmi:id="_pq8wJY-rEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_pq8wJo-rEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_pq8wJ4-rEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_sQ7rMI-8Eeq6MKifrC4neg" kind="Usage" supplier="_pq8wII-rEeq6MKifrC4neg"/>
+</xmi:XMI>

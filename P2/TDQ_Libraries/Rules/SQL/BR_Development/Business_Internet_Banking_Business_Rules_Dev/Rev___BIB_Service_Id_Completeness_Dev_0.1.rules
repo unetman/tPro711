@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__S09kD4UEequm5sdFaVv4g" name="Rev : BIB Service Id Completeness Dev" supplierDependency="_P84gED4VEequm5sdFaVv4g" criticalityLevel="1" whereExpression="trim(bib_serv_id) = '0' or bib_serv_id is null or trim(bib_serv_id) = ' ' ">
+    <taggedValue xmi:id="__S09kT4UEequm5sdFaVv4g" tag="Status" value="development"/>
+    <taggedValue xmi:id="__S09kj4UEequm5sdFaVv4g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="__S09kz4UEequm5sdFaVv4g" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="__S09lD4UEequm5sdFaVv4g" tag="Description" value="% BIB Service Id Completeness : Check to see whether Business Internet Banking Service Id is 0, null or Blank"/>
+    <taggedValue xmi:id="__S09lT4UEequm5sdFaVv4g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__S09lj4UEequm5sdFaVv4g" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__S09lz4UEequm5sdFaVv4g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_P84gED4VEequm5sdFaVv4g" kind="Usage" supplier="__S09kD4UEequm5sdFaVv4g"/>
+</xmi:XMI>

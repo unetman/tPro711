@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_EiFoII-gEeqVfsmI0g4Khg" name="Rev : FBPB Customer Ind Mthr Mdn Nme Numerals Validity" supplierDependency="_akKSAI-9Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(mthr_mdn_nme) is not null and MTHR_MDN_NME REGEXP_LIKE '[0-9]'">
+    <taggedValue xmi:id="_EiFoIY-gEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_EiFoIo-gEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_EiFoI4-gEeqVfsmI0g4Khg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_EiFoJI-gEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Individual Mother Maiden Name Numerals Validity : Check to see if Customer Mother's Maiden Name has any numbers in it, for FBPB Customers"/>
+    <taggedValue xmi:id="_EiFoJY-gEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_EiFoJo-gEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_EiFoJ4-gEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_akKSAI-9Eeq6MKifrC4neg" kind="Usage" supplier="_EiFoII-gEeqVfsmI0g4Khg"/>
+</xmi:XMI>

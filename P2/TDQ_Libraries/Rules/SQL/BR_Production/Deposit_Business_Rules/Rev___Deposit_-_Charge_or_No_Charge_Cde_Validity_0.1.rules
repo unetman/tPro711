@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_3MXIIIxcEemXCqTWQOVr0Q" name="Rev : Deposit - Charge or No Charge Cde Validity" supplierDependency="_8lJjAIxiEemXCqTWQOVr0Q" criticalityLevel="1" whereExpression="trim(chrg_no_chrg_cde) is not null and trim(chrg_no_chrg_cde) not in (select chrg_or_no_chrg_cd from dv_ref_dep_chrg_no_chrg_codes)">
+    <taggedValue xmi:id="_3MXIIYxcEemXCqTWQOVr0Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_3MXIIoxcEemXCqTWQOVr0Q" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_3MXII4xcEemXCqTWQOVr0Q" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_3MXIJIxcEemXCqTWQOVr0Q" tag="Description" value="% Deposit - Charge or No Charge Code Validity : Check to see whether the Deposit Account's Charge or No Charge code is valid or not "/>
+    <taggedValue xmi:id="_3MXIJYxcEemXCqTWQOVr0Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_3MXIJoxcEemXCqTWQOVr0Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_3MXIJ4xcEemXCqTWQOVr0Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_8lJjAIxiEemXCqTWQOVr0Q" kind="Usage" supplier="_3MXIIIxcEemXCqTWQOVr0Q"/>
+</xmi:XMI>

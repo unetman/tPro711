@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_iIyzANaIEeqOGOz3OjX5Ng" name="Rev : FB Customer Secondary Phone Trl and Prcd Blanks Validity Dev" criticalityLevel="1" whereExpression="trim(scndy_ph_nbr) is not null and len(scndy_ph_nbr) != len(trim(scndy_ph_nbr))">
+  <taggedValue xmi:id="_iIyzAdaIEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_iIyzAtaIEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_iIyzA9aIEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_iIyzBNaIEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Secondary Phone Trailing and Preceding Blanks Validity : Check to see whether Customer Secondary Phone Number has leading or trailing blankspaces, for FB Cusomers"/>
+  <taggedValue xmi:id="_iIyzBdaIEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_iIyzBtaIEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_iIyzB9aIEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

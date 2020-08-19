@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_MwiYgPljEei0xu3Xsej7sQ" name="Rev : Customer Tax Id Number Repeating Number Validity Dev" supplierDependency="_S3R2ADIfEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(cis_tax_id_nbr) is not null and &#xD;&#xA;(trim(cis_tax_id_nbr) like '%111111111%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%222222222%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%333333333%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%444444444%' or&#xD;&#xA; trim(cis_tax_id_nbr)like '%555555555%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%666666666%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%777777777%' or&#xD;&#xA; trim (cis_tax_id_nbr) like '%888888888%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%999999999%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%000000000%')">
+    <taggedValue xmi:id="_MwiYgfljEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_MwiYgvljEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_MwiYg_ljEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_MwiYhPljEei0xu3Xsej7sQ" tag="Description" value="% Customer Tax Id Number Repeating Number Validity : Check to see whether Customer Tax Id Number has no Repeating Numbers"/>
+    <taggedValue xmi:id="_MwiYhfljEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_MwiYhvljEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_MwiYh_ljEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_S3R2ADIfEeqLtr0qyEBgPA" kind="Usage" supplier="_MwiYgPljEei0xu3Xsej7sQ"/>
+</xmi:XMI>

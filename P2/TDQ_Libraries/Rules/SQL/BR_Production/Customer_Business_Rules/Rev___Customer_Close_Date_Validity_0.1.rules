@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_2vs-8DuXEem0OtLaJU4itw" name="Rev : Customer Close Date Validity" criticalityLevel="1" whereExpression="cust_clos_dte != '9999-12-31' and ((CURRENT_DATE() - CUST_CLOS_DTE)/365) > 100">
+  <taggedValue xmi:id="_2vs-8TuXEem0OtLaJU4itw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_2vs-8juXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_2vs-8zuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_2vs-9DuXEem0OtLaJU4itw" tag="Description" value="% Customer Close Date Validity : Check to see whether Customer Close Date is valid"/>
+  <taggedValue xmi:id="_2vs-9TuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_2vs-9juXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_2vs-9zuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

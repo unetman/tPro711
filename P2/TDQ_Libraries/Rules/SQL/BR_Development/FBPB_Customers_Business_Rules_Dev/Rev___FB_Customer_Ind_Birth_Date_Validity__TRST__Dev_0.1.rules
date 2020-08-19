@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_h_1aYNZ_EeqOGOz3OjX5Ng" name="Rev : FB Customer Ind Birth Date Validity (TRST) Dev" criticalityLevel="1" whereExpression="TRIM(BRTH_DTE) IS NOT NULL &#xD;&#xA;AND (CURRENT_DATE() - BRTH_DTE)/365 > 100 &#xD;&#xA;AND REC_TYP_CDE = 'I'&#xD;&#xA;AND CUST_STAT_CDE != 'D' &#xD;&#xA;AND CUST_HIST_CDE != 'Y' &#xD;&#xA;AND CUST_CIS_NBR IN (SELECT distinct cust_cis_nbr FROM dv_customer_acct_daily WHERE trim(acct_class_nme) = 'MISC ACCT' and trim(appl_cde) = 'TRST')&#xD;&#xA;and cust_cis_nbr in (select distinct cust_cis_nbr from dv_customer_acct_daily where cust_to_acct_rlt_role_cde not in ('051', '164','193'))">
+  <taggedValue xmi:id="_h_1aYdZ_EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_h_1aYtZ_EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_h_1aY9Z_EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_h_1aZNZ_EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual Birth Date Validity (TRST) : Check the Individual Customer's Birth Date (Trust) in valid range, for FB Customers"/>
+  <taggedValue xmi:id="_h_1aZdZ_EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_h_1aZtZ_EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_h_1aZ9Z_EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

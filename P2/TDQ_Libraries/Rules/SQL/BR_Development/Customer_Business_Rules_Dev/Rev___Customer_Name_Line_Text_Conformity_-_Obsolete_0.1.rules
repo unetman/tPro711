@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_f0a5gDuYEem0OtLaJU4itw" name="Rev : Customer Name Line Text Conformity - Obsolete" criticalityLevel="1" whereExpression="trim(cis_nme_lne_txt) like '[a-z]'">
+  <taggedValue xmi:id="_f0a5gTuYEem0OtLaJU4itw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_f0a5gjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_f0a5gzuYEem0OtLaJU4itw" tag="Purpose" value="Conformity"/>
+  <taggedValue xmi:id="_f0a5hDuYEem0OtLaJU4itw" tag="Description" value="% Customer Name Line Text Conformity : Check to see whether Customer Name Line Text has Lower case characters"/>
+  <taggedValue xmi:id="_f0a5hTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_f0a5hjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_f0a5hzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

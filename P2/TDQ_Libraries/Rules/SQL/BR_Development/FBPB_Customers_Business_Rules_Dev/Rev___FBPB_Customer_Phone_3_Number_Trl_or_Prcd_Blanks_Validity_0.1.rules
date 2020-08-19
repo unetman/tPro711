@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_XAFo8I-qEeq6MKifrC4neg" name="Rev : FBPB Customer Phone 3 Number Trl or Prcd Blanks Validity" supplierDependency="_nLjFwI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cis_ph_3_full_nbr) is not null and len(cis_ph_3_full_nbr) != len(trim(cis_ph_3_full_nbr))">
+    <taggedValue xmi:id="_XAFo8Y-qEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_XAFo8o-qEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_XAFo84-qEeq6MKifrC4neg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_XAFo9I-qEeq6MKifrC4neg" tag="Description" value="% FBPB Customer Phone 3 Number Trailing or Preceding Blanks Validity : Check to see whether Customer Phone 3 Number has leading or trailing blank spaces, for FBPB Customers"/>
+    <taggedValue xmi:id="_XAFo9Y-qEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_XAFo9o-qEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_XAFo94-qEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_nLjFwI-8Eeq6MKifrC4neg" kind="Usage" supplier="_XAFo8I-qEeq6MKifrC4neg"/>
+</xmi:XMI>

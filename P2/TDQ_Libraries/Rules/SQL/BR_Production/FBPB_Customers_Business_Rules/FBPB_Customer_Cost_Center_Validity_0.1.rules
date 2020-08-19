@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_v_xi8MEpEeq9SuuzRwvbLg" name="FBPB Customer Cost Center Validity" supplierDependency="_YhtusMF5EeqwS8SBMO_YRw" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center)">
+    <taggedValue xmi:id="_v_xi8cEpEeq9SuuzRwvbLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_v_xi8sEpEeq9SuuzRwvbLg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_v_xi88EpEeq9SuuzRwvbLg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_v_xi9MEpEeq9SuuzRwvbLg" tag="Description" value="% FBPB Customer Cost Center Validity : Check to see whether Customer has got valid cost center using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_v_xi9cEpEeq9SuuzRwvbLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_v_xi9sEpEeq9SuuzRwvbLg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_v_xi98EpEeq9SuuzRwvbLg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_YhtusMF5EeqwS8SBMO_YRw" kind="Usage" supplier="_v_xi8MEpEeq9SuuzRwvbLg"/>
+</xmi:XMI>

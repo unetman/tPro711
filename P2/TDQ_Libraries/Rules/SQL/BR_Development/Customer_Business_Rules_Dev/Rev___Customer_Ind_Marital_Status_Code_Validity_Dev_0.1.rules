@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_6hAicPlhEei0xu3Xsej7sQ" name="Rev : Customer Ind Marital Status Code Validity Dev" supplierDependency="_BPsCUDIhEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(mrtl_stat_cde) is not null and mrtl_stat_cde not in (select marital_status_code from dv_ref_marital_status_codes) ">
+    <taggedValue xmi:id="_6hAicflhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_6hAicvlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_6hAic_lhEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_6hAidPlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Individual Marital Status Code Validity : Check to see whether Customer Marital Status Codes are valid using Reference Table"/>
+    <taggedValue xmi:id="_6hAidflhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_6hAidvlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_6hAid_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_BPsCUDIhEeqLtr0qyEBgPA" kind="Usage" supplier="_6hAicPlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

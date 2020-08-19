@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_o-lO0I-qEeq6MKifrC4neg" name="Rev : FBPB Customer Secondary Phone Forward Sequential Validity" supplierDependency="_qjmmsI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(scndy_ph_nbr) is not null and trim(scndy_ph_nbr) like '%123456789%'">
+    <taggedValue xmi:id="_o-lO0Y-qEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_o-lO0o-qEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_o-lO04-qEeq6MKifrC4neg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_o-lO1I-qEeq6MKifrC4neg" tag="Description" value="% FBPB Customer Secondary Phone Forward Sequential Validity : Check to see whether Customer Secondary Phone Number has number like '%123456789%', for FBPB Cusomers"/>
+    <taggedValue xmi:id="_o-lO1Y-qEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_o-lO1o-qEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_o-lO14-qEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_qjmmsI-8Eeq6MKifrC4neg" kind="Usage" supplier="_o-lO0I-qEeq6MKifrC4neg"/>
+</xmi:XMI>

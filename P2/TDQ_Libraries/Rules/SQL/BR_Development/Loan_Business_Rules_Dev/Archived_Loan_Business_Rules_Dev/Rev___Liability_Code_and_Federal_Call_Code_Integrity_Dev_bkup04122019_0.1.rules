@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_6Z_2sGUpEemYn-4n0xSN1g" name="Rev : Liability Code and Federal Call Code Integrity Dev bkup04122019" criticalityLevel="1" whereExpression="fed_call_cde like '%150%' and coll_cde in (select collateral_code from dv_ref_collateral_codes where collateral_type = 'R')">
+  <taggedValue xmi:id="_6Z_2sWUpEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_6Z_2smUpEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_6Z_2s2UpEemYn-4n0xSN1g" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_6Z_2tGUpEemYn-4n0xSN1g" tag="Description" value="% Liability Code and Federal Call Code Integrity : Check to see whether Liability code is in integrity with Federal Call Code"/>
+  <taggedValue xmi:id="_6Z_2tWUpEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_6Z_2tmUpEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_6Z_2t2UpEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

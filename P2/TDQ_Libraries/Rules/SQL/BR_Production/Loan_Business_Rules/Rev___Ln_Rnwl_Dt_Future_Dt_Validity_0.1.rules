@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_58QasHs2Eemu-btWfnVaaA" name="Rev : Ln Rnwl Dt Future Dt Validity" supplierDependency="_l-Ic8HmuEeqCgOfbbhT6Gw" criticalityLevel="1" whereExpression="rnwl_dte > current_date()">
+    <taggedValue xmi:id="_58QasXs2Eemu-btWfnVaaA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_58Qasns2Eemu-btWfnVaaA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_58Qas3s2Eemu-btWfnVaaA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_58QatHs2Eemu-btWfnVaaA" tag="Description" value="% Loan Renewal Date Future Date Validity : Check to see whether Loan Renewal Date has any Future Dates"/>
+    <taggedValue xmi:id="_58QatXs2Eemu-btWfnVaaA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_58Qatns2Eemu-btWfnVaaA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_58Qat3s2Eemu-btWfnVaaA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_l-Ic8HmuEeqCgOfbbhT6Gw" kind="Usage" supplier="_58QasHs2Eemu-btWfnVaaA"/>
+</xmi:XMI>

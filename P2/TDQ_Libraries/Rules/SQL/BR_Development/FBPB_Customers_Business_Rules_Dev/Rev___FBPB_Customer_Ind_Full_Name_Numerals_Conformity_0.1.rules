@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_4HrvMI-aEeqVfsmI0g4Khg" name="Rev : FBPB Customer Ind Full Name Numerals Conformity" supplierDependency="_YRN_AI-9Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cis_nme_lne_txt) is not null and trim(cis_nme_lne_txt) regexp_like '[0-9]'">
+    <taggedValue xmi:id="_4HrvMY-aEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_4HrvMo-aEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_4HrvM4-aEeqVfsmI0g4Khg" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_4HrvNI-aEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Individual Full Name Numerals Conformity : Check to see whether Customer Full Name has any numbers for Individuals, for FBPB Customers"/>
+    <taggedValue xmi:id="_4HrvNY-aEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_4HrvNo-aEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_4HrvN4-aEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_YRN_AI-9Eeq6MKifrC4neg" kind="Usage" supplier="_4HrvMI-aEeqVfsmI0g4Khg"/>
+</xmi:XMI>

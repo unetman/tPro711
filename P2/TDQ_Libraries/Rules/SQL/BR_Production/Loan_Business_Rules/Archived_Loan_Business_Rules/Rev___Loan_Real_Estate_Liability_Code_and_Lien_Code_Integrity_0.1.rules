@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_au1UEGuNEem3y_nFJCbfSg" name="Rev : Loan Real Estate Liability Code and Lien Code Integrity" supplierDependency="_oK7NUGuvEemZT-q9u_n5mQ" criticalityLevel="1" whereExpression="trim(coll_cde) in (select trim(collateral_code) from dv_ref_collateral_codes where collateral_type = 'R') and trim(fhlb_mtg_typ_cde) is null ">
+    <taggedValue xmi:id="_au1UEWuNEem3y_nFJCbfSg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_au1UEmuNEem3y_nFJCbfSg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_au1UE2uNEem3y_nFJCbfSg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_au1UFGuNEem3y_nFJCbfSg" tag="Description" value="% Loan Real Estate Liability Code and Lien Code Integrity : Check to seefor Real Estate Liability Code, the Lien Code is present"/>
+    <taggedValue xmi:id="_au1UFWuNEem3y_nFJCbfSg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_au1UFmuNEem3y_nFJCbfSg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_au1UF2uNEem3y_nFJCbfSg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_oK7NUGuvEemZT-q9u_n5mQ" kind="Usage" supplier="_au1UEGuNEem3y_nFJCbfSg"/>
+</xmi:XMI>

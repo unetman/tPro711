@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_m2zMUPDgEemdN5tOU9BUkA" name="Rev : RL Prospect SSN Repeating Number Validity" supplierDependency="_P_dUMPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="(trim(social_security_number) is not null) &#xD;&#xA;and TRIM(social_security_number) != ' ' &#xD;&#xA;and (social_security_number like '000000000%'&#xD;&#xA;or social_security_number like '111111111%'&#xD;&#xA;or social_security_number like '222222222%'&#xD;&#xA;or social_security_number like '333333333%'&#xD;&#xA;or social_security_number like '444444444%'&#xD;&#xA;or social_security_number like '555555555%'&#xD;&#xA;or social_security_number like '666666666%'&#xD;&#xA;or social_security_number like '777777777%'&#xD;&#xA;or social_security_number like '888888888%'&#xD;&#xA;or social_security_number like '999999999%')">
+    <taggedValue xmi:id="_m2zMUfDgEemdN5tOU9BUkA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_m2zMUvDgEemdN5tOU9BUkA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_m2zMU_DgEemdN5tOU9BUkA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_m2zMVPDgEemdN5tOU9BUkA" tag="Description" value="% RL Prospect SSN Repeating Number Validity : Check to see whether Residential Lending - Prospect has same number repeatedly as SSN, which is Invalid"/>
+    <taggedValue xmi:id="_m2zMVfDgEemdN5tOU9BUkA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_m2zMVvDgEemdN5tOU9BUkA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_m2zMV_DgEemdN5tOU9BUkA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_P_dUMPG8EemeArsjLNyAig" kind="Usage" supplier="_m2zMUPDgEemdN5tOU9BUkA"/>
+</xmi:XMI>

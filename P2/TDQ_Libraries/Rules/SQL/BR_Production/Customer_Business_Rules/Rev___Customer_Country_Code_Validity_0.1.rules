@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_I00KMDuYEem0OtLaJU4itw" name="Rev : Customer Country Code Validity" supplierDependency="_44x2gP_zEeme9e15BCF9uw" criticalityLevel="1" whereExpression="TRIM(CIS_CTRY_CDE) IS NOT NULL AND trim(CIS_CTRY_CDE) not IN (SELECT COUNTRY_alpha3_CODE FROM DV_REF_COUNTRIES)">
+    <taggedValue xmi:id="_I00KMTuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_I00KMjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_I00KMzuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_I00KNDuYEem0OtLaJU4itw" tag="Description" value="% Customer Country Code Validity : Check to see whether Country Codes are valid using Reference Table"/>
+    <taggedValue xmi:id="_I00KNTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_I00KNjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_I00KNzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_44x2gP_zEeme9e15BCF9uw" kind="Usage" supplier="_I00KMDuYEem0OtLaJU4itw"/>
+</xmi:XMI>

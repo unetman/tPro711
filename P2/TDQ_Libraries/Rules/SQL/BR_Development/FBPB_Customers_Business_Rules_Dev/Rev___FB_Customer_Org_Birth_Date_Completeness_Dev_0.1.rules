@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_gGgkcNaDEeqOGOz3OjX5Ng" name="Rev : FB Customer Org Birth Date Completeness Dev" criticalityLevel="1" whereExpression="(BRTH_DTE IS not NULL) AND CUST_CIS_NBR IN (SELECT CUST_CIS_NBR FROM DV_ALL_CUSTOMER WHERE REC_TYP_CDE = 'O')">
+  <taggedValue xmi:id="_gGgkcdaDEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_gGgkctaDEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_gGgkc9aDEeqOGOz3OjX5Ng" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_gGgkdNaDEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Organization Birth Date Completeness : Check the Organization Customer's Birth Date is null, for FB Customers"/>
+  <taggedValue xmi:id="_gGgkddaDEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_gGgkdtaDEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_gGgkd9aDEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

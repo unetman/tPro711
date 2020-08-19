@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_kg_gIEc6Eemhuf5XDidYwQ" name="Rev : Note Type Validity for Revolving LOC Loans" supplierDependency="_h7yCUF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="ln_cat_cde = 'R' and (note_typ_cde not between '400' and '499')">
+    <taggedValue xmi:id="_kg_gIUc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_kg_gIkc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_kg_gI0c6Eemhuf5XDidYwQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_kg_gJEc6Eemhuf5XDidYwQ" tag="Description" value="% Revolving LOC Loans Note Types Validity : Check to see whether Note Type Code is valid for Revolving LOC Loans"/>
+    <taggedValue xmi:id="_kg_gJUc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_kg_gJkc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_kg_gJ0c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_h7yCUF08Eemj9s3KLP4KwA" kind="Usage" supplier="_kg_gIEc6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

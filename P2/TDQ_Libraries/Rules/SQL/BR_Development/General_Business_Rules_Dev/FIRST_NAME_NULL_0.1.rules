@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_azLuAJZ1Eeik9ud-VJYeow" name="FIRST NAME NULL" supplierDependency="_Y00tw6FTEeiscurkDk8-dA" criticalityLevel="1" whereExpression="CIS_FRST_NME IS NULL">
+    <taggedValue xmi:id="_azLuAZZ1Eeik9ud-VJYeow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_azLuApZ1Eeik9ud-VJYeow" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_azLuA5Z1Eeik9ud-VJYeow" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_azLuBJZ1Eeik9ud-VJYeow" tag="Description" value="First Name Check : Check for First Name Null"/>
+    <taggedValue xmi:id="_azLuBZZ1Eeik9ud-VJYeow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_azLuBpZ1Eeik9ud-VJYeow" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_azLuB5Z1Eeik9ud-VJYeow" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Y00tw6FTEeiscurkDk8-dA" kind="Usage" supplier="_azLuAJZ1Eeik9ud-VJYeow"/>
+</xmi:XMI>

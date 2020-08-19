@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_W2sqsOU4Eem2HcKyHEagMg" name="Rev : HR Employee Officer Code Trl or Prcd Blanks Validity Dev" supplierDependency="_0Jjb8PQ6EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="len(officer_code) != len(trim(officer_code)) ;">
+    <taggedValue xmi:id="_W2sqseU4Eem2HcKyHEagMg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_W2sqsuU4Eem2HcKyHEagMg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_W2sqs-U4Eem2HcKyHEagMg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_W2sqtOU4Eem2HcKyHEagMg" tag="Description" value="% HR Employee Officer Code Trl or Prcd Blanks Validity Dev : Check to see whether HR Employee Officer Code has trailing or preceding blanks"/>
+    <taggedValue xmi:id="_W2sqteU4Eem2HcKyHEagMg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_W2sqtuU4Eem2HcKyHEagMg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_W2sqt-U4Eem2HcKyHEagMg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0Jjb8PQ6EemE9v9c8kc5eA" kind="Usage" supplier="_W2sqsOU4Eem2HcKyHEagMg"/>
+</xmi:XMI>

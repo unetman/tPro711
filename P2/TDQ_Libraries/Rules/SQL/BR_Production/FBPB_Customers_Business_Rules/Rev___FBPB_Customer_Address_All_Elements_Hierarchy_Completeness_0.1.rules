@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__K1-8MEpEeq9SuuzRwvbLg" name="Rev : FBPB Customer Address All Elements Hierarchy Completeness" supplierDependency="_Zo6AQMF5EeqwS8SBMO_YRw" criticalityLevel="1" whereExpression="(cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is not null) &#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is null and cis_addr_lne_5_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null &#xD;&#xA;and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is null&#xD;&#xA;and cis_addr_lne_5_txt is null and cis_addr_lne_6_txt is not null)">
+    <taggedValue xmi:id="__K1-8cEpEeq9SuuzRwvbLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="__K1-8sEpEeq9SuuzRwvbLg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="__K1-88EpEeq9SuuzRwvbLg" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="__K1-9MEpEeq9SuuzRwvbLg" tag="Description" value="% FBPB Customer Address All Elements Hierarchy Completeness : Check to see whether Customer All Elements Hierarchy has missing values (Address Line 2 has value without Address Line 1, etc.), for FBPB Customers"/>
+    <taggedValue xmi:id="__K1-9cEpEeq9SuuzRwvbLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__K1-9sEpEeq9SuuzRwvbLg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__K1-98EpEeq9SuuzRwvbLg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Zo6AQMF5EeqwS8SBMO_YRw" kind="Usage" supplier="__K1-8MEpEeq9SuuzRwvbLg"/>
+</xmi:XMI>

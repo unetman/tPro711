@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_d9P_0JaBEeik9ud-VJYeow" name="CIS_TAX_ID_NBR NUMERALS" supplierDependency="_OgFbU5aOEeik9ud-VJYeow" criticalityLevel="1" whereExpression="CIS_TAX_ID_NBR REGEXP_LIKE '[^0-9]' AND CIS_TAX_ID_NBR IS NOT NULL">
+    <taggedValue xmi:id="_d9P_0ZaBEeik9ud-VJYeow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_d9P_0paBEeik9ud-VJYeow" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_d9P_05aBEeik9ud-VJYeow" tag="Purpose" value="Business Rule on Customers to check for Non-numeric Elements in CIS Tax Identification Number"/>
+    <taggedValue xmi:id="_d9P_1JaBEeik9ud-VJYeow" tag="Description" value="Business Rule on Customers to check for Non-numeric Elements in CIS Tax Identification Number"/>
+    <taggedValue xmi:id="_d9P_1ZaBEeik9ud-VJYeow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_d9P_1paBEeik9ud-VJYeow" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_d9P_15aBEeik9ud-VJYeow" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_OgFbU5aOEeik9ud-VJYeow" kind="Usage" supplier="_d9P_0JaBEeik9ud-VJYeow"/>
+</xmi:XMI>

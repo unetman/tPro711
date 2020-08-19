@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_GZpWwPDbEemlzsRV_s27CA" name="Rev : BC Officer Last Name Numerals Validity" supplierDependency="_4FZ7YPGmEemeArsjLNyAig" criticalityLevel="1" whereExpression="trim(offcr_lst_nme) is not null and trim(offcr_lst_nme) regexp_like '[0-9]' and trim(offcr_lst_nme) not like 'ZZ%'">
+    <taggedValue xmi:id="_GZpWwfDbEemlzsRV_s27CA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_GZpWwvDbEemlzsRV_s27CA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_GZpWw_DbEemlzsRV_s27CA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_GZpWxPDbEemlzsRV_s27CA" tag="Description" value="% BC Officer Last Name Numerals Validity : Check to see whether Bank Control Officer Last Name has any numbers (since it is stored as string)"/>
+    <taggedValue xmi:id="_GZpWxfDbEemlzsRV_s27CA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_GZpWxvDbEemlzsRV_s27CA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_GZpWx_DbEemlzsRV_s27CA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_4FZ7YPGmEemeArsjLNyAig" kind="Usage" supplier="_GZpWwPDbEemlzsRV_s27CA"/>
+</xmi:XMI>

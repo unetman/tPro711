@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Uh83QKReEeqlleFKRV4t5w" name="Rev : Branch Reference Table Name Check Reverse" supplierDependency="_sz_mEKXjEeqsNP2Ze1nAIg" criticalityLevel="5" whereExpression="branch_name like 'DOWNTOWN%'">
+    <taggedValue xmi:id="_Uh83QaReEeqlleFKRV4t5w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Uh83QqReEeqlleFKRV4t5w" tag="Author" value="mark.blanchette@seacoastbank.com"/>
+    <taggedValue xmi:id="_Uh83Q6ReEeqlleFKRV4t5w" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_Uh83RKReEeqlleFKRV4t5w" tag="Description" value="% Branch Names that Don't begin with Downtown  :"/>
+    <taggedValue xmi:id="_Uh83RaReEeqlleFKRV4t5w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Uh83RqReEeqlleFKRV4t5w" tag="Validation_Status" value="true"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Uh83R6ReEeqlleFKRV4t5w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_sz_mEKXjEeqsNP2Ze1nAIg" kind="Usage" supplier="_Uh83QKReEeqlleFKRV4t5w"/>
+</xmi:XMI>

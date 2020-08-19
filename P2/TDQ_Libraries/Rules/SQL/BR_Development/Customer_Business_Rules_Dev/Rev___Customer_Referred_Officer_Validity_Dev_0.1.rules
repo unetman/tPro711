@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_EpCF4PljEei0xu3Xsej7sQ" name="Rev : Customer Referred Officer Validity Dev" supplierDependency="_1h_qoCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="trim(ref_offcr_nbr) is not null and ref_offcr_nbr not in (select officer_code from dv_employees where termdate is null and expiration_date is null) and ref_offcr_nbr != 0">
+    <taggedValue xmi:id="_EpCF4fljEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_EpCF4vljEei0xu3Xsej7sQ" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_EpCF4_ljEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_EpCF5PljEei0xu3Xsej7sQ" tag="Description" value="% Customer Referred Officer Validity : Check to see whether Referred Officer Numbers are valid, if present"/>
+    <taggedValue xmi:id="_EpCF5fljEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_EpCF5vljEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_EpCF5_ljEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_1h_qoCu9EemUO5X_bnxflQ" kind="Usage" supplier="_EpCF4PljEei0xu3Xsej7sQ"/>
+</xmi:XMI>

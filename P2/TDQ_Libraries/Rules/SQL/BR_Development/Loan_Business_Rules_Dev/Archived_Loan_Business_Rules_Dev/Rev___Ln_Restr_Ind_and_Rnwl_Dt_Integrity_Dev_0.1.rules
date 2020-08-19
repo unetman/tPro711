@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Dwj8oFuWEemVPLrW4xPHIg" name="Rev : Ln Restr Ind and Rnwl Dt Integrity Dev" supplierDependency="_WVsrwLrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="(current_date() - rnwl_dte) / 365 &lt;= 50 and trim(rstrt_ind) is null ">
+    <taggedValue xmi:id="_Dwj8oVuWEemVPLrW4xPHIg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Dwj8oluWEemVPLrW4xPHIg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Dwj8o1uWEemVPLrW4xPHIg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_Dwj8pFuWEemVPLrW4xPHIg" tag="Description" value="% Loan Restructure Indicator and Renewal Date Integrity : Check to see whether Restructure Indicator is Missing when Renewal Date is Present and Valid."/>
+    <taggedValue xmi:id="_Dwj8pVuWEemVPLrW4xPHIg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Dwj8pluWEemVPLrW4xPHIg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Dwj8p1uWEemVPLrW4xPHIg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_WVsrwLrNEemDOqp3RrQ-hA" kind="Usage" supplier="_Dwj8oFuWEemVPLrW4xPHIg"/>
+</xmi:XMI>

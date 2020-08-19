@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_U4LCsGuNEem3y_nFJCbfSg" name="Rev : Loan Liability Code and Original Appraisal Date Integrity" supplierDependency="_na760GuvEemZT-q9u_n5mQ" criticalityLevel="1" whereExpression="trim(coll_cde) in (select trim(collateral_code) from dv_ref_collateral_codes where collateral_type = 'R') and apprsl_dte = '0001-01-01'">
+    <taggedValue xmi:id="_U4LCsWuNEem3y_nFJCbfSg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_U4LCsmuNEem3y_nFJCbfSg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_U4LCs2uNEem3y_nFJCbfSg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_U4LCtGuNEem3y_nFJCbfSg" tag="Description" value="% Loan Liability Code and Original Appraisal Date Integrity : Check to see whether Real Estate Liability Code has Null Original Appraisal Date"/>
+    <taggedValue xmi:id="_U4LCtWuNEem3y_nFJCbfSg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_U4LCtmuNEem3y_nFJCbfSg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_U4LCt2uNEem3y_nFJCbfSg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_na760GuvEemZT-q9u_n5mQ" kind="Usage" supplier="_U4LCsGuNEem3y_nFJCbfSg"/>
+</xmi:XMI>

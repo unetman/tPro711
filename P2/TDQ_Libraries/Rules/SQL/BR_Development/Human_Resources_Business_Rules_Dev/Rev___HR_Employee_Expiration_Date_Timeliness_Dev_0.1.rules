@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Gwgv0PaHEemSPYJD1GJy_A" name="Rev : HR Employee Expiration Date Timeliness Dev" supplierDependency="_-hjPQPcTEemvOORKZ4_I9Q" criticalityLevel="1" whereExpression="expiration_date &lt;= current_date() and termdate is null">
+    <taggedValue xmi:id="_Gwgv0faHEemSPYJD1GJy_A" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Gwgv0vaHEemSPYJD1GJy_A" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Gwgv0_aHEemSPYJD1GJy_A" tag="Purpose" value="Timeliness"/>
+    <taggedValue xmi:id="_Gwgv1PaHEemSPYJD1GJy_A" tag="Description" value="% HR Employee Expiration Date Timeliness : Check to see whether Employee with older expiration date without term date"/>
+    <taggedValue xmi:id="_Gwgv1faHEemSPYJD1GJy_A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Gwgv1vaHEemSPYJD1GJy_A" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Gwgv1_aHEemSPYJD1GJy_A" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_-hjPQPcTEemvOORKZ4_I9Q" kind="Usage" supplier="_Gwgv0PaHEemSPYJD1GJy_A"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_gXqTQEc6Eemhuf5XDidYwQ" name="Rev : Foreclosure Indicator Validity" supplierDependency="_hUwekF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="frclsr_dte != '0001-01-01' and trim(frclsr_ind) is null ">
+    <taggedValue xmi:id="_gXqTQUc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_gXqTQkc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_gXqTQ0c6Eemhuf5XDidYwQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_gXqTREc6Eemhuf5XDidYwQ" tag="Description" value="% Foreclosure Indicator Validity : Check to see whether Foreclosure Indicator is missing for valid Foreclosure Date"/>
+    <taggedValue xmi:id="_gXqTRUc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_gXqTRkc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_gXqTR0c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_hUwekF08Eemj9s3KLP4KwA" kind="Usage" supplier="_gXqTQEc6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

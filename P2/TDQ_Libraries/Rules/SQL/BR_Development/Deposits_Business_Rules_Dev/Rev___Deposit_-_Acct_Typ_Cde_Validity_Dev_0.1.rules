@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_WeCSEIYMEemTuNwo29mDoA" name="Rev : Deposit - Acct Typ Cde Validity Dev" supplierDependency="_F59ZMDMKEeq3ANzlhDNHQg" criticalityLevel="1" whereExpression="acct_typ_cde not in (select acct_typ_cd from dv_ref_dep_acct_types)">
+    <taggedValue xmi:id="_WeCSEYYMEemTuNwo29mDoA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_WeCSEoYMEemTuNwo29mDoA" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_WeCSE4YMEemTuNwo29mDoA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_WeCSFIYMEemTuNwo29mDoA" tag="Description" value="% Deposit - Account Type Code Validity : Check to see whether Deposit Account Type Codes are valid or not"/>
+    <taggedValue xmi:id="_WeCSFYYMEemTuNwo29mDoA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_WeCSFoYMEemTuNwo29mDoA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_WeCSF4YMEemTuNwo29mDoA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_F59ZMDMKEeq3ANzlhDNHQg" kind="Usage" supplier="_WeCSEIYMEemTuNwo29mDoA"/>
+</xmi:XMI>

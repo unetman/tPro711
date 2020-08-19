@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_mJxHMPDgEemdN5tOU9BUkA" name="Rev : RL Prospect SSN Length Validity" supplierDependency="_P3uUgPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="len(social_security_number) != 9 and social_security_number is not null and social_security_number != ' ' ">
+    <taggedValue xmi:id="_mJxHMfDgEemdN5tOU9BUkA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_mJxHMvDgEemdN5tOU9BUkA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_mJxHM_DgEemdN5tOU9BUkA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_mJxHNPDgEemdN5tOU9BUkA" tag="Description" value="% RL Prospect SSN Length Validity : Check to see whether Residential Lending - Prospect's SSN Length has valid length. The Valid Length is 9"/>
+    <taggedValue xmi:id="_mJxHNfDgEemdN5tOU9BUkA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_mJxHNvDgEemdN5tOU9BUkA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_mJxHN_DgEemdN5tOU9BUkA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_P3uUgPG8EemeArsjLNyAig" kind="Usage" supplier="_mJxHMPDgEemdN5tOU9BUkA"/>
+</xmi:XMI>

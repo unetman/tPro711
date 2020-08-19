@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_RieTUDuXEem0OtLaJU4itw" name="Customer Email Indicator Validity" criticalityLevel="1" whereExpression="email_ind in ('Y', 'N')">
+  <taggedValue xmi:id="_RieTUTuXEem0OtLaJU4itw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_RieTUjuXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_RieTUzuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_RieTVDuXEem0OtLaJU4itw" tag="Description" value="% Customer Email Indicator Validity : Check to see whether Email Indicator has valid values"/>
+  <taggedValue xmi:id="_RieTVTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_RieTVjuXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_RieTVzuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

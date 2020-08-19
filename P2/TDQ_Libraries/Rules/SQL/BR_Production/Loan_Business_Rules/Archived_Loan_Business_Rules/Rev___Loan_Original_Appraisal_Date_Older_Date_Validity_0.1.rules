@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_j1d7EF0sEemj9s3KLP4KwA" name="Rev : Loan Original Appraisal Date Older Date Validity" supplierDependency="_bNhsgF06Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="(current_date() - apprsl_dte)/365 between 100 and 1000;">
+    <taggedValue xmi:id="_j1d7EV0sEemj9s3KLP4KwA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_j1d7El0sEemj9s3KLP4KwA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_j1d7E10sEemj9s3KLP4KwA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_j1d7FF0sEemj9s3KLP4KwA" tag="Description" value="% Loan Original Appraisal Date Older Date Validity : Check to see whether Loan Original Appraisal Date has very old dates"/>
+    <taggedValue xmi:id="_j1d7FV0sEemj9s3KLP4KwA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_j1d7Fl0sEemj9s3KLP4KwA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_j1d7F10sEemj9s3KLP4KwA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_bNhsgF06Eemj9s3KLP4KwA" kind="Usage" supplier="_j1d7EF0sEemj9s3KLP4KwA"/>
+</xmi:XMI>

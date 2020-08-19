@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_kIHmcNaIEeqOGOz3OjX5Ng" name="Rev : FB Customer Tax Id Number Reverse Sequential Validity Dev" criticalityLevel="1" whereExpression="(trim(CIS_TAX_ID_NBR) is not null) and&#xD;&#xA;cast(substr(cis_tax_id_nbr,8,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 9,1) as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,7,1)  as INTEGER) = cast(substr(cis_tax_id_nbr, 8,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,6,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 7,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,5,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 6,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,4,1)  as INTEGER)= cast(substr(cis_tax_id_nbr, 5,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,3,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 4,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,2,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 3,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,1,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 2,1)as INTEGER) +1&#xD;&#xA;">
+  <taggedValue xmi:id="_kIHmcdaIEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_kIHmctaIEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_kIHmc9aIEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_kIHmdNaIEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Tax Id Number Reverse Sequential Validity : Check for reverse Sequential Numbers in CIS Tax Id Number, for FB Customers"/>
+  <taggedValue xmi:id="_kIHmddaIEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_kIHmdtaIEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_kIHmd9aIEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

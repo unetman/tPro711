@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_PQr7kHAIEemC6Oc8srIKXw" name="Rev : HR Employee VOIP Extension Length Conformity Dev" supplierDependency="_2HrVgPQ6EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="len(trim(voip)) != 5 ">
+    <taggedValue xmi:id="_PQr7kXAIEemC6Oc8srIKXw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_PQr7knAIEemC6Oc8srIKXw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_PQr7k3AIEemC6Oc8srIKXw" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_PQr7lHAIEemC6Oc8srIKXw" tag="Description" value="% HR Employee VOIP Extension Length Conformity : Check to see whether HR Employee VOIP Extension Length is Valid "/>
+    <taggedValue xmi:id="_PQr7lXAIEemC6Oc8srIKXw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_PQr7lnAIEemC6Oc8srIKXw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_PQr7l3AIEemC6Oc8srIKXw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_2HrVgPQ6EemE9v9c8kc5eA" kind="Usage" supplier="_PQr7kHAIEemC6Oc8srIKXw"/>
+</xmi:XMI>

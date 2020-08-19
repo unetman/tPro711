@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_RmcG4NZ7EeqOGOz3OjX5Ng" name="Rev : FB Customer Address USA State Code Validity Dev" criticalityLevel="1" whereExpression="trim(cis_ctry_cde) = 'USA' and cis_st_cde NOT in (SELECT distinct STATE_abbr from dv_ref_us_postal_codes);">
+  <taggedValue xmi:id="_RmcG4dZ7EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_RmcG4tZ7EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_RmcG49Z7EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_RmcG5NZ7EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Address USA State Code Validity : Check for Customer Address State Code Validity, for FB Customers"/>
+  <taggedValue xmi:id="_RmcG5dZ7EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_RmcG5tZ7EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_RmcG59Z7EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

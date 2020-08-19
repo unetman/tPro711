@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_92efMNaBEeqOGOz3OjX5Ng" name="Rev : FB Customer Ind Occupation Code Completeness Dev" criticalityLevel="1" whereExpression="REC_TYP_CDE = 'I' and TRIM(OCCPN_CDE) IS NULL">
+  <taggedValue xmi:id="_92efMdaBEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_92efMtaBEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_92efM9aBEeqOGOz3OjX5Ng" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_92efNNaBEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual Occupation Code Completeness : Check to see whether Occupation Code is present for Individual Customers, for FB Customers"/>
+  <taggedValue xmi:id="_92efNdaBEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_92efNtaBEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_92efN9aBEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

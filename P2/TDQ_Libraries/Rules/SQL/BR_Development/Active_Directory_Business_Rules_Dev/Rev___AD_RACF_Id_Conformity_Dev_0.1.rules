@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_std3kKMqEemwq7-aq-oVWw" name="Rev : AD RACF Id Conformity Dev" supplierDependency="_yY23oKMrEemwq7-aq-oVWw" criticalityLevel="1" whereExpression="substr(racf_id,2) REGEXP_LIKE '[^0-9]'">
+    <taggedValue xmi:id="_std3kaMqEemwq7-aq-oVWw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_std3kqMqEemwq7-aq-oVWw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_std3k6MqEemwq7-aq-oVWw" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_std3lKMqEemwq7-aq-oVWw" tag="Description" value="% AD RACF Id Conformity : Check to see whether Resource Access Control Facility Id has numerals other than 'W'"/>
+    <taggedValue xmi:id="_std3laMqEemwq7-aq-oVWw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_std3lqMqEemwq7-aq-oVWw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_std3l6MqEemwq7-aq-oVWw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_yY23oKMrEemwq7-aq-oVWw" kind="Usage" supplier="_std3kKMqEemwq7-aq-oVWw"/>
+</xmi:XMI>

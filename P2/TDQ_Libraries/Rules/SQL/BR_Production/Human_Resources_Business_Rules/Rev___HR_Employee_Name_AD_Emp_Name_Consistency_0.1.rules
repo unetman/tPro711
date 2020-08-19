@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_dKHWoPQ4EemE9v9c8kc5eA" name="Rev : HR Employee Name AD Emp Name Consistency" supplierDependency="_r17uAPQ8EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="lower(name) not in (select lower(first_nm) || ' ' || lower(last_nm) from dv_active_directory_user )">
+    <taggedValue xmi:id="_dKHWofQ4EemE9v9c8kc5eA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_dKHWovQ4EemE9v9c8kc5eA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_dKHWo_Q4EemE9v9c8kc5eA" tag="Purpose" value="Consistency"/>
+    <taggedValue xmi:id="_dKHWpPQ4EemE9v9c8kc5eA" tag="Description" value="% HR Employee Name AD Employee Name Consistency : Check to see whether HR Employee Names are found in Active Directory"/>
+    <taggedValue xmi:id="_dKHWpfQ4EemE9v9c8kc5eA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_dKHWpvQ4EemE9v9c8kc5eA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_dKHWp_Q4EemE9v9c8kc5eA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_r17uAPQ8EemE9v9c8kc5eA" kind="Usage" supplier="_dKHWoPQ4EemE9v9c8kc5eA"/>
+</xmi:XMI>

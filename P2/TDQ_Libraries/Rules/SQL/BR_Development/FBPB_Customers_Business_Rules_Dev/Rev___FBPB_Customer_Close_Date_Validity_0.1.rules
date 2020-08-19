@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_07lNwI8lEeq3kqhnn5_eCg" name="Rev : FBPB Customer Close Date Validity" supplierDependency="_eggBMI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="cust_clos_dte != '9999-12-31' and ((CURRENT_DATE() - CUST_CLOS_DTE)/365) > 100">
+    <taggedValue xmi:id="_07lNwY8lEeq3kqhnn5_eCg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_07lNwo8lEeq3kqhnn5_eCg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_07lNw48lEeq3kqhnn5_eCg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_07lNxI8lEeq3kqhnn5_eCg" tag="Description" value="% FBPB Customer Close Date Validity : Check to see whether Customer Close Date is valid, for FBPB Customers"/>
+    <taggedValue xmi:id="_07lNxY8lEeq3kqhnn5_eCg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_07lNxo8lEeq3kqhnn5_eCg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_07lNx48lEeq3kqhnn5_eCg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_eggBMI-8Eeq6MKifrC4neg" kind="Usage" supplier="_07lNwI8lEeq3kqhnn5_eCg"/>
+</xmi:XMI>

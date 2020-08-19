@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_rb8zsNZ4EeqOGOz3OjX5Ng" name="FB Customer FBPB Ind Birth Date Completeness Dev" criticalityLevel="1" whereExpression="trim(BRTH_DTE) IS NULL">
+  <taggedValue xmi:id="_rb8zsdZ4EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_rb8zstZ4EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_rb8zs9Z4EeqOGOz3OjX5Ng" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_rb8ztNZ4EeqOGOz3OjX5Ng" tag="Description" value="% FBPB Customer Individual Birth Date Completeness : Check the Individual Customer's Birth Date is missing, for FBPB Customers"/>
+  <taggedValue xmi:id="_rb8ztdZ4EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_rb8zttZ4EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_rb8zt9Z4EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

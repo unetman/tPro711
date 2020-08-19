@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_2SBI4NZ5EeqOGOz3OjX5Ng" name="Rev : FB Customer Address Line 2 Type and Text 2 Integrity Dev" criticalityLevel="1" whereExpression="trim(cis_addr_lne_2_txt) is not null and trim(cis_lne_2_typ_cde) is null">
+  <taggedValue xmi:id="_2SBI4dZ5EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_2SBI4tZ5EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_2SBI49Z5EeqOGOz3OjX5Ng" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_2SBI5NZ5EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Address Line 2 Type and Text 2 Integrity : Check to see whether Customer Address Line 2 Type Code is null or blank if Address Line 2 Text has value, for FB Customers"/>
+  <taggedValue xmi:id="_2SBI5dZ5EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_2SBI5tZ5EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_2SBI59Z5EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_jP3-QPlhEei0xu3Xsej7sQ" name="Rev : Customer Code 2 Validity Dev" supplierDependency="_T9F0EA-DEemdqaqE5vll_w" criticalityLevel="1" whereExpression="TRIM(CUST_2_CDE) IS NOT NULL AND CUST_2_CDE NOT IN (SELECT CUSTOMER_CD FROM DV_REF_CUSTOMER_CODES) ">
+    <taggedValue xmi:id="_jP3-QflhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_jP3-QvlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_jP3-Q_lhEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_jP3-RPlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Code 2 Validity : Check to see how many Customer Code 2 is valid using Reference Table"/>
+    <taggedValue xmi:id="_jP3-RflhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_jP3-RvlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_jP3-R_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_T9F0EA-DEemdqaqE5vll_w" kind="Usage" supplier="_jP3-QPlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

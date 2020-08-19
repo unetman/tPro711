@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_8qa7YDxoEeqFzZjukxc7rQ" name="Rev : Reference Data Country Country Id Completeness Dev" supplierDependency="_1uYg4DxpEeqFzZjukxc7rQ" criticalityLevel="1" whereExpression="trim(country_id) = ' ' or country_id is null">
+    <taggedValue xmi:id="_8qa7YTxoEeqFzZjukxc7rQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_8qa7YjxoEeqFzZjukxc7rQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_8qa7YzxoEeqFzZjukxc7rQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_8qa7ZDxoEeqFzZjukxc7rQ" tag="Description" value="% RD Country Country Id Completeness : Check to see whether Country Country Id is missing in Countries Reference Data"/>
+    <taggedValue xmi:id="_8qa7ZTxoEeqFzZjukxc7rQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_8qa7ZjxoEeqFzZjukxc7rQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_8qa7ZzxoEeqFzZjukxc7rQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_1uYg4DxpEeqFzZjukxc7rQ" kind="Usage" supplier="_8qa7YDxoEeqFzZjukxc7rQ"/>
+</xmi:XMI>

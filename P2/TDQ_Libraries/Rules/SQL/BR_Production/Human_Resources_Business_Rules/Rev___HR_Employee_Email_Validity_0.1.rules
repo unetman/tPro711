@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_OkQREIxcEemXCqTWQOVr0Q" name="Rev : HR Employee Email Validity" supplierDependency="_cpTOwPGqEemeArsjLNyAig" criticalityLevel="1" whereExpression="lower(email) not in (select lower(email_addr) from dv_active_directory_user)">
+    <taggedValue xmi:id="_OkQREYxcEemXCqTWQOVr0Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_OkQREoxcEemXCqTWQOVr0Q" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_OkQRE4xcEemXCqTWQOVr0Q" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_OkQRFIxcEemXCqTWQOVr0Q" tag="Description" value="% HR Employee Email Validity : Check to see whether HR Employee Email is valid and same as in Active Directory"/>
+    <taggedValue xmi:id="_OkQRFYxcEemXCqTWQOVr0Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_OkQRFoxcEemXCqTWQOVr0Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_OkQRF4xcEemXCqTWQOVr0Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_cpTOwPGqEemeArsjLNyAig" kind="Usage" supplier="_OkQREIxcEemXCqTWQOVr0Q"/>
+</xmi:XMI>

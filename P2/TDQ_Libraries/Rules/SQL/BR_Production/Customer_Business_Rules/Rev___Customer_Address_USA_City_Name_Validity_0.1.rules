@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_0FLSYDuXEem0OtLaJU4itw" name="Rev : Customer Address USA City Name Validity" criticalityLevel="1" whereExpression="trim(cis_ctry_cde) = 'USA' and upper(cis_cty_nme) not in (SELECT distinct upper(city) from dv_ref_us_postal_codes)">
+  <taggedValue xmi:id="_0FLSYTuXEem0OtLaJU4itw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_0FLSYjuXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_0FLSYzuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_0FLSZDuXEem0OtLaJU4itw" tag="Description" value="% Customer Address USA City Name Validity : Check to see whether USA city name is valid"/>
+  <taggedValue xmi:id="_0FLSZTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_0FLSZjuXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_0FLSZzuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

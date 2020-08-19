@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_J9_YYPljEei0xu3Xsej7sQ" name="Rev : Customer Ind Gender Code Completeness Dev" supplierDependency="_APFg8DIhEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="TRIM(GNDR_CDE) IS NULL">
+    <taggedValue xmi:id="_J9_YYfljEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_J9_YYvljEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_J9_YY_ljEei0xu3Xsej7sQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_J9_YZPljEei0xu3Xsej7sQ" tag="Description" value="% Customer Individual Gender Code Completeness : Check to see if Individual Customers have gender codes assigned"/>
+    <taggedValue xmi:id="_J9_YZfljEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_J9_YZvljEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_J9_YZ_ljEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_APFg8DIhEeqLtr0qyEBgPA" kind="Usage" supplier="_J9_YYPljEei0xu3Xsej7sQ"/>
+</xmi:XMI>

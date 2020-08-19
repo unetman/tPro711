@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_h1NRUIloEequY4KwQ76_YQ" name="Rev : FBPB Customer Phn Nbr 2 and Rlt Resn Code 2 Integrity Dev" supplierDependency="_y_21EImMEeqhe5FGsRAHRg" criticalityLevel="1" whereExpression="cis_ph_2_full_nbr is not null and trim(cis_ph_2_rlt_resn_cde) is null">
+    <taggedValue xmi:id="_h1NRUYloEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_h1NRUoloEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_h1NRU4loEequY4KwQ76_YQ" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_h1NRVIloEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Phone Number 2 and Rlt Resn Code 2 Integrity : Check to see whether Customer Phone Number 2 and respective Relationship Reason Code is complete"/>
+    <taggedValue xmi:id="_h1NRVYloEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_h1NRVoloEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_h1NRV4loEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_y_21EImMEeqhe5FGsRAHRg" kind="Usage" supplier="_h1NRUIloEequY4KwQ76_YQ"/>
+</xmi:XMI>

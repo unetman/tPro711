@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_9QRa0NaBEeqOGOz3OjX5Ng" name="Rev : FB Customer Ind NAICS Code Validity Dev" criticalityLevel="1" whereExpression="trim(indv_naics_cde) is not null and indv_naics_cde not in (select naics_code from dv_ref_naics) and trim(indv_naics_cde) != '000000' ">
+  <taggedValue xmi:id="_9QRa0daBEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_9QRa0taBEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_9QRa09aBEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_9QRa1NaBEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual NAICS Code Validity : Check to see whether Customer Individual NAICS Code validity using Reference Table, for FB Customers"/>
+  <taggedValue xmi:id="_9QRa1daBEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_9QRa1taBEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_9QRa19aBEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

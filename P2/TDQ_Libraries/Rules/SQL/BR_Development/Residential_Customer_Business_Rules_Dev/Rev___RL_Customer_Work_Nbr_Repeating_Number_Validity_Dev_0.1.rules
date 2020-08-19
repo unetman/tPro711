@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_pZBxwLrYEemDOqp3RrQ-hA" name="Rev : RL Customer Work Nbr Repeating Number Validity Dev" supplierDependency="_NfXqUO99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="(trim(work_number) is not null) &#xD;&#xA;and TRIM(work_number) != ' ' &#xD;&#xA;and (work_number like '000000000%'&#xD;&#xA;or work_number like '111111111%'&#xD;&#xA;or work_number like '222222222%'&#xD;&#xA;or work_number like '333333333%'&#xD;&#xA;or work_number like '444444444%'&#xD;&#xA;or work_number like '555555555%'&#xD;&#xA;or work_number like '666666666%'&#xD;&#xA;or work_number like '777777777%'&#xD;&#xA;or work_number like '888888888%'&#xD;&#xA;or work_number like '999999999%') ;">
+    <taggedValue xmi:id="_pZCY0LrYEemDOqp3RrQ-hA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_pZCY0brYEemDOqp3RrQ-hA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_pZCY0rrYEemDOqp3RrQ-hA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_pZCY07rYEemDOqp3RrQ-hA" tag="Description" value="% RL Customer Work Number Repeating Number Validity : Check to see whether Residential Lending - Customer's Work Number has repeating number, which is Invalid"/>
+    <taggedValue xmi:id="_pZCY1LrYEemDOqp3RrQ-hA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_pZCY1brYEemDOqp3RrQ-hA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_pZCY1rrYEemDOqp3RrQ-hA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_NfXqUO99EemWeu8zCvaDhg" kind="Usage" supplier="_pZBxwLrYEemDOqp3RrQ-hA"/>
+</xmi:XMI>

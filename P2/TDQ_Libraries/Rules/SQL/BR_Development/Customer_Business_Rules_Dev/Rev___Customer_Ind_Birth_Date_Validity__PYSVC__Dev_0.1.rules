@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_af_iYOFjEemKv5NAaVBVTg" name="Rev : Customer Ind Birth Date Validity (PYSVC) Dev" supplierDependency="_ew1w0PXNEemCt6USiNPfGQ" criticalityLevel="1" whereExpression="TRIM(BRTH_DTE) IS NOT NULL &#xD;&#xA;AND (CURRENT_DATE() - BRTH_DTE)/365 > 100 &#xD;&#xA;AND REC_TYP_CDE = 'I'&#xD;&#xA;AND CUST_STAT_CDE != 'D' &#xD;&#xA;AND CUST_HIST_CDE != 'Y' &#xD;&#xA;AND CUST_CIS_NBR IN (SELECT distinct cust_cis_nbr FROM dv_customer_acct_daily WHERE trim(acct_class_nme) = 'MISC ACCT' and trim(appl_cde) = 'PYSVC')&#xD;&#xA;and cust_cis_nbr in (select distinct cust_cis_nbr from dv_customer_acct_daily where cust_to_acct_rlt_role_cde not in ('051', '164','193'))">
+    <taggedValue xmi:id="_af_iYeFjEemKv5NAaVBVTg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_af_iYuFjEemKv5NAaVBVTg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_af_iY-FjEemKv5NAaVBVTg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_af_iZOFjEemKv5NAaVBVTg" tag="Description" value="% Customer Individual Birth Date Validity (PYSVC) : Check the Individual PYSVC Customer's Birth Date (Payroll Services) in valid range"/>
+    <taggedValue xmi:id="_af_iZeFjEemKv5NAaVBVTg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_af_iZuFjEemKv5NAaVBVTg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_af_iZ-FjEemKv5NAaVBVTg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_ew1w0PXNEemCt6USiNPfGQ" kind="Usage" supplier="_af_iYOFjEemKv5NAaVBVTg"/>
+</xmi:XMI>

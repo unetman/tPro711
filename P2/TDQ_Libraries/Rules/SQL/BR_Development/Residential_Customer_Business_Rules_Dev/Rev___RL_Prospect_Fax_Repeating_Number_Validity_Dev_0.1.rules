@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_n-aJoOoGEem6B9cRfDaYGA" name="Rev : RL Prospect Fax Repeating Number Validity Dev" supplierDependency="_VYb4UO99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="(trim(fax) is not null) &#xD;&#xA;and TRIM(fax) != ' ' &#xD;&#xA;and (fax like '000000000%'&#xD;&#xA;or fax like '111111111%'&#xD;&#xA;or fax like '222222222%'&#xD;&#xA;or fax like '333333333%'&#xD;&#xA;or fax like '444444444%'&#xD;&#xA;or fax like '555555555%'&#xD;&#xA;or fax like '666666666%'&#xD;&#xA;or fax like '777777777%'&#xD;&#xA;or fax like '888888888%'&#xD;&#xA;or fax like '999999999%') ;">
+    <taggedValue xmi:id="_n-aJoeoGEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_n-aJouoGEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_n-aJo-oGEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_n-aJpOoGEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Fax Repeating Number Validity : Check to see whether Residential Lending - Prospect's Fax has repeating number, which is Invalid"/>
+    <taggedValue xmi:id="_n-aJpeoGEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_n-aJpuoGEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_n-aJp-oGEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_VYb4UO99EemWeu8zCvaDhg" kind="Usage" supplier="_n-aJoOoGEem6B9cRfDaYGA"/>
+</xmi:XMI>

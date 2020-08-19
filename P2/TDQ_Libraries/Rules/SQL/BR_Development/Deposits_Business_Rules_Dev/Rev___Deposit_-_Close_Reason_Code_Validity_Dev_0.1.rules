@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_HLPVQIFdEemjcNE9eNtwfQ" name="Rev : Deposit - Close Reason Code Validity Dev" supplierDependency="_dkE8cPAfEemWB8N1vAcLdw" criticalityLevel="1" whereExpression="trim(clos_resn_cde) is not null and trim(clos_resn_cde) not in (select clos_resn_cde from dv_ref_dep_clos_resn_codes)">
+    <taggedValue xmi:id="_HLPVQYFdEemjcNE9eNtwfQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_HLPVQoFdEemjcNE9eNtwfQ" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_HLPVQ4FdEemjcNE9eNtwfQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_HLPVRIFdEemjcNE9eNtwfQ" tag="Description" value="% Deposit - Close Reason Code Validity : Check to see whether Deposit Account Close Reason Code is valid or not"/>
+    <taggedValue xmi:id="_HLPVRYFdEemjcNE9eNtwfQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_HLPVRoFdEemjcNE9eNtwfQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_HLPVR4FdEemjcNE9eNtwfQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_dkE8cPAfEemWB8N1vAcLdw" kind="Usage" supplier="_HLPVQIFdEemjcNE9eNtwfQ"/>
+</xmi:XMI>

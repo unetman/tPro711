@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_10ukcDuXEem0OtLaJU4itw" name="Rev : Customer Branch Number Validity" supplierDependency="_Oj-20EBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(cis_brnch_nbr) is not null and trim(cast(cis_brnch_nbr as integer)) not in (select branch_number from dv_ref_branches where current_flag = 'Y' )">
+    <taggedValue xmi:id="_10ukcTuXEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_10ukcjuXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_10ukczuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_10ukdDuXEem0OtLaJU4itw" tag="Description" value="% Customer Branch Number Validity : Check to see whether Customer Branch Number is valid using Reference Table"/>
+    <taggedValue xmi:id="_10ukdTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_10ukdjuXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_10ukdzuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Oj-20EBWEemEnMlxCqUjoA" kind="Usage" supplier="_10ukcDuXEem0OtLaJU4itw"/>
+</xmi:XMI>

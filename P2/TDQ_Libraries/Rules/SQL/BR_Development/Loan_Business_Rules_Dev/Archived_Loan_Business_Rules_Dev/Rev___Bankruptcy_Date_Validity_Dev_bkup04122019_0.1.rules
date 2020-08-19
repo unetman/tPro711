@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_3C1GkGUpEemYn-4n0xSN1g" name="Rev : Bankruptcy Date Validity Dev bkup04122019" criticalityLevel="1" whereExpression="bkrpt_fil_dte > current_date()">
+  <taggedValue xmi:id="_3C1GkWUpEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_3C1GkmUpEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_3C1Gk2UpEemYn-4n0xSN1g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_3C1GlGUpEemYn-4n0xSN1g" tag="Description" value="% Bankruptcy Date Validity : Bankruptcy Date should not be future date"/>
+  <taggedValue xmi:id="_3C1GlWUpEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_3C1GlmUpEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_3C1Gl2UpEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

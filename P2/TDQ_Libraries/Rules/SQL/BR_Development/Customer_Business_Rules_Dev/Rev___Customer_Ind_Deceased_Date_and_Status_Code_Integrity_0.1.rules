@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_ZhF94OOXEemvHb_Uo09uCg" name="Rev : Customer Ind Deceased Date and Status Code Integrity" criticalityLevel="1" whereExpression="decd_dte != '0001-01-01' and decd_dte != '9999-12-31' and cust_stat_cde != 'D' ">
+    <taggedValue xmi:id="_ZhF94eOXEemvHb_Uo09uCg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_ZhF94uOXEemvHb_Uo09uCg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_ZhF94-OXEemvHb_Uo09uCg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_ZhF95OOXEemvHb_Uo09uCg" tag="Description" value="% Customer Individual Deceased Date and Status Code Integrity : Check on Customer Individual Deceased Date and Status Code Integrity"/>
+    <taggedValue xmi:id="_ZhF95eOXEemvHb_Uo09uCg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ZhF95uOXEemvHb_Uo09uCg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_ZhF95-OXEemvHb_Uo09uCg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Pz2DMOOcEemvHb_Uo09uCg" kind="Usage">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Production/FBPB_PreIntegration/Table_Analysis_-_FBPB_Ind_Customers_Staging_0.1.ana#_CQ0n4DFgEeqMf6s7I6jokQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../../TDQ_Data Profiling/Analyses/AN_Development/Kadhir/FBPB_PreIntegration/Table_Analysis_-_FBPB_Ind_Customers_Staging_Dev_0.1.ana#_UgntQDPeEeqJd9Q195XSEQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

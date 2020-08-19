@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_w3-RsOoOEem6B9cRfDaYGA" name="Rev : RL Prospect Work Nbr Forward Sequential Validity Dev" supplierDependency="_XG164O99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="(trim(work_number) is not null) &#xD;&#xA;and TRIM(work_number) != ' ' &#xD;&#xA;and (work_number like '123456789%'&#xD;&#xA;or work_number like '23456789%'&#xD;&#xA;or work_number like '3456789012%'&#xD;&#xA;or work_number like '4567890123%'&#xD;&#xA;or work_number like '5678901234%'&#xD;&#xA;or work_number like '6789012345%'&#xD;&#xA;or work_number like '7890123456%'&#xD;&#xA;or work_number like '8901234567%'&#xD;&#xA;or work_number like '9012345678%') ;">
+    <taggedValue xmi:id="_w3-RseoOEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_w3-RsuoOEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_w3-Rs-oOEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_w3-RtOoOEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Work Number Forward Sequential Validity : Check to see whether Residential Lending - Prospect's Work Number has Forward Sequential Number, which is Invalid"/>
+    <taggedValue xmi:id="_w3-RteoOEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_w3-RtuoOEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_w3-Rt-oOEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_XG164O99EemWeu8zCvaDhg" kind="Usage" supplier="_w3-RsOoOEem6B9cRfDaYGA"/>
+</xmi:XMI>

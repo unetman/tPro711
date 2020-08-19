@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_j_f-kHstEemyHpvMaVu4fA" name="Rev : Deposit - Invalid Reopen Dates Validity" supplierDependency="_891v0IxiEemXCqTWQOVr0Q" criticalityLevel="1" whereExpression="((current_date() - reopn_dte)/365) not between 0 and 100 and reopn_dte != '0001-01-01' ">
+    <taggedValue xmi:id="_j_f-kXstEemyHpvMaVu4fA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_j_f-knstEemyHpvMaVu4fA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_j_f-k3stEemyHpvMaVu4fA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_j_f-lHstEemyHpvMaVu4fA" tag="Description" value="% Deposit - Invalid Reopen Dates Validity : Check to see whether Reopen Dates are Valid for Deposit Accounts"/>
+    <taggedValue xmi:id="_j_f-lXstEemyHpvMaVu4fA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_j_f-lnstEemyHpvMaVu4fA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_j_f-l3stEemyHpvMaVu4fA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_891v0IxiEemXCqTWQOVr0Q" kind="Usage" supplier="_j_f-kHstEemyHpvMaVu4fA"/>
+</xmi:XMI>

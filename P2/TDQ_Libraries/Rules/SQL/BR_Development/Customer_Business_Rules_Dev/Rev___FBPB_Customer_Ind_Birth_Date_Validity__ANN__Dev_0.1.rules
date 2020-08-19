@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_38m4MIlmEequY4KwQ76_YQ" name="Rev : FBPB Customer Ind Birth Date Validity (ANN) Dev" supplierDependency="_1BmV0I7bEeq3kqhnn5_eCg" criticalityLevel="1" whereExpression="TRIM(BRTH_DTE) IS NOT NULL &#xD;&#xA;AND (CURRENT_DATE() - BRTH_DTE)/365 > 100 &#xD;&#xA;AND REC_TYP_CDE = 'I'&#xD;&#xA;AND CUST_STAT_CDE != 'D' &#xD;&#xA;AND CUST_HIST_CDE != 'Y' &#xD;&#xA;AND CUST_CIS_NBR IN (SELECT distinct cust_cis_nbr FROM dv_customer_acct_daily WHERE trim(acct_class_nme) = 'MISC ACCT' and trim(appl_cde) = 'ANN')&#xD;&#xA;and cust_cis_nbr in (select distinct cust_cis_nbr from dv_customer_acct_daily where cust_to_acct_rlt_role_cde not in ('051', '164','193'))">
+    <taggedValue xmi:id="_38m4MYlmEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_38m4MolmEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_38m4M4lmEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_38m4NIlmEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Individual Birth Date Validity (ANN) : Check the Individual Customer's Birth Date (Annuity) in valid range, for FBPB Customers"/>
+    <taggedValue xmi:id="_38m4NYlmEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_38m4NolmEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_38m4N4lmEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_1BmV0I7bEeq3kqhnn5_eCg" kind="Usage" supplier="_38m4MIlmEequY4KwQ76_YQ"/>
+</xmi:XMI>

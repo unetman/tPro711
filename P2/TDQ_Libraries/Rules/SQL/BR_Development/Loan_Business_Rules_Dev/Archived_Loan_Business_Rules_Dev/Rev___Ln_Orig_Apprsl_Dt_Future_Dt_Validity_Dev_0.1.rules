@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_T34FAFvDEemJcZOsfZUuPg" name="Rev : Ln Orig Apprsl Dt Future Dt Validity Dev" supplierDependency="_VMYTQLrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="apprsl_dte > current_date()">
+    <taggedValue xmi:id="_T34FAVvDEemJcZOsfZUuPg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_T34FAlvDEemJcZOsfZUuPg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_T34FA1vDEemJcZOsfZUuPg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_T34FBFvDEemJcZOsfZUuPg" tag="Description" value="% Loan Original Appraisal Date Future Date Validity : Check to see whether Loan Original Appraisal Date has any Future Dates"/>
+    <taggedValue xmi:id="_T34FBVvDEemJcZOsfZUuPg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_T34FBlvDEemJcZOsfZUuPg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_T34FB1vDEemJcZOsfZUuPg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_VMYTQLrNEemDOqp3RrQ-hA" kind="Usage" supplier="_T34FAFvDEemJcZOsfZUuPg"/>
+</xmi:XMI>

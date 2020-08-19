@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_76u-4JaPEeik9ud-VJYeow" name="CIS_CTY_NME BLANK" supplierDependency="_lOOVQ5aQEeik9ud-VJYeow" criticalityLevel="1" whereExpression="CIS_CTY_NME IS NOT NULL  AND TRIM(CIS_CTY_NME) IS NOT NULL">
+    <taggedValue xmi:id="_76u-4ZaPEeik9ud-VJYeow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_76u-4paPEeik9ud-VJYeow" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_76u-45aPEeik9ud-VJYeow" tag="Purpose" value="Business Rule for Customers to check for City Name is Blank"/>
+    <taggedValue xmi:id="_76u-5JaPEeik9ud-VJYeow" tag="Description" value="Business Rule for Customers to check for City Name is Blank"/>
+    <taggedValue xmi:id="_76u-5ZaPEeik9ud-VJYeow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_76u-5paPEeik9ud-VJYeow" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_76u-55aPEeik9ud-VJYeow" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_lOOVQ5aQEeik9ud-VJYeow" kind="Usage" supplier="_76u-4JaPEeik9ud-VJYeow"/>
+</xmi:XMI>

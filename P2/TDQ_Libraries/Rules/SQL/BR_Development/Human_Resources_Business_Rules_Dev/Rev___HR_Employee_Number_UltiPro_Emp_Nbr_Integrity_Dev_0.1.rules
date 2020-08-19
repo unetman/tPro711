@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2e2XUOkhEemqwrSLv0-zjA" name="Rev : HR Employee Number UltiPro Emp Nbr Integrity Dev" supplierDependency="_z2RTkPQ6EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="empnum not in (select emp_nbr from dv_ods_associates)">
+    <taggedValue xmi:id="_2e2XUekhEemqwrSLv0-zjA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2e2XUukhEemqwrSLv0-zjA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2e2XU-khEemqwrSLv0-zjA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_2e2XVOkhEemqwrSLv0-zjA" tag="Description" value="% HR Employee Number UltiPro Employee Number Integrity : Check to see whether HR Employee Numbers are found in UltiPro"/>
+    <taggedValue xmi:id="_2e2XVekhEemqwrSLv0-zjA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2e2XVukhEemqwrSLv0-zjA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2e2XV-khEemqwrSLv0-zjA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_z2RTkPQ6EemE9v9c8kc5eA" kind="Usage" supplier="_2e2XUOkhEemqwrSLv0-zjA"/>
+</xmi:XMI>

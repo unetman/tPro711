@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_txvaEL0rEemUt6IHvIMl_w" name="Rev : RL Customer SSN Reverse Sequential Validity" supplierDependency="_GitF4PG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="(trim(social_security_number) is not null) &#xD;&#xA;and TRIM(social_security_number) != ' ' &#xD;&#xA;and (social_security_number like '987654321%'&#xD;&#xA;or social_security_number like '876543219%'&#xD;&#xA;or social_security_number like '765432198%'&#xD;&#xA;or social_security_number like '654321987%'&#xD;&#xA;or social_security_number like '543219876%'&#xD;&#xA;or social_security_number like '432198765%'&#xD;&#xA;or social_security_number like '321987654%'&#xD;&#xA;or social_security_number like '219876543%'&#xD;&#xA;or social_security_number like '198765432%') ;">
+    <taggedValue xmi:id="_txvaEb0rEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_txvaEr0rEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_txvaE70rEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_txvaFL0rEemUt6IHvIMl_w" tag="Description" value="% RL Customer SSN Reverse Sequential Number Validity : Check to see whether the Residential Lending Customer SSN has reverse sequential number, which is Invalid"/>
+    <taggedValue xmi:id="_txvaFb0rEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_txvaFr0rEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_txvaF70rEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_GitF4PG8EemeArsjLNyAig" kind="Usage" supplier="_txvaEL0rEemUt6IHvIMl_w"/>
+</xmi:XMI>

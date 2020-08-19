@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_HmpRQPUAEemZUKycr7uNCg" name="Rev : Customer Address All Elements Completeness Dev" supplierDependency="_r7oUQDFvEeqMf6s7I6jokQ" criticalityLevel="1" whereExpression="trim(cis_addr_lne_1_txt) is null and trim(cis_addr_lne_2_txt) is null&#xD;&#xA;and trim(cis_addr_lne_3_txt) is null and trim(cis_addr_lne_4_txt) is null&#xD;&#xA;and trim(cis_addr_lne_5_txt) is null and trim(cis_addr_lne_6_txt) is null ">
+    <taggedValue xmi:id="_HmpRQfUAEemZUKycr7uNCg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_HmpRQvUAEemZUKycr7uNCg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_HmpRQ_UAEemZUKycr7uNCg" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_HmpRRPUAEemZUKycr7uNCg" tag="Description" value="% Customer Address All Elements Completeness : Check to see whether Customer All Elements are having values"/>
+    <taggedValue xmi:id="_HmpRRfUAEemZUKycr7uNCg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_HmpRRvUAEemZUKycr7uNCg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_HmpRR_UAEemZUKycr7uNCg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_r7oUQDFvEeqMf6s7I6jokQ" kind="Usage" supplier="_HmpRQPUAEemZUKycr7uNCg"/>
+</xmi:XMI>

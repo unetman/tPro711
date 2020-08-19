@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_n6cb0I-rEeq6MKifrC4neg" name="Rev : FBPB Customer Tax Id Number Repeating Number Validity" supplierDependency="_rxbEsI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cis_tax_id_nbr) is not null and &#xD;&#xA;(trim(cis_tax_id_nbr) like '%111111111%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%222222222%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%333333333%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%444444444%' or&#xD;&#xA; trim(cis_tax_id_nbr)like '%555555555%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%666666666%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%777777777%' or&#xD;&#xA; trim (cis_tax_id_nbr) like '%888888888%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%999999999%' or&#xD;&#xA; trim(cis_tax_id_nbr) like '%000000000%')">
+    <taggedValue xmi:id="_n6cb0Y-rEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_n6cb0o-rEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_n6cb04-rEeq6MKifrC4neg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_n6cb1I-rEeq6MKifrC4neg" tag="Description" value="% FBPB Customer Tax Id Number Repeating Number Validity : Check to see whether Customer Tax Id Number has no Repeating Numbers, for FBPB Customers"/>
+    <taggedValue xmi:id="_n6cb1Y-rEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_n6cb1o-rEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_n6cb14-rEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_rxbEsI-8Eeq6MKifrC4neg" kind="Usage" supplier="_n6cb0I-rEeq6MKifrC4neg"/>
+</xmi:XMI>

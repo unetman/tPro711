@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Yh_gkI-qEeq6MKifrC4neg" name="Rev : FBPB Customer Phone 4 Number Numerals Validity" supplierDependency="_nnYGII-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cis_ph_4_full_nbr) regexp_like '[^0-9]' and trim(cis_ph_4_full_nbr) is not null">
+    <taggedValue xmi:id="_Yh_gkY-qEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Yh_gko-qEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Yh_gk4-qEeq6MKifrC4neg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_Yh_glI-qEeq6MKifrC4neg" tag="Description" value="% FBPB Customer Phone 4 Number Numerals Validity : Check to see whether Customer Phone 4 Number contains Numerals only, for FBPB Customers"/>
+    <taggedValue xmi:id="_Yh_glY-qEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Yh_glo-qEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Yh_gl4-qEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_nnYGII-8Eeq6MKifrC4neg" kind="Usage" supplier="_Yh_gkI-qEeq6MKifrC4neg"/>
+</xmi:XMI>

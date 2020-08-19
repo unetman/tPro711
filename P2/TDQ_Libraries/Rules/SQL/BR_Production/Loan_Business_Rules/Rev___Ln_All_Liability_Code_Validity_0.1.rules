@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_RreNUPD8EemdN5tOU9BUkA" name="Rev : Ln All Liability Code Validity" supplierDependency="_jQbgkHmuEeqCgOfbbhT6Gw" criticalityLevel="1" whereExpression="coll_cde not in (select collateral_code from dv_ref_collateral_codes)">
+    <taggedValue xmi:id="_RreNUfD8EemdN5tOU9BUkA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_RreNUvD8EemdN5tOU9BUkA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_RreNU_D8EemdN5tOU9BUkA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_RreNVPD8EemdN5tOU9BUkA" tag="Description" value="% Loan All Liability Code Validity : Check to see whether Loan Liability Code is valid for All Customers. This valid is done against reference table"/>
+    <taggedValue xmi:id="_RreNVfD8EemdN5tOU9BUkA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_RreNVvD8EemdN5tOU9BUkA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_RreNV_D8EemdN5tOU9BUkA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_jQbgkHmuEeqCgOfbbhT6Gw" kind="Usage" supplier="_RreNUPD8EemdN5tOU9BUkA"/>
+</xmi:XMI>

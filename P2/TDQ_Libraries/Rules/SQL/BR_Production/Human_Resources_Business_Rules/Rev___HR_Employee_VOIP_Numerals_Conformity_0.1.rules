@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_REwe8IxcEemXCqTWQOVr0Q" name="Rev : HR Employee VOIP Numerals Conformity" supplierDependency="_dW8X4PGqEemeArsjLNyAig" criticalityLevel="1" whereExpression="voip REGEXP_LIKE '[^0-9]'">
+    <taggedValue xmi:id="_REwe8YxcEemXCqTWQOVr0Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_REwe8oxcEemXCqTWQOVr0Q" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_REwe84xcEemXCqTWQOVr0Q" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_REwe9IxcEemXCqTWQOVr0Q" tag="Description" value="% HR Employee VOIP Numerals Conformity : Check to see whether HR Employee VOIP has Numerals only"/>
+    <taggedValue xmi:id="_REwe9YxcEemXCqTWQOVr0Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_REwe9oxcEemXCqTWQOVr0Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_REwe94xcEemXCqTWQOVr0Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_dW8X4PGqEemeArsjLNyAig" kind="Usage" supplier="_REwe8IxcEemXCqTWQOVr0Q"/>
+</xmi:XMI>

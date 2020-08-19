@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_AYTXkOoFEem6B9cRfDaYGA" name="Rev : RL Prospect Cell Forward Sequential Validity Dev" supplierDependency="_U4744O99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="(trim(cell) is not null) &#xD;&#xA;and TRIM(cell) != ' ' &#xD;&#xA;and (cell like '123456789%'&#xD;&#xA;or cell like '23456789%'&#xD;&#xA;or cell like '3456789012%'&#xD;&#xA;or cell like '4567890123%'&#xD;&#xA;or cell like '5678901234%'&#xD;&#xA;or cell like '6789012345%'&#xD;&#xA;or cell like '7890123456%'&#xD;&#xA;or cell like '8901234567%'&#xD;&#xA;or cell like '9012345678%') ;">
+    <taggedValue xmi:id="_AYTXkeoFEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_AYTXkuoFEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_AYTXk-oFEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_AYTXlOoFEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Cell Forward Sequential Validity : Check to see whether Residential Lending - Prospect's Cell has Forward Sequential Number, which is Invalid"/>
+    <taggedValue xmi:id="_AYTXleoFEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_AYTXluoFEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_AYTXl-oFEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_U4744O99EemWeu8zCvaDhg" kind="Usage" supplier="_AYTXkOoFEem6B9cRfDaYGA"/>
+</xmi:XMI>

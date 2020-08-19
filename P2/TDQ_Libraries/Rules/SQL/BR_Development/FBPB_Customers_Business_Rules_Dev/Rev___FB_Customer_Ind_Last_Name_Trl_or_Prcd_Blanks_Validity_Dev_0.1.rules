@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_u2ixoNaAEeqOGOz3OjX5Ng" name="Rev : FB Customer Ind Last Name Trl or Prcd Blanks Validity Dev" criticalityLevel="1" whereExpression="trim(cis_lst_nme) is not null and LEN(cis_lst_nme) != LEN(TRIM(cis_lst_nme))">
+  <taggedValue xmi:id="_u2ixodaAEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_u2ixotaAEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_u2ixo9aAEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_u2ixpNaAEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual Last Name Trailing or Preceding Blanks Validity : Check to see whether Customer Last Name has trailing or preceding blanks, for FB Customers"/>
+  <taggedValue xmi:id="_u2ixpdaAEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_u2ixptaAEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_u2ixp9aAEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

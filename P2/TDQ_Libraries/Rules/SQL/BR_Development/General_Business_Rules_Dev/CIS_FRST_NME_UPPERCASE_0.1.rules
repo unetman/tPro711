@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_zxUfMJZ4Eeik9ud-VJYeow" name="CIS_FRST_NME UPPERCASE" supplierDependency="_XkRlM5Z5Eeik9ud-VJYeow" criticalityLevel="1" whereExpression="CIS_FRST_NME REGEXP_LIKE '[a-z]'">
+    <taggedValue xmi:id="_zxUfMZZ4Eeik9ud-VJYeow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_zxUfMpZ4Eeik9ud-VJYeow" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_zxUfM5Z4Eeik9ud-VJYeow" tag="Purpose" value="Business Rule to check on Customers for CIS First Name UPPERCASE"/>
+    <taggedValue xmi:id="_zxUfNJZ4Eeik9ud-VJYeow" tag="Description" value="Business Rule to check on Customers for CIS First Name UPPERCASE"/>
+    <taggedValue xmi:id="_zxUfNZZ4Eeik9ud-VJYeow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_zxUfNpZ4Eeik9ud-VJYeow" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_zxUfN5Z4Eeik9ud-VJYeow" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_XkRlM5Z5Eeik9ud-VJYeow" kind="Usage" supplier="_zxUfMJZ4Eeik9ud-VJYeow"/>
+</xmi:XMI>

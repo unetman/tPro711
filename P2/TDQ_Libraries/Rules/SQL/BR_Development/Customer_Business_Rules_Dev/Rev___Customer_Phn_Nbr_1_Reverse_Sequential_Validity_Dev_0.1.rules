@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Lj-K0PAQEemWB8N1vAcLdw" name="Rev : Customer Phn Nbr 1 Reverse Sequential Validity Dev" supplierDependency="_PD8uUDIfEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(cis_ph_1_full_nbr) is not null and trim(cis_ph_1_full_nbr) like '%987654321%'">
+    <taggedValue xmi:id="_Lj-K0fAQEemWB8N1vAcLdw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Lj-K0vAQEemWB8N1vAcLdw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Lj-K0_AQEemWB8N1vAcLdw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_Lj-K1PAQEemWB8N1vAcLdw" tag="Description" value="% Customer Phn Nbr 1 Reverse Sequential Validity : Check to see whether Customer Phone Number 1 is &quot;%987654321%&quot;"/>
+    <taggedValue xmi:id="_Lj-K1fAQEemWB8N1vAcLdw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Lj-K1vAQEemWB8N1vAcLdw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Lj-K1_AQEemWB8N1vAcLdw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_PD8uUDIfEeqLtr0qyEBgPA" kind="Usage" supplier="_Lj-K0PAQEemWB8N1vAcLdw"/>
+</xmi:XMI>

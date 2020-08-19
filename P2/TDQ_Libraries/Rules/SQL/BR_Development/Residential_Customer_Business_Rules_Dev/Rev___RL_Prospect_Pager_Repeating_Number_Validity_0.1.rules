@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_j8IK8PDgEemdN5tOU9BUkA" name="Rev : RL Prospect Pager Repeating Number Validity" supplierDependency="_PYRYYPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="(trim(pager) is not null) &#xD;&#xA;and TRIM(pager) != ' ' &#xD;&#xA;and (pager like '000000000%'&#xD;&#xA;or pager like '111111111%'&#xD;&#xA;or pager like '222222222%'&#xD;&#xA;or pager like '333333333%'&#xD;&#xA;or pager like '444444444%'&#xD;&#xA;or pager like '555555555%'&#xD;&#xA;or pager like '666666666%'&#xD;&#xA;or pager like '777777777%'&#xD;&#xA;or pager like '888888888%'&#xD;&#xA;or pager like '999999999%') ;">
+    <taggedValue xmi:id="_j8IK8fDgEemdN5tOU9BUkA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_j8IK8vDgEemdN5tOU9BUkA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_j8IK8_DgEemdN5tOU9BUkA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_j8IK9PDgEemdN5tOU9BUkA" tag="Description" value="% RL Prospect Pager Repeating Number Validity : Check to see whether Residential Lending - Prospect's Pager has repeating number, which is Invalid"/>
+    <taggedValue xmi:id="_j8IK9fDgEemdN5tOU9BUkA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_j8IK9vDgEemdN5tOU9BUkA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_j8IK9_DgEemdN5tOU9BUkA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_PYRYYPG8EemeArsjLNyAig" kind="Usage" supplier="_j8IK8PDgEemdN5tOU9BUkA"/>
+</xmi:XMI>

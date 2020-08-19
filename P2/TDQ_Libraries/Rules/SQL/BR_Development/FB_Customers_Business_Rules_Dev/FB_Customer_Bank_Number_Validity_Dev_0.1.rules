@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_lD2CINZ4EeqOGOz3OjX5Ng" name="FB Customer Bank Number Validity Dev" criticalityLevel="1" whereExpression="CUST_BASE_NBR IN  ('422', '508')">
+  <taggedValue xmi:id="_lD2CIdZ4EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_lD2CItZ4EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_lD2CI9Z4EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_lD2CJNZ4EeqOGOz3OjX5Ng" tag="Description" value="% FBPB Customer Bank Number Validity : Check that Customer Bank Number is either 422 or 508, , for FBPB Customers"/>
+  <taggedValue xmi:id="_lD2CJdZ4EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_lD2CJtZ4EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_lD2CJ9Z4EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

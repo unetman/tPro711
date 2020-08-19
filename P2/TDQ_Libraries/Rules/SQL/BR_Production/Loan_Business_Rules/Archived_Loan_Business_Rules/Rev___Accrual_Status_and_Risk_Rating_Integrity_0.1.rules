@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_cPrxQEc6Eemhuf5XDidYwQ" name="Rev : Accrual Status and Risk Rating Integrity" supplierDependency="_gunEkF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="ln_cat_cde = 'C' and trim(risk_rtg_cde) in ('08','09', '10') and note_typ_cde not like '%91' and accr_lit_cde not in ('N', 'CN')">
+    <taggedValue xmi:id="_cPrxQUc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_cPrxQkc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_cPrxQ0c6Eemhuf5XDidYwQ" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_cPsYUEc6Eemhuf5XDidYwQ" tag="Description" value="% Accrual Status on Risk Rating Code and Note Type Integrity : Check to see whether Accrual Status is valid for Category C loans with Risk Rating Code in ('08', '09', '10') and Note Type Not ending with '%91'"/>
+    <taggedValue xmi:id="_cPsYUUc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_cPsYUkc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_cPsYU0c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_gunEkF08Eemj9s3KLP4KwA" kind="Usage" supplier="_cPrxQEc6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

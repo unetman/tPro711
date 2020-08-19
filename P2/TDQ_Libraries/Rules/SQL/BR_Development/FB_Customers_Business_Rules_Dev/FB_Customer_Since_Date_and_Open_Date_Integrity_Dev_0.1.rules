@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_z8pCYNZ4EeqOGOz3OjX5Ng" name="FB Customer Since Date and Open Date Integrity Dev" criticalityLevel="1" whereExpression="cust_snc_dte &lt;= cust_open_dte">
+  <taggedValue xmi:id="_z8pCYdZ4EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_z8pCYtZ4EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_z8pCY9Z4EeqOGOz3OjX5Ng" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_z8pCZNZ4EeqOGOz3OjX5Ng" tag="Description" value="% FBPB Customer Since Date and Open Date Integrity : Check to see whether customer since date is valid on comparison with Customer Open Date, for FBPB Customers"/>
+  <taggedValue xmi:id="_z8pCZdZ4EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_z8pCZtZ4EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_z8pCZ9Z4EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

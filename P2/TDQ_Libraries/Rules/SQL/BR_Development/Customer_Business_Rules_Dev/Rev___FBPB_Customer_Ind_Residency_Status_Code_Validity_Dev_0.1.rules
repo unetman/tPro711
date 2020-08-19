@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_AzaEUIloEequY4KwQ76_YQ" name="Rev : FBPB Customer Ind Residency Status Code Validity Dev" supplierDependency="_00qagIpQEeq749sm8FqTxg" criticalityLevel="1" whereExpression="trim(own_rent_cde) is not null and trim(own_rent_cde) not in (select dv_ref_residency_status_codes.residency_status_code from dv_ref_residency_status_codes)">
+    <taggedValue xmi:id="_AzaEUYloEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_AzaEUoloEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_AzaEU4loEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_AzaEVIloEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Individual Residency Status Validity : Check to see whether Customer Residency Status Code is valid using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_AzaEVYloEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_AzaEVoloEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_AzaEV4loEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_00qagIpQEeq749sm8FqTxg" kind="Usage" supplier="_AzaEUIloEequY4KwQ76_YQ"/>
+</xmi:XMI>

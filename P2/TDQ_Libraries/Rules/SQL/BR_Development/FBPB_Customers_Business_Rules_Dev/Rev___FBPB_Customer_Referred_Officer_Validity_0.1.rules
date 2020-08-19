@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_jvJ8kI-qEeq6MKifrC4neg" name="Rev : FBPB Customer Referred Officer Validity" supplierDependency="_qU9GsI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(ref_offcr_nbr) is not null and ref_offcr_nbr not in (select officer_code from dv_employees where termdate is null and expiration_date is null) and ref_offcr_nbr != 0">
+    <taggedValue xmi:id="_jvJ8kY-qEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_jvJ8ko-qEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_jvJ8k4-qEeq6MKifrC4neg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_jvJ8lI-qEeq6MKifrC4neg" tag="Description" value="% FBPB Customer Referred Officer Validity : Check to see whether Referred Officer Numbers are valid, if present, for FBPB Customers"/>
+    <taggedValue xmi:id="_jvJ8lY-qEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_jvJ8lo-qEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_jvJ8l4-qEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_qU9GsI-8Eeq6MKifrC4neg" kind="Usage" supplier="_jvJ8kI-qEeq6MKifrC4neg"/>
+</xmi:XMI>

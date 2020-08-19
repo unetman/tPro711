@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2_IywI-aEeqVfsmI0g4Khg" name="Rev : FBPB Customer Ind FN Trl or Prcd Blanks Validity" supplierDependency="_YHXfcI-9Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cis_frst_nme)is not null and LEN(cis_frst_nme) != LEN(TRIM(cis_frst_nme))">
+    <taggedValue xmi:id="_2_IywY-aEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2_Iywo-aEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2_Iyw4-aEeqVfsmI0g4Khg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_2_IyxI-aEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Individual First Name Trailing or Preceding Blanks Validity : Check to see whether Customer First Name has trailing or preceding blanks, for FBPB Customers"/>
+    <taggedValue xmi:id="_2_IyxY-aEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2_Iyxo-aEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2_Iyx4-aEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_YHXfcI-9Eeq6MKifrC4neg" kind="Usage" supplier="_2_IywI-aEeqVfsmI0g4Khg"/>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_HxIYkL4OEemUXsmMP7AZ_w" name="Rev : RL Person SSN Forward Sequential Number Validity" criticalityLevel="1" whereExpression="(social_security_number like '%123-45-6789%'&#xD;&#xA;or social_security_number like '%234-56-7891%'&#xD;&#xA;or social_security_number like '%345-67-8912%'&#xD;&#xA;or social_security_number like '%456-78-9123%'&#xD;&#xA;or social_security_number like '%567-89-1234%'&#xD;&#xA;or social_security_number like '%678-91-2345%'&#xD;&#xA;or social_security_number like '%789-12-3456%'&#xD;&#xA;or social_security_number like '%891-23-4567%'&#xD;&#xA;or social_security_number like '%912-34-5678%')">
+  <taggedValue xmi:id="_HxIYkb4OEemUXsmMP7AZ_w" tag="Status" value="development"/>
+  <taggedValue xmi:id="_HxIYkr4OEemUXsmMP7AZ_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_HxIYk74OEemUXsmMP7AZ_w" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_HxIYlL4OEemUXsmMP7AZ_w" tag="Description" value="% RL Person SSN Forward Sequential Number Validity : Check to see whether Residential Lending Person SSN has forward sequential numbers, which is Invalid"/>
+  <taggedValue xmi:id="_HxIYlb4OEemUXsmMP7AZ_w" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_HxIYlr4OEemUXsmMP7AZ_w" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_HxIYl74OEemUXsmMP7AZ_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

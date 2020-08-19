@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_wnT3APpKEemRorP59Z1rWA" name="Rev : Customer Address All Elements Hierarchy Completeness Dev" supplierDependency="_Inq3kEKrEeqgnoLB8nCZ5Q" criticalityLevel="1" whereExpression="(cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is not null) &#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is null and cis_addr_lne_5_txt is not null)&#xD;&#xA;or (cis_addr_lne_1_txt is null and cis_addr_lne_2_txt is null &#xD;&#xA;and cis_addr_lne_3_txt is null and cis_addr_lne_4_txt is null&#xD;&#xA;and cis_addr_lne_5_txt is null and cis_addr_lne_6_txt is not null)">
+    <taggedValue xmi:id="_wnT3AfpKEemRorP59Z1rWA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_wnT3AvpKEemRorP59Z1rWA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_wnT3A_pKEemRorP59Z1rWA" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_wnT3BPpKEemRorP59Z1rWA" tag="Description" value="% Customer Address All Elements Hierarchy Completeness : Check to see whether Customer All Elements Hierarchy has missing values (Address Line 2 has value without Address Line 1, etc.)"/>
+    <taggedValue xmi:id="_wnT3BfpKEemRorP59Z1rWA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wnT3BvpKEemRorP59Z1rWA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_wnT3B_pKEemRorP59Z1rWA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Inq3kEKrEeqgnoLB8nCZ5Q" kind="Usage" supplier="_wnT3APpKEemRorP59Z1rWA"/>
+</xmi:XMI>

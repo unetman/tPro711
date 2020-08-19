@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_wz3i0M3hEeqMleRwETqDmQ" name="Rev : RL Customer Birthdate Completeness Dev" supplierDependency="_bETLIM35EeqMleRwETqDmQ" criticalityLevel="1" whereExpression="(birthdate is null or birthdate = ' ')">
+    <taggedValue xmi:id="_wz3i0c3hEeqMleRwETqDmQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_wz3i0s3hEeqMleRwETqDmQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_wz3i083hEeqMleRwETqDmQ" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_wz3i1M3hEeqMleRwETqDmQ" tag="Description" value="% RL Customer Birthdate Completeness : Check to see whether Residential Lending - Customer Birthdate is missing. "/>
+    <taggedValue xmi:id="_wz3i1c3hEeqMleRwETqDmQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wz3i1s3hEeqMleRwETqDmQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_wz3i183hEeqMleRwETqDmQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_bETLIM35EeqMleRwETqDmQ" kind="Usage" supplier="_wz3i0M3hEeqMleRwETqDmQ"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_x6Tn0PlgEei0xu3Xsej7sQ" name="Customer Record Type Validity Dev" supplierDependency="_rmcucDFvEeqMf6s7I6jokQ" criticalityLevel="1" whereExpression="REC_TYP_CDE IN ('I', 'O')">
+    <taggedValue xmi:id="_x6Tn0flgEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_x6Tn0vlgEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_x6Tn0_lgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_x6Tn1PlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Record Type Code Validity : Check to see if Customer Record Type Codes are not in ('I', 'O')"/>
+    <taggedValue xmi:id="_x6Tn1flgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_x6Tn1vlgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_x6Tn1_lgEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_rmcucDFvEeqMf6s7I6jokQ" kind="Usage" supplier="_x6Tn0PlgEei0xu3Xsej7sQ"/>
+</xmi:XMI>

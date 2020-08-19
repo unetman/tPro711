@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_OzavMNaHEeqOGOz3OjX5Ng" name="Rev : FB Customer Phone 5 Number Repeating Number Validity Dev" criticalityLevel="1" whereExpression="trim(cis_ph_5_full_nbr) is not null and &#xD;&#xA;(trim(cis_ph_5_full_nbr) = '0000000000' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '111111111' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '2222222222' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '3333333333' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '4444444444' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '5555555555' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '6666666666' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '7777777777' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '8888888888' or&#xD;&#xA;trim(cis_ph_5_full_nbr) = '9999999999' )">
+  <taggedValue xmi:id="_OzavMdaHEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_OzavMtaHEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_OzavM9aHEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_OzavNNaHEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Phone 5 Number Repeating Number Validity : Check to see whether Customer Phone 5 Number is valid, for FB Customers"/>
+  <taggedValue xmi:id="_OzavNdaHEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_OzavNtaHEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_OzavN9aHEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

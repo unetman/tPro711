@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_RywckPlgEei0xu3Xsej7sQ" name="Customer Open Date Validity Dev" supplierDependency="_0Do2QCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="(CURRENT_DATE() - CUST_OPEN_DTE)/365 &lt;= 100">
+    <taggedValue xmi:id="_RywckflgEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_RywckvlgEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Rywck_lgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_RywclPlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Open Date Validity : Check that Customer Open Date is not Null"/>
+    <taggedValue xmi:id="_RywclflgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_RywclvlgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Rywcl_lgEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0Do2QCu9EemUO5X_bnxflQ" kind="Usage" supplier="_RywckPlgEei0xu3Xsej7sQ"/>
+</xmi:XMI>

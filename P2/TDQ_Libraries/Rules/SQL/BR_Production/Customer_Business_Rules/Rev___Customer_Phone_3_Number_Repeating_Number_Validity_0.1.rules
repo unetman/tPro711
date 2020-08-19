@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_9jOrwDuYEem0OtLaJU4itw" name="Rev : Customer Phone 3 Number Repeating Number Validity" supplierDependency="_UOdGUEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(cis_ph_3_full_nbr) is not null and &#xD;&#xA;(trim(cis_ph_3_full_nbr) = '0000000000' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '111111111' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '2222222222' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '3333333333' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '4444444444' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '5555555555' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '6666666666' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '7777777777' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '8888888888' or&#xD;&#xA;trim(cis_ph_3_full_nbr) = '9999999999' )">
+    <taggedValue xmi:id="_9jOrwTuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_9jOrwjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_9jOrwzuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_9jOrxDuYEem0OtLaJU4itw" tag="Description" value="% Customer Phone 3 Number Repeating Number Validity : Check to see whether Customer Phone 3 Number is valid"/>
+    <taggedValue xmi:id="_9jOrxTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_9jOrxjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_9jOrxzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_UOdGUEBWEemEnMlxCqUjoA" kind="Usage" supplier="_9jOrwDuYEem0OtLaJU4itw"/>
+</xmi:XMI>

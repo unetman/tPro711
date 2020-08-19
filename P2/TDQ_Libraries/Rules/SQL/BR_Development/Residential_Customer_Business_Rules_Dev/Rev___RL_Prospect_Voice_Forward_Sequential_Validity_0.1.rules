@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_oPSCMPDgEemdN5tOU9BUkA" name="Rev : RL Prospect Voice Forward Sequential Validity" supplierDependency="_QZ-F8PG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="(trim(voice) is not null) &#xD;&#xA;and TRIM(voice) != ' ' &#xD;&#xA;and (voice like '123456789%'&#xD;&#xA;or voice like '23456789%'&#xD;&#xA;or voice like '3456789012%'&#xD;&#xA;or voice like '4567890123%'&#xD;&#xA;or voice like '5678901234%'&#xD;&#xA;or voice like '6789012345%'&#xD;&#xA;or voice like '7890123456%'&#xD;&#xA;or voice like '8901234567%'&#xD;&#xA;or voice like '9012345678%') ;">
+    <taggedValue xmi:id="_oPSCMfDgEemdN5tOU9BUkA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_oPSCMvDgEemdN5tOU9BUkA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_oPSCM_DgEemdN5tOU9BUkA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_oPSCNPDgEemdN5tOU9BUkA" tag="Description" value="% RL Prospect Voice Forward Sequential Validity : Check to see whether Residential Lending - Prospect's Voice has Forward Sequential Number, which is Invalid"/>
+    <taggedValue xmi:id="_oPSCNfDgEemdN5tOU9BUkA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_oPSCNvDgEemdN5tOU9BUkA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_oPSCN_DgEemdN5tOU9BUkA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_QZ-F8PG8EemeArsjLNyAig" kind="Usage" supplier="_oPSCMPDgEemdN5tOU9BUkA"/>
+</xmi:XMI>

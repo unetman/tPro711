@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_E5k7kF01Eemj9s3KLP4KwA" name="Rev : Ln Liab Cde and Fed Call Cde Integrity Dev" supplierDependency="_TURiILrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="fed_call_cde like '%150%' and coll_cde in (select collateral_code from dv_ref_collateral_codes where collateral_type = 'R')">
+    <taggedValue xmi:id="_E5k7kV01Eemj9s3KLP4KwA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_E5k7kl01Eemj9s3KLP4KwA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_E5k7k101Eemj9s3KLP4KwA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_E5k7lF01Eemj9s3KLP4KwA" tag="Description" value="% Loan Liability Code and Federal Call Code Integrity : Check to see whether Liability code is in integrity with Federal Call Code"/>
+    <taggedValue xmi:id="_E5k7lV01Eemj9s3KLP4KwA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_E5k7ll01Eemj9s3KLP4KwA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_E5k7l101Eemj9s3KLP4KwA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_TURiILrNEemDOqp3RrQ-hA" kind="Usage" supplier="_E5k7kF01Eemj9s3KLP4KwA"/>
+</xmi:XMI>

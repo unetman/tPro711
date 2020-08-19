@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_VYa7YOoFEem6B9cRfDaYGA" name="Rev : RL Prospect Cell Length Validity Dev" supplierDependency="_U-a10O99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="len(cell)!= 10 and cell is not null and cell != ' ' ">
+    <taggedValue xmi:id="_VYa7YeoFEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_VYa7YuoFEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_VYa7Y-oFEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_VYa7ZOoFEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Cell Length Validity : Check to see whether Residential Lending - Prospect Cell Length has valid length. The Valid Length is 10"/>
+    <taggedValue xmi:id="_VYa7ZeoFEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_VYa7ZuoFEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_VYa7Z-oFEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_U-a10O99EemWeu8zCvaDhg" kind="Usage" supplier="_VYa7YOoFEem6B9cRfDaYGA"/>
+</xmi:XMI>

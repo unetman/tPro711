@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_VcgBkZaTEeik9ud-VJYeow" name="MTHR_MDN_NME BLANK" supplierDependency="_NsX3sZaUEeik9ud-VJYeow" criticalityLevel="1" whereExpression="TRIM(MTHR_MDN_NME) IS NULL AND MTHR_MDN_NME IS NOT NULL">
+    <taggedValue xmi:id="_VcgBkpaTEeik9ud-VJYeow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_VcgBk5aTEeik9ud-VJYeow" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_VcgBlJaTEeik9ud-VJYeow" tag="Purpose" value="Business Rule for Customers to check for Blank on Mother's Maiden Name"/>
+    <taggedValue xmi:id="_VcgBlZaTEeik9ud-VJYeow" tag="Description" value="Business Rule for Customers to check for Blank on Mother's Maiden Name"/>
+    <taggedValue xmi:id="_VcgBlpaTEeik9ud-VJYeow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_VcgBl5aTEeik9ud-VJYeow" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_VcgBmJaTEeik9ud-VJYeow" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_NsX3sZaUEeik9ud-VJYeow" kind="Usage" supplier="_VcgBkZaTEeik9ud-VJYeow"/>
+</xmi:XMI>

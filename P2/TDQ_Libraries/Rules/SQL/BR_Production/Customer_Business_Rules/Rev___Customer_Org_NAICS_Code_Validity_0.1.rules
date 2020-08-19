@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_jiXK4DuYEem0OtLaJU4itw" name="Rev : Customer Org NAICS Code Validity" supplierDependency="_NYuvMEBXEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(org_naics_cde) is not null and org_naics_cde NOT in (select rightpad(naics_code, 6, '0') from dv_ref_naics)  ">
+    <taggedValue xmi:id="_jiXK4TuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_jiXK4juYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_jiXK4zuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_jiXK5DuYEem0OtLaJU4itw" tag="Description" value="% Customer Organization NAICS Code Validity : Check to see whether Customer Organization NAICS Code validity"/>
+    <taggedValue xmi:id="_jiXK5TuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_jiXK5juYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_jiXK5zuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_NYuvMEBXEemEnMlxCqUjoA" kind="Usage" supplier="_jiXK4DuYEem0OtLaJU4itw"/>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_TqlZkMEqEeq9SuuzRwvbLg" name="Rev : FBPB Customer Ind Dcesd Dt and Status Cde Integrity ddd" criticalityLevel="1" whereExpression="decd_dte != '0001-01-01' and decd_dte != '9999-12-31' and cust_stat_cde != 'D' ">
+  <taggedValue xmi:id="_TqlZkcEqEeq9SuuzRwvbLg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_TqlZksEqEeq9SuuzRwvbLg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_TqlZk8EqEeq9SuuzRwvbLg" tag="Purpose" value="Integrity"/>
+  <taggedValue xmi:id="_TqlZlMEqEeq9SuuzRwvbLg" tag="Description" value="% FBPB Customer Individual Deceased Date and Status Code Integrity : Check on Customer Individual Deceased Date and Status Code Integrity, for FBPB Customers"/>
+  <taggedValue xmi:id="_TqlZlcEqEeq9SuuzRwvbLg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_TqlZlsEqEeq9SuuzRwvbLg" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_TqlZl8EqEeq9SuuzRwvbLg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

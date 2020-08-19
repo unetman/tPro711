@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_PkgVwOYEEemwAfXbq5nc5A" name="Rev : HR Employee Officer Name BC Officer Name Consistency Dev" supplierDependency="_0Tmv0PQ6EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="trim(lower(name)) not in (select trim(lower(offcr_nme)) from dv_ref_officer) and trim(officer_code) in (select trim(offcr_nbr) from dv_ref_officer) ">
+    <taggedValue xmi:id="_PkgVweYEEemwAfXbq5nc5A" tag="Status" value="development"/>
+    <taggedValue xmi:id="_PkgVwuYEEemwAfXbq5nc5A" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_PkgVw-YEEemwAfXbq5nc5A" tag="Purpose" value="Consistency"/>
+    <taggedValue xmi:id="_PkgVxOYEEemwAfXbq5nc5A" tag="Description" value="% HR Employee Officer Name BC Officer Name Consistency : Check to see whether HR Employee Officer Names match Bank Control Officer Names respectively"/>
+    <taggedValue xmi:id="_PkgVxeYEEemwAfXbq5nc5A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_PkgVxuYEEemwAfXbq5nc5A" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_PkgVx-YEEemwAfXbq5nc5A" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0Tmv0PQ6EemE9v9c8kc5eA" kind="Usage" supplier="_PkgVwOYEEemwAfXbq5nc5A"/>
+</xmi:XMI>

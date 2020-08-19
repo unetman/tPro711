@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2m2aAPlhEei0xu3Xsej7sQ" name="Rev : Customer Ind Ethnicity Code Validity Dev" supplierDependency="__D1OwDIgEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="TRIM(ETHNC_CDE) IS NOT NULL AND ETHNC_CDE not IN (SELECT ETHNIC_CODE FROM DV_REF_ETHNIC_CODES) ">
+    <taggedValue xmi:id="_2m2aAflhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2m2aAvlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2m2aA_lhEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_2m2aBPlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Individual Ethnicity Code Validity : Check to see if Ethnicity Code is valid using Reference Table "/>
+    <taggedValue xmi:id="_2m2aBflhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2m2aBvlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2m2aB_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__D1OwDIgEeqLtr0qyEBgPA" kind="Usage" supplier="_2m2aAPlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

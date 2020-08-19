@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_R_pFkDuZEem0OtLaJU4itw" name="Rev : Customer W8 Certification Status and Date Integrity" supplierDependency="_XEBlQEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="TRIM(W8_CERT_STAT_CDE) IS NOT NULL AND W8_CERT_DTE IS NULL">
+    <taggedValue xmi:id="_R_pFkTuZEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_R_pFkjuZEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_R_pFkzuZEem0OtLaJU4itw" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_R_pFlDuZEem0OtLaJU4itw" tag="Description" value="% Customer W8 Certification Status and Date Integrity : Check to see whether Date is present when Status is present"/>
+    <taggedValue xmi:id="_R_pFlTuZEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_R_pFljuZEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_R_pFlzuZEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_XEBlQEBWEemEnMlxCqUjoA" kind="Usage" supplier="_R_pFkDuZEem0OtLaJU4itw"/>
+</xmi:XMI>

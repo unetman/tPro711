@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_pBvbENZ4EeqOGOz3OjX5Ng" name="FB Customer Cost Center Validity Dev" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center)">
+  <taggedValue xmi:id="_pBvbEdZ4EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_pBvbEtZ4EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_pBvbE9Z4EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_pBvbFNZ4EeqOGOz3OjX5Ng" tag="Description" value="% FBPB Customer Cost Center Validity : Check to see whether Customer has got valid cost center using Reference Table, for FBPB Customers"/>
+  <taggedValue xmi:id="_pBvbFdZ4EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_pBvbFtZ4EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_pBvbF9Z4EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

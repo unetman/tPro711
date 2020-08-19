@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_4FpngKyQEemvVclr9dbikw" name="Rev : AD Manager User Id Validity" supplierDependency="_3AAG4Ky4EemvVclr9dbikw" criticalityLevel="1" whereExpression="manager_user_id not in (select user_id from dv_active_directory_user)">
+    <taggedValue xmi:id="_4FpngayQEemvVclr9dbikw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_4FpngqyQEemvVclr9dbikw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_4Fpng6yQEemvVclr9dbikw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_4FpnhKyQEemvVclr9dbikw" tag="Description" value="% AD Manager User Id Validity : Check to see whether Manager User Ids are valid"/>
+    <taggedValue xmi:id="_4FpnhayQEemvVclr9dbikw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_4FpnhqyQEemvVclr9dbikw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_4Fpnh6yQEemvVclr9dbikw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_3AAG4Ky4EemvVclr9dbikw" kind="Usage" supplier="_4FpngKyQEemvVclr9dbikw"/>
+</xmi:XMI>

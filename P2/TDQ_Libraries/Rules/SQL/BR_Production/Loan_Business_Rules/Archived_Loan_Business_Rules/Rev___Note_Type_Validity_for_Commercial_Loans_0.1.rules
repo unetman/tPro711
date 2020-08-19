@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_h7sR0Ec6Eemhuf5XDidYwQ" name="Rev : Note Type Validity for Commercial Loans" supplierDependency="_hkBpoF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="ln_cat_cde = 'C' and (note_typ_cde not between '200' and '299' and note_typ_cde not between '500' and '599')">
+    <taggedValue xmi:id="_h7sR0Uc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_h7sR0kc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_h7sR00c6Eemhuf5XDidYwQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_h7sR1Ec6Eemhuf5XDidYwQ" tag="Description" value="% Commercial Loans Note Types Validity : Check to see whether Note Type Code is valid for Commercial Loans"/>
+    <taggedValue xmi:id="_h7sR1Uc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_h7sR1kc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_h7sR10c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_hkBpoF08Eemj9s3KLP4KwA" kind="Usage" supplier="_h7sR0Ec6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

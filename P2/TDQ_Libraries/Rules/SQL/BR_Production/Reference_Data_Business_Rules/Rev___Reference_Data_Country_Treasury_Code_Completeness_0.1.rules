@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_292MIEHkEeqiwOU8aEetew" name="Rev : Reference Data Country Treasury Code Completeness" supplierDependency="_BE_ecEHpEeqiwOU8aEetew" criticalityLevel="1" whereExpression="trim(treasury_code) = ' ' or treasury_code is null">
+    <taggedValue xmi:id="_292MIUHkEeqiwOU8aEetew" tag="Status" value="development"/>
+    <taggedValue xmi:id="_292MIkHkEeqiwOU8aEetew" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_292MI0HkEeqiwOU8aEetew" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_292MJEHkEeqiwOU8aEetew" tag="Description" value="% RD Country Treasury Code Completeness : Check to see whether Treasury Code is missing in Countries Reference Data"/>
+    <taggedValue xmi:id="_292MJUHkEeqiwOU8aEetew" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_292MJkHkEeqiwOU8aEetew" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_292MJ0HkEeqiwOU8aEetew" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_BE_ecEHpEeqiwOU8aEetew" kind="Usage" supplier="_292MIEHkEeqiwOU8aEetew"/>
+</xmi:XMI>

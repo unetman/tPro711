@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_ino-YIlpEequY4KwQ76_YQ" name="Rev : FBPB Customer Tax Id Number Forward Sequential Validity Dev" supplierDependency="_7nFwoImMEeqhe5FGsRAHRg" criticalityLevel="1" whereExpression="(trim(CIS_TAX_ID_NBR) is not null) and&#xD;&#xA;cast(substr(cis_tax_id_nbr,2,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 1,1) as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,3,1)  as INTEGER) = cast(substr(cis_tax_id_nbr, 2,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,4,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 3,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,5,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 4,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,6,1)  as INTEGER)= cast(substr(cis_tax_id_nbr, 5,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,7,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 6,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,8,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 7,1)as INTEGER) +1&#xD;&#xA;and cast(substr(cis_tax_id_nbr,9,1) as INTEGER) = cast(substr(cis_tax_id_nbr, 8,1)as INTEGER) +1">
+    <taggedValue xmi:id="_ino-YYlpEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_ino-YolpEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_ino-Y4lpEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_ino-ZIlpEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Tax Id Number Forward Sequential Validity : Check for forward Sequential Numbers in CIS Tax Id Number, for FBPB Customers"/>
+    <taggedValue xmi:id="_ino-ZYlpEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ino-ZolpEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_ino-Z4lpEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_7nFwoImMEeqhe5FGsRAHRg" kind="Usage" supplier="_ino-YIlpEequY4KwQ76_YQ"/>
+</xmi:XMI>

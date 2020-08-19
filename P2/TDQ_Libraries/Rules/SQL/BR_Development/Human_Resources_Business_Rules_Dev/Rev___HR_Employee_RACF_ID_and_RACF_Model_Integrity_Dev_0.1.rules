@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Mb3NEHAUEemC6Oc8srIKXw" name="Rev : HR Employee RACF_ID and RACF_Model Integrity Dev" supplierDependency="_1W28kPQ6EemE9v9c8kc5eA" criticalityLevel="1" whereExpression="(upper(racf_id) like 'W%'and trim(racf_model) =' ') or (upper(racf_id) like 'Y#' and trim(racf_model) = ' ')">
+    <taggedValue xmi:id="_Mb3NEXAUEemC6Oc8srIKXw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Mb3NEnAUEemC6Oc8srIKXw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Mb3NE3AUEemC6Oc8srIKXw" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_Mb3NFHAUEemC6Oc8srIKXw" tag="Description" value="% HR Employee RACF_ID and RACF_Model Integrity : Check to see whether RACF_ID is present and RACF_Model is missing"/>
+    <taggedValue xmi:id="_Mb3NFXAUEemC6Oc8srIKXw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Mb3NFnAUEemC6Oc8srIKXw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Mb3NF3AUEemC6Oc8srIKXw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_1W28kPQ6EemE9v9c8kc5eA" kind="Usage" supplier="_Mb3NEHAUEemC6Oc8srIKXw"/>
+</xmi:XMI>

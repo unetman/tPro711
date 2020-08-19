@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_6nL3gI-aEeqVfsmI0g4Khg" name="Rev : FBPB Customer Ind Gender Code Completeness" supplierDependency="_YunssI-9Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="TRIM(GNDR_CDE) IS NULL">
+    <taggedValue xmi:id="_6nL3gY-aEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_6nL3go-aEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_6nL3g4-aEeqVfsmI0g4Khg" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_6nL3hI-aEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Individual Gender Code Completeness : Check to see if Individual Customers have gender codes assigned, for FBPB Customers"/>
+    <taggedValue xmi:id="_6nL3hY-aEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_6nL3ho-aEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_6nL3h4-aEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_YunssI-9Eeq6MKifrC4neg" kind="Usage" supplier="_6nL3gI-aEeqVfsmI0g4Khg"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_b4nMgIlnEequY4KwQ76_YQ" name="Rev : FBPB Customer Ind Gender Code Validity Dev" supplierDependency="_vUXasIpQEeq749sm8FqTxg" criticalityLevel="1" whereExpression="trim(gndr_cde) is not null and GNDR_CDE not IN ('M', 'F')">
+    <taggedValue xmi:id="_b4nMgYlnEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_b4nMgolnEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_b4nMg4lnEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_b4nMhIlnEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Individual Gender Code Validity : Check to see if gender codes have valid values with list ('M', 'F'), for FBPB Customers"/>
+    <taggedValue xmi:id="_b4nMhYlnEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_b4nMholnEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_b4nMh4lnEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_vUXasIpQEeq749sm8FqTxg" kind="Usage" supplier="_b4nMgIlnEequY4KwQ76_YQ"/>
+</xmi:XMI>

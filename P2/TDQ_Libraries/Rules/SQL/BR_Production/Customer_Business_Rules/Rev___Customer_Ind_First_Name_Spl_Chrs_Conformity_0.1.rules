@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_MQLd0DuYEem0OtLaJU4itw" name="Rev : Customer Ind First Name Spl Chrs Conformity" supplierDependency="_uxxsgPGpEemeArsjLNyAig" criticalityLevel="1" whereExpression="(REPLACE(cis_frst_nme,char(39),'')) REGEXP_LIKE '[^A-Z-%/ &quot;!:#0-9&amp;.-]'">
+    <taggedValue xmi:id="_MQLd0TuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_MQLd0juYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_MQLd0zuYEem0OtLaJU4itw" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_MQLd1DuYEem0OtLaJU4itw" tag="Description" value="% Customer Individual First Name Special Characters Conformity : Check whether Customer First Name has any non-allowed special characters"/>
+    <taggedValue xmi:id="_MQLd1TuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_MQLd1juYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_MQLd1zuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_uxxsgPGpEemeArsjLNyAig" kind="Usage" supplier="_MQLd0DuYEem0OtLaJU4itw"/>
+</xmi:XMI>

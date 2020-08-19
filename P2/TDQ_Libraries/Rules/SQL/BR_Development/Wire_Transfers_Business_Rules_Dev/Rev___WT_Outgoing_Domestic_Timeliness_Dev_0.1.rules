@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_t953cAcREeqU6fl_CzgU2A" name="Rev : WT Outgoing Domestic Timeliness Dev" supplierDependency="_CWg54AcTEeqU6fl_CzgU2A" criticalityLevel="1" whereExpression="(GETTIMEINMILLIS(exportdatetime)-GETTIMEINMILLIS(origindatetime))/1000/60 > 60">
+    <taggedValue xmi:id="_t953cQcREeqU6fl_CzgU2A" tag="Status" value="development"/>
+    <taggedValue xmi:id="_t953cgcREeqU6fl_CzgU2A" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_t953cwcREeqU6fl_CzgU2A" tag="Purpose" value="Timeliness"/>
+    <taggedValue xmi:id="_t953dAcREeqU6fl_CzgU2A" tag="Description" value="% WT Outgoing Domestic Timeliness : Check to see number of Outgoing Domestic Wire Transfers taken more than 60 minutes"/>
+    <taggedValue xmi:id="_t953dQcREeqU6fl_CzgU2A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_t953dgcREeqU6fl_CzgU2A" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_t953dwcREeqU6fl_CzgU2A" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_CWg54AcTEeqU6fl_CzgU2A" kind="Usage" supplier="_t953cAcREeqU6fl_CzgU2A"/>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_f0NXsNZ8EeqOGOz3OjX5Ng" name="Rev : FB Customer Code 2 Validity Dev" criticalityLevel="1" whereExpression="TRIM(CUST_2_CDE) IS NOT NULL AND CUST_2_CDE NOT IN (SELECT CUSTOMER_CD FROM DV_REF_CUSTOMER_CODES) ">
+  <taggedValue xmi:id="_f0NXsdZ8EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_f0NXstZ8EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_f0NXs9Z8EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_f0NXtNZ8EeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Code 2 Validity : Check to see how many Customer Code 2 is valid using Reference Table, for FB Customers"/>
+  <taggedValue xmi:id="_f0NXtdZ8EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_f0NXttZ8EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_f0NXt9Z8EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

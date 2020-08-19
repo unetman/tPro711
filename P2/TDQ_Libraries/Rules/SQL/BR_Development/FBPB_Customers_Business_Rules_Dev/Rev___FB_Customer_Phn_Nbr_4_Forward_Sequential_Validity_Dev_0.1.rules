@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_mROvYNaFEeqOGOz3OjX5Ng" name="Rev : FB Customer Phn Nbr 4 Forward Sequential Validity Dev" criticalityLevel="1" whereExpression="trim(cis_ph_4_full_nbr) is not null and trim(cis_ph_4_full_nbr) like '%123456789%'">
+  <taggedValue xmi:id="_mROvYdaFEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_mROvYtaFEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_mROvY9aFEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_mROvZNaFEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Phn Nbr 4 Forward Sequential Validity : Check to see whether Customer Phone 4 Number is like '123456789%' , for FB Customers"/>
+  <taggedValue xmi:id="_mROvZdaFEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_mROvZtaFEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_mROvZ9aFEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Sz3o8L0sEemUt6IHvIMl_w" name="Rev : RL Customer Voice Length Validity" supplierDependency="_GrhDoPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="len(voice)!= 10 and voice is not null and voice != ' ' ">
+    <taggedValue xmi:id="_Sz3o8b0sEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Sz3o8r0sEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Sz3o870sEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_Sz3o9L0sEemUt6IHvIMl_w" tag="Description" value="% RL Customer Voice Length Validity : Check to see whether Residential Customer Voice Length has valid length. The Valid Length is 10"/>
+    <taggedValue xmi:id="_Sz3o9b0sEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Sz3o9r0sEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Sz3o970sEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_GrhDoPG8EemeArsjLNyAig" kind="Usage" supplier="_Sz3o8L0sEemUt6IHvIMl_w"/>
+</xmi:XMI>

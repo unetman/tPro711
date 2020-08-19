@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_-jSicOU9Eem2HcKyHEagMg" name="Rev : BC Officer Name and First Middle Last Validity Dev" supplierDependency="_0pYEwOVCEem1lvZFDxUvug" criticalityLevel="1" whereExpression="offcr_nme not like 'ZZ%'&#xD;&#xA; and trim(offcr_nme) != concat(trim(offcr_frst_nme), ' ', trim(offcr_mid_nme), ' ', trim(offcr_lst_nme))&#xD;&#xA; and trim(offcr_mid_nme) is not null">
+    <taggedValue xmi:id="_-jSiceU9Eem2HcKyHEagMg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_-jSicuU9Eem2HcKyHEagMg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_-jSic-U9Eem2HcKyHEagMg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_-jSidOU9Eem2HcKyHEagMg" tag="Description" value="% BC Officer Name and First Middle Last Name Validity : Check to see whether Officer Name is same as concatenation of First Name,Middle Name and Last Name"/>
+    <taggedValue xmi:id="_-jSideU9Eem2HcKyHEagMg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-jSiduU9Eem2HcKyHEagMg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_-jSid-U9Eem2HcKyHEagMg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0pYEwOVCEem1lvZFDxUvug" kind="Usage" supplier="_-jSicOU9Eem2HcKyHEagMg"/>
+</xmi:XMI>

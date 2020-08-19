@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_v8edkKzAEeqtYreauaMrcw" name="Rev : HR Employee Officer Number Duplicates" supplierDependency="_kfxM4KzEEeqtYreauaMrcw" criticalityLevel="1" whereExpression="trim(officer_code) in (select trim(officer_code) &#xD;&#xA;                               from dv_employees &#xD;&#xA;                              where officer_code is not null &#xD;&#xA;                              and officer_code != ' ' &#xD;&#xA;                              and trim(officer_code) != '0' &#xD;&#xA;                              and termdate is null and expiration_date is null&#xD;&#xA;                              group by officer_code having count(*) > 1)">
+    <taggedValue xmi:id="_v8edkazAEeqtYreauaMrcw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_v8edkqzAEeqtYreauaMrcw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_v8edk6zAEeqtYreauaMrcw" tag="Purpose" value="Uniqueness"/>
+    <taggedValue xmi:id="_v8edlKzAEeqtYreauaMrcw" tag="Description" value="% HR Employee Officer Number Duplicates : Check to see whether any officer Number is duplicate"/>
+    <taggedValue xmi:id="_v8edlazAEeqtYreauaMrcw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_v8edlqzAEeqtYreauaMrcw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_v8edl6zAEeqtYreauaMrcw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_kfxM4KzEEeqtYreauaMrcw" kind="Usage" supplier="_v8edkKzAEeqtYreauaMrcw"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_JlR90DuYEem0OtLaJU4itw" name="Rev : Customer Ind Birth Date Validity" supplierDependency="_uiy1UPGpEemeArsjLNyAig" criticalityLevel="1" whereExpression="TRIM(BRTH_DTE) IS NOT NULL &#xD;&#xA;AND (CURRENT_DATE() - BRTH_DTE)/365 > 100 &#xD;&#xA;AND REC_TYP_CDE = 'I'&#xD;&#xA;AND CUST_STAT_CDE != 'D' &#xD;&#xA;AND CUST_HIST_CDE != 'Y' &#xD;&#xA;AND CUST_CIS_NBR IN (SELECT distinct cust_cis_nbr FROM dv_customer_acct_daily WHERE acct_class_nme != 'MISC ACCT')&#xD;&#xA;and cust_cis_nbr in (select distinct cust_cis_nbr from dv_customer_acct_daily where cust_to_acct_rlt_role_cde not in ('051', '164','193'))">
+    <taggedValue xmi:id="_JlR90TuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_JlR90juYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_JlR90zuYEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_JlR91DuYEem0OtLaJU4itw" tag="Description" value="% Customer Individual Birth Date Validity : Check the Individual Customer's Birth Date in valid range"/>
+    <taggedValue xmi:id="_JlR91TuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_JlR91juYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_JlR91zuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_uiy1UPGpEemeArsjLNyAig" kind="Usage" supplier="_JlR90DuYEem0OtLaJU4itw"/>
+</xmi:XMI>

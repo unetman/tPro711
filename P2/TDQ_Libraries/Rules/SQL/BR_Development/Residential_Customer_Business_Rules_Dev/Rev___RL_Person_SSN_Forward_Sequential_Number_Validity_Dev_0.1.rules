@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_X2bl4L0WEemUt6IHvIMl_w" name="Rev : RL Person SSN Forward Sequential Number Validity Dev" supplierDependency="_YfAHAOqjEemUpYIfl0O09Q" criticalityLevel="1" whereExpression="(social_security_number like '%123-45-6789%'&#xD;&#xA;or social_security_number like '%234-56-7891%'&#xD;&#xA;or social_security_number like '%345-67-8912%'&#xD;&#xA;or social_security_number like '%456-78-9123%'&#xD;&#xA;or social_security_number like '%567-89-1234%'&#xD;&#xA;or social_security_number like '%678-91-2345%'&#xD;&#xA;or social_security_number like '%789-12-3456%'&#xD;&#xA;or social_security_number like '%891-23-4567%'&#xD;&#xA;or social_security_number like '%912-34-5678%')">
+    <taggedValue xmi:id="_X2bl4b0WEemUt6IHvIMl_w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_X2bl4r0WEemUt6IHvIMl_w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_X2bl470WEemUt6IHvIMl_w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_X2bl5L0WEemUt6IHvIMl_w" tag="Description" value="% RL Person SSN Forward Sequential Number Validity : Check to see whether Residential Lending - Person's SSN has forward sequential numbers, which is Invalid"/>
+    <taggedValue xmi:id="_X2bl5b0WEemUt6IHvIMl_w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_X2bl5r0WEemUt6IHvIMl_w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_X2bl570WEemUt6IHvIMl_w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_YfAHAOqjEemUpYIfl0O09Q" kind="Usage" supplier="_X2bl4L0WEemUt6IHvIMl_w"/>
+</xmi:XMI>

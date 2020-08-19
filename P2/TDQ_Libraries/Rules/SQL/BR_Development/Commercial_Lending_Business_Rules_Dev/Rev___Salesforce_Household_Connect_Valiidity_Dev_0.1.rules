@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_EwfYwA1EEeqQNv3AIsr60w" name="Rev : Salesforce Household Connect Valiidity Dev" supplierDependency="_p1tF8A1GEeqQNv3AIsr60w" criticalityLevel="1" whereExpression="linkage_count != 1">
+    <taggedValue xmi:id="_EwfYwQ1EEeqQNv3AIsr60w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_EwfYwg1EEeqQNv3AIsr60w" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_EwfYww1EEeqQNv3AIsr60w" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_EwfYxA1EEeqQNv3AIsr60w" tag="Description" value="% Salesforce Household Connect Validity : Check that Salesforce Household Connect is not 1"/>
+    <taggedValue xmi:id="_EwfYxQ1EEeqQNv3AIsr60w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_EwfYxg1EEeqQNv3AIsr60w" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_EwfYxw1EEeqQNv3AIsr60w" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_p1tF8A1GEeqQNv3AIsr60w" kind="Usage" supplier="_EwfYwA1EEeqQNv3AIsr60w"/>
+</xmi:XMI>

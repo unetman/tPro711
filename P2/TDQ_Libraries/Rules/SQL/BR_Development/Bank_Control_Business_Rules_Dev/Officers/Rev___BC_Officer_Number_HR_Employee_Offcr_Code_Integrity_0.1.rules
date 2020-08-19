@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_Ox0ioPDbEemlzsRV_s27CA" name="Rev : BC Officer Number HR Employee Offcr Code Integrity" supplierDependency="_5f5jcPGmEemeArsjLNyAig" criticalityLevel="1" whereExpression="trim(offcr_nbr) not in (select trim(officer_code) from dv_employees) and trim(offcr_nme) not like 'ZZ%';">
+    <taggedValue xmi:id="_Ox0iofDbEemlzsRV_s27CA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Ox0iovDbEemlzsRV_s27CA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_Ox0io_DbEemlzsRV_s27CA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_Ox0ipPDbEemlzsRV_s27CA" tag="Description" value="% BC Officer Number HR Employee Offcr Code Integrity : Check to see whether Bank Officer Numbers are there in HR Employees system"/>
+    <taggedValue xmi:id="_Ox0ipfDbEemlzsRV_s27CA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Ox0ipvDbEemlzsRV_s27CA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_Ox0ip_DbEemlzsRV_s27CA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_5f5jcPGmEemeArsjLNyAig" kind="Usage" supplier="_Ox0ioPDbEemlzsRV_s27CA"/>
+</xmi:XMI>

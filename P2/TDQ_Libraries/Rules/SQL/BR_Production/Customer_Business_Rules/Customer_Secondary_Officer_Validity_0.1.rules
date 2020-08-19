@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_fLAlkDuXEem0OtLaJU4itw" name="Customer Secondary Officer Validity" supplierDependency="_4BHFwAvHEeqrKojIvh1D1w" criticalityLevel="1" whereExpression="trim(scndy_offcr_nbr) is not null and scndy_offcr_nbr in (select officer_code from dv_employees where termdate is null and expiration_date is null)">
+    <taggedValue xmi:id="_fLAlkTuXEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_fLAlkjuXEem0OtLaJU4itw" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_fLAlkzuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_fLAllDuXEem0OtLaJU4itw" tag="Description" value="% Customer Secondary Officer Validity : Check to see whether Secondary Officer Numbers are valid, if present"/>
+    <taggedValue xmi:id="_fLAllTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_fLAlljuXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_fLAllzuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_4BHFwAvHEeqrKojIvh1D1w" kind="Usage" supplier="_fLAlkDuXEem0OtLaJU4itw"/>
+</xmi:XMI>

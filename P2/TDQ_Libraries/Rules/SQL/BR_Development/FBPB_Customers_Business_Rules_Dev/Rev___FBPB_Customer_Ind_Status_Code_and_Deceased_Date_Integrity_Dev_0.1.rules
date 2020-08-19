@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_GizoEI-zEeq6MKifrC4neg" name="Rev : FBPB Customer Ind Status Code and Deceased Date Integrity Dev" supplierDependency="_sttwYJ67Eeq18YfG5eKKNw" criticalityLevel="1" whereExpression="cust_stat_cde = 'D' and decd_dte != '0001-01-01' and decd_dte != '9999-12-31'">
+    <taggedValue xmi:id="_GizoEY-zEeq6MKifrC4neg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_GizoEo-zEeq6MKifrC4neg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_GizoE4-zEeq6MKifrC4neg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_GizoFI-zEeq6MKifrC4neg" tag="Description" value="% FBPB Customer Individual Status Code and Deceased Date Integrity : Check on Customer Individual Status Code and Deceased Date Integrity, for FBPB Customers"/>
+    <taggedValue xmi:id="_GizoFY-zEeq6MKifrC4neg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_GizoFo-zEeq6MKifrC4neg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_GizoF4-zEeq6MKifrC4neg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_sttwYJ67Eeq18YfG5eKKNw" kind="Usage" supplier="_GizoEI-zEeq6MKifrC4neg"/>
+</xmi:XMI>

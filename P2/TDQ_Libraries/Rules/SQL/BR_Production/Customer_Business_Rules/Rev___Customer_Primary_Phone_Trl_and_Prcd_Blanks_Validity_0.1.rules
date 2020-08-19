@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_I9csUDuZEem0OtLaJU4itw" name="Rev : Customer Primary Phone Trl and Prcd Blanks Validity" supplierDependency="_VzKaUEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="trim(prmy_ph_nbr) is not null and len(prmy_ph_nbr) != len(trim(prmy_ph_nbr))">
+    <taggedValue xmi:id="_I9csUTuZEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_I9csUjuZEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_I9csUzuZEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_I9csVDuZEem0OtLaJU4itw" tag="Description" value="% Customer Primary Phone Trailing and Preceding Blanks Validity : Check to see whether Customer Primary Phone Number has leading or trailing blank spaces"/>
+    <taggedValue xmi:id="_I9csVTuZEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_I9csVjuZEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_I9csVzuZEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_VzKaUEBWEemEnMlxCqUjoA" kind="Usage" supplier="_I9csUDuZEem0OtLaJU4itw"/>
+</xmi:XMI>

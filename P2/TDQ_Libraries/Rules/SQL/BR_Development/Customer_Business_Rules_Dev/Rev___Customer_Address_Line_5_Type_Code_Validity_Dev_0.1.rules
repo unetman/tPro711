@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_I7coMPlhEei0xu3Xsej7sQ" name="Rev : Customer Address Line 5 Type Code Validity Dev" supplierDependency="_0Sz6sCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="trim(cis_lne_5_typ_cde) is not null and cis_lne_5_typ_cde not in ('A', 'S', 'C')">
+    <taggedValue xmi:id="_I7coMflhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_I7coMvlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_I7coM_lhEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_I7coNPlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Address Line 5 Type Code Validity : Check to see whether Customer Address Line 5 Type Code is valid with the list of ('A', 'S', 'C')"/>
+    <taggedValue xmi:id="_I7coNflhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_I7coNvlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_I7coN_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0Sz6sCu9EemUO5X_bnxflQ" kind="Usage" supplier="_I7coMPlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

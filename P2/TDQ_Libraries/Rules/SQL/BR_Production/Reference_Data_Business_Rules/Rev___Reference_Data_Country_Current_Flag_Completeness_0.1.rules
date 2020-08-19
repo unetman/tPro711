@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_1POHIEHkEeqiwOU8aEetew" name="Rev : Reference Data Country Current Flag Completeness" supplierDependency="_Av-3wEHpEeqiwOU8aEetew" criticalityLevel="1" whereExpression="trim(current_flag) = ' ' or current_flag is null">
+    <taggedValue xmi:id="_1POHIUHkEeqiwOU8aEetew" tag="Status" value="development"/>
+    <taggedValue xmi:id="_1POHIkHkEeqiwOU8aEetew" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_1POHI0HkEeqiwOU8aEetew" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_1POHJEHkEeqiwOU8aEetew" tag="Description" value="% RD Country Current Flag Completeness : Check to see whether Country Current Flag is missing in Countries Reference Data"/>
+    <taggedValue xmi:id="_1POHJUHkEeqiwOU8aEetew" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_1POHJkHkEeqiwOU8aEetew" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_1POHJ0HkEeqiwOU8aEetew" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Av-3wEHpEeqiwOU8aEetew" kind="Usage" supplier="_1POHIEHkEeqiwOU8aEetew"/>
+</xmi:XMI>

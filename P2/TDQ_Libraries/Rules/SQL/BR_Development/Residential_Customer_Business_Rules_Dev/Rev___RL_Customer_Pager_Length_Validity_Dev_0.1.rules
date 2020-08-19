@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2qWSULriEemzSd7ctP39Dw" name="Rev : RL Customer Pager Length Validity Dev" supplierDependency="_MjFoQO99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="len(pager)!= 10 and pager is not null and pager != ' ' ">
+    <taggedValue xmi:id="_2qWSUbriEemzSd7ctP39Dw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2qWSUrriEemzSd7ctP39Dw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2qWSU7riEemzSd7ctP39Dw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_2qWSVLriEemzSd7ctP39Dw" tag="Description" value="% RL Customer Pager Length Validity : Check to see whether Residential Lending - Customer's Pager Length has valid length. The Valid Length is 10"/>
+    <taggedValue xmi:id="_2qWSVbriEemzSd7ctP39Dw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2qWSVrriEemzSd7ctP39Dw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2qWSV7riEemzSd7ctP39Dw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_MjFoQO99EemWeu8zCvaDhg" kind="Usage" supplier="_2qWSULriEemzSd7ctP39Dw"/>
+</xmi:XMI>

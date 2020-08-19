@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_E-jWcIllEequY4KwQ76_YQ" name="Rev : FBPB Customer Code 2 Validity Dev" supplierDependency="_TeyXkI8JEeq3kqhnn5_eCg" criticalityLevel="1" whereExpression="TRIM(CUST_2_CDE) IS NOT NULL AND CUST_2_CDE NOT IN (SELECT CUSTOMER_CD FROM DV_REF_CUSTOMER_CODES) ">
+    <taggedValue xmi:id="_E-jWcYllEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_E-jWcollEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_E-jWc4llEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_E-jWdIllEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Code 2 Validity : Check to see how many Customer Code 2 is valid using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_E-jWdYllEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_E-jWdollEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_E-jWd4llEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_TeyXkI8JEeq3kqhnn5_eCg" kind="Usage" supplier="_E-jWcIllEequY4KwQ76_YQ"/>
+</xmi:XMI>

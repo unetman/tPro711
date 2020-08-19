@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_FVkqoPDbEemlzsRV_s27CA" name="Rev : BC Officer First Name Trl or Prcd Blanks Validity" supplierDependency="_38R0kPGmEemeArsjLNyAig" criticalityLevel="1" whereExpression="len(offcr_frst_nme) != len(trim(offcr_frst_nme)) and trim(offcr_frst_nme) not like 'ZZ%'">
+    <taggedValue xmi:id="_FVkqofDbEemlzsRV_s27CA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_FVkqovDbEemlzsRV_s27CA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_FVkqo_DbEemlzsRV_s27CA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_FVkqpPDbEemlzsRV_s27CA" tag="Description" value="% BC Officer First Name Trailing or Preceding Blanks Validity : Check to see whether Bank Control Officer First Name has trailing or preceding blank spaces"/>
+    <taggedValue xmi:id="_FVkqpfDbEemlzsRV_s27CA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_FVkqpvDbEemlzsRV_s27CA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_FVkqp_DbEemlzsRV_s27CA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_38R0kPGmEemeArsjLNyAig" kind="Usage" supplier="_FVkqoPDbEemlzsRV_s27CA"/>
+</xmi:XMI>

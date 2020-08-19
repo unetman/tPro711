@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_B6zlIMEqEeq9SuuzRwvbLg" name="Rev : FBPB Customer Address Line 1 Type Code Validity" supplierDependency="_Z-PXEMF5EeqwS8SBMO_YRw" criticalityLevel="1" whereExpression="trim(cis_lne_1_typ_cde) is not null and cis_lne_1_typ_cde not in ('A', 'S', 'C')">
+    <taggedValue xmi:id="_B6zlIcEqEeq9SuuzRwvbLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_B6zlIsEqEeq9SuuzRwvbLg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_B6zlI8EqEeq9SuuzRwvbLg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_B6zlJMEqEeq9SuuzRwvbLg" tag="Description" value="% FBPB Customer Address Line 1 Type Code Validity : Check to see whether Address Line 1 Type Code is valid with the list of ('A', 'S', 'C'), for FBPB Customers"/>
+    <taggedValue xmi:id="_B6zlJcEqEeq9SuuzRwvbLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_B6zlJsEqEeq9SuuzRwvbLg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_B6zlJ8EqEeq9SuuzRwvbLg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Z-PXEMF5EeqwS8SBMO_YRw" kind="Usage" supplier="_B6zlIMEqEeq9SuuzRwvbLg"/>
+</xmi:XMI>

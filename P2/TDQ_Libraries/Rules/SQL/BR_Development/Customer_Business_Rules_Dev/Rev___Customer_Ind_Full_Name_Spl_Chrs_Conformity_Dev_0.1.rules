@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_ZXs_EC7yEemiuoPLh8etag" name="Rev : Customer Ind Full Name Spl Chrs Conformity Dev" supplierDependency="__2IOYDIgEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="(REPLACE(CIS_NME_lne_txt,char(39),'')) REGEXP_LIKE '[^A-Z-%/ &quot;!:#0-9&amp;.-]'">
+    <taggedValue xmi:id="_ZXs_ES7yEemiuoPLh8etag" tag="Status" value="development"/>
+    <taggedValue xmi:id="_ZXs_Ei7yEemiuoPLh8etag" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_ZXs_Ey7yEemiuoPLh8etag" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_ZXs_FC7yEemiuoPLh8etag" tag="Description" value="% Customer Individual Full Name Special Characters Conformity : Check to see whether Individual Customer Names have special Characters other than allowed"/>
+    <taggedValue xmi:id="_ZXs_FS7yEemiuoPLh8etag" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ZXs_Fi7yEemiuoPLh8etag" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_ZXs_Fy7yEemiuoPLh8etag" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__2IOYDIgEeqLtr0qyEBgPA" kind="Usage" supplier="_ZXs_EC7yEemiuoPLh8etag"/>
+</xmi:XMI>

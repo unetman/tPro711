@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2sAlMHsmEemyHpvMaVu4fA" name="Rev : AD Employee Number Length Conformity Dev" supplierDependency="_RsK78IumEemqveVA-Tnyjg" criticalityLevel="1" whereExpression="len(trim(emp_num)) != 6">
+    <taggedValue xmi:id="_2sAlMXsmEemyHpvMaVu4fA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2sAlMnsmEemyHpvMaVu4fA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2sAlM3smEemyHpvMaVu4fA" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_2sAlNHsmEemyHpvMaVu4fA" tag="Description" value="% AD Employee Number Length Conformity : check to see whether the employee number has valid length"/>
+    <taggedValue xmi:id="_2sAlNXsmEemyHpvMaVu4fA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2sAlNnsmEemyHpvMaVu4fA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2sAlN3smEemyHpvMaVu4fA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_RsK78IumEemqveVA-Tnyjg" kind="Usage" supplier="_2sAlMHsmEemyHpvMaVu4fA"/>
+</xmi:XMI>

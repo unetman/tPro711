@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_457yIGUpEemYn-4n0xSN1g" name="Rev : Foreclosure Date Validity Dev bkup04122019" criticalityLevel="1" whereExpression="trim(frclsr_ind) is not null and frclsr_dte = '0001-01-01' ">
+  <taggedValue xmi:id="_457yIWUpEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_457yImUpEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_457yI2UpEemYn-4n0xSN1g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_457yJGUpEemYn-4n0xSN1g" tag="Description" value="% Foreclosure Date Validity : Check to see whether Foreclosure Date is missing for valid Foreclosure Indicator"/>
+  <taggedValue xmi:id="_457yJWUpEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_457yJmUpEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_457yJ2UpEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

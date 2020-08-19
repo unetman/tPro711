@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_uPqkwB9BEemDpJqtCCYS2Q" name="Customer Birth Date Completeness ITF Beneficiaries Dev" criticalityLevel="1" whereExpression="trim(BRTH_DTE) IS NOT NULL AND CUST_CIS_NBR IN (SELECT CUST_CIS_NBR FROM DV_ALL_CUSTOMER WHERE REC_TYP_CDE = 'I')&#xD;&#xA;and cust_to_acct_rlt_role_type_cde = ">
+  <taggedValue xmi:id="_uPqkwR9BEemDpJqtCCYS2Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_uPqkwh9BEemDpJqtCCYS2Q" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_uPqkwx9BEemDpJqtCCYS2Q" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_uPqkxB9BEemDpJqtCCYS2Q" tag="Description" value="% Customer Birthdate Completeness for Individuals : Check the Individual Customer's Birth Date is missing"/>
+  <taggedValue xmi:id="_uPqkxR9BEemDpJqtCCYS2Q" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_uPqkxh9BEemDpJqtCCYS2Q" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_uPqkxx9BEemDpJqtCCYS2Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

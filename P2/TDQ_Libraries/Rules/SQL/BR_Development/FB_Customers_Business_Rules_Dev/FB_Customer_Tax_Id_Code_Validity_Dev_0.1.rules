@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_uLgUwNZ5EeqOGOz3OjX5Ng" name="FB Customer Tax Id Code Validity Dev" criticalityLevel="1" whereExpression="TRIM(CIS_TAX_ID_CDE) IS NOT NULL AND CIS_TAX_ID_CDE IN (SELECT TAX_ID_CODE FROM DV_REF_CUST_TAX_ID_CODES)">
+  <taggedValue xmi:id="_uLgUwdZ5EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_uLgUwtZ5EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_uLgUw9Z5EeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_uLgUxNZ5EeqOGOz3OjX5Ng" tag="Description" value="% FBPB Customer Tax Id Code Validity : Check to see whether Customer Tax Id Codes are valid using Reference Table, for FBPB Customers"/>
+  <taggedValue xmi:id="_uLgUxdZ5EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_uLgUxtZ5EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_uLgUx9Z5EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

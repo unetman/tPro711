@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_HO2gcPDbEemlzsRV_s27CA" name="Rev : BC Officer Last Name Spl Chrs Conformity" supplierDependency="_4NVvYPGmEemeArsjLNyAig" criticalityLevel="1" whereExpression="(REPLACE(offcr_lst_nme,char(39),'')) REGEXP_LIKE '[^A-Z-%/ &quot;!:#0-9&amp;.-]'">
+    <taggedValue xmi:id="_HO2gcfDbEemlzsRV_s27CA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_HO2gcvDbEemlzsRV_s27CA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_HO2gc_DbEemlzsRV_s27CA" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_HO2gdPDbEemlzsRV_s27CA" tag="Description" value="% BC Officer Last Name Special Characters Conformity : Check to see whether Bank Control Officer Last Name has special characters"/>
+    <taggedValue xmi:id="_HO2gdfDbEemlzsRV_s27CA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_HO2gdvDbEemlzsRV_s27CA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_HO2gd_DbEemlzsRV_s27CA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_4NVvYPGmEemeArsjLNyAig" kind="Usage" supplier="_HO2gcPDbEemlzsRV_s27CA"/>
+</xmi:XMI>

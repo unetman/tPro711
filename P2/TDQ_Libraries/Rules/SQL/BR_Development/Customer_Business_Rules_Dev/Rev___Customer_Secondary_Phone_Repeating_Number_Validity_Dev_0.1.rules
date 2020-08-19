@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_G3dsUPljEei0xu3Xsej7sQ" name="Rev : Customer Secondary Phone Repeating Number Validity Dev" supplierDependency="_So_iYDIfEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(scndy_ph_nbr) is not null and &#xD;&#xA;(trim(scndy_ph_nbr) = '0000000000' or&#xD;&#xA;trim(scndy_ph_nbr) = '0111111111' or&#xD;&#xA;trim(scndy_ph_nbr) = '02222222222' or&#xD;&#xA;trim(scndy_ph_nbr) = '03333333333' or&#xD;&#xA;trim(scndy_ph_nbr) = '04444444444' or&#xD;&#xA;trim(scndy_ph_nbr) = '05555555555' or&#xD;&#xA;trim(scndy_ph_nbr) = '06666666666' or&#xD;&#xA;trim(scndy_ph_nbr) = '07777777777' or&#xD;&#xA;trim(scndy_ph_nbr) = '08888888888' or&#xD;&#xA;trim(scndy_ph_nbr) = '09999999999' )">
+    <taggedValue xmi:id="_G3dsUfljEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_G3dsUvljEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_G3dsU_ljEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_G3dsVPljEei0xu3Xsej7sQ" tag="Description" value="% Customer Secondary Phone Repeating Number Validity : Check to see whether Customer Secondary Phone Number is valid"/>
+    <taggedValue xmi:id="_G3dsVfljEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_G3dsVvljEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_G3dsV_ljEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_So_iYDIfEeqLtr0qyEBgPA" kind="Usage" supplier="_G3dsUPljEei0xu3Xsej7sQ"/>
+</xmi:XMI>

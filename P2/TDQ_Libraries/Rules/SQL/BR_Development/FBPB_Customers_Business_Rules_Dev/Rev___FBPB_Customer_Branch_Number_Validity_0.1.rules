@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_z5k-MI8lEeq3kqhnn5_eCg" name="Rev : FBPB Customer Branch Number Validity" supplierDependency="_eYtXII-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cis_brnch_nbr) is not null and trim(cast(cis_brnch_nbr as integer)) not in (select branch_number from dv_ref_branches where current_flag = 'Y' )">
+    <taggedValue xmi:id="_z5k-MY8lEeq3kqhnn5_eCg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_z5k-Mo8lEeq3kqhnn5_eCg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_z5k-M48lEeq3kqhnn5_eCg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_z5k-NI8lEeq3kqhnn5_eCg" tag="Description" value="% FBPB Customer Branch Number Validity : Check to see whether Customer Branch Number is valid using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_z5k-NY8lEeq3kqhnn5_eCg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_z5k-No8lEeq3kqhnn5_eCg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_z5k-N48lEeq3kqhnn5_eCg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_eYtXII-8Eeq6MKifrC4neg" kind="Usage" supplier="_z5k-MI8lEeq3kqhnn5_eCg"/>
+</xmi:XMI>

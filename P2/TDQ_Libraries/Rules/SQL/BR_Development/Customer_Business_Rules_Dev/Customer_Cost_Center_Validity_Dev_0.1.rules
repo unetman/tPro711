@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_CZoWcPlgEei0xu3Xsej7sQ" name="Customer Cost Center Validity Dev" supplierDependency="_0CowsCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center)">
+    <taggedValue xmi:id="_CZoWcflgEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_CZoWcvlgEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_CZoWc_lgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_CZoWdPlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Cost Center Validity : Check to see whether Customer has got valid cost center using Reference Table"/>
+    <taggedValue xmi:id="_CZoWdflgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_CZoWdvlgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_CZoWd_lgEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0CowsCu9EemUO5X_bnxflQ" kind="Usage" supplier="_CZoWcPlgEei0xu3Xsej7sQ"/>
+</xmi:XMI>

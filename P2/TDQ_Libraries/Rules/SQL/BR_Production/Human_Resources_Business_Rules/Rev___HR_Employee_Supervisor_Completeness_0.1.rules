@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_QPE0IIxcEemXCqTWQOVr0Q" name="Rev : HR Employee Supervisor Completeness" supplierDependency="_dKWtYPGqEemeArsjLNyAig" criticalityLevel="1" whereExpression="trim(supervisor) = ' ' and empnum != '046880' ">
+    <taggedValue xmi:id="_QPE0IYxcEemXCqTWQOVr0Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_QPE0IoxcEemXCqTWQOVr0Q" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_QPE0I4xcEemXCqTWQOVr0Q" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_QPE0JIxcEemXCqTWQOVr0Q" tag="Description" value="% HR Employee Supervisor Completeness : Check to see whether HR Employee Supervisor is not missing. "/>
+    <taggedValue xmi:id="_QPE0JYxcEemXCqTWQOVr0Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_QPE0JoxcEemXCqTWQOVr0Q" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_QPE0J4xcEemXCqTWQOVr0Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_dKWtYPGqEemeArsjLNyAig" kind="Usage" supplier="_QPE0IIxcEemXCqTWQOVr0Q"/>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_v2S4ENZ4EeqOGOz3OjX5Ng" name="FB Customer Ind Mother Maiden Name Completeness Dev" criticalityLevel="1" whereExpression="trim(mthr_mdn_nme) is not null">
+  <taggedValue xmi:id="_v2S4EdZ4EeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_v2S4EtZ4EeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_v2S4E9Z4EeqOGOz3OjX5Ng" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_v2S4FNZ4EeqOGOz3OjX5Ng" tag="Description" value="% FBPB Customer Individual Mother Maiden Name Completeness : Check to see whether Individual customer Mother's maiden name is blank or null, for FBPB Customers"/>
+  <taggedValue xmi:id="_v2S4FdZ4EeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_v2S4FtZ4EeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_v2S4F9Z4EeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

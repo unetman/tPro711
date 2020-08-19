@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_pmHdEDuYEem0OtLaJU4itw" name="Rev : Customer Phn Nbr 3 and Rlt Resn Code 3 Integrity" supplierDependency="_RmwEQEBWEemEnMlxCqUjoA" criticalityLevel="1" whereExpression="cis_ph_3_full_nbr is not null and trim(cis_ph_3_rlt_resn_cde) is null">
+    <taggedValue xmi:id="_pmHdETuYEem0OtLaJU4itw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_pmHdEjuYEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_pmHdEzuYEem0OtLaJU4itw" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_pmHdFDuYEem0OtLaJU4itw" tag="Description" value="% Customer Phone Number 3 and Rlt Resn Code 3 Integrity : Check to see whether Customer Phone Number 3 and respective Relationship Reason Code is complete"/>
+    <taggedValue xmi:id="_pmHdFTuYEem0OtLaJU4itw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_pmHdFjuYEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_pmHdFzuYEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_RmwEQEBWEemEnMlxCqUjoA" kind="Usage" supplier="_pmHdEDuYEem0OtLaJU4itw"/>
+</xmi:XMI>

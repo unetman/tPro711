@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_LHP7ML6PEemMrcwlXTRSDQ" name="Rev : RL Customer Gender Code Validity Check" supplierDependency="_F2ECUPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="Sex not IN ('M', 'F', 'P', 'I', 'N')">
+    <taggedValue xmi:id="_LHP7Mb6PEemMrcwlXTRSDQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_LHP7Mr6PEemMrcwlXTRSDQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_LHP7M76PEemMrcwlXTRSDQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_LHP7NL6PEemMrcwlXTRSDQ" tag="Description" value="% RL Customer Gender Code Validity : Check to see if gender codes have valid values"/>
+    <taggedValue xmi:id="_LHP7Nb6PEemMrcwlXTRSDQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_LHP7Nr6PEemMrcwlXTRSDQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_LHP7N76PEemMrcwlXTRSDQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_F2ECUPG8EemeArsjLNyAig" kind="Usage" supplier="_LHP7ML6PEemMrcwlXTRSDQ"/>
+</xmi:XMI>

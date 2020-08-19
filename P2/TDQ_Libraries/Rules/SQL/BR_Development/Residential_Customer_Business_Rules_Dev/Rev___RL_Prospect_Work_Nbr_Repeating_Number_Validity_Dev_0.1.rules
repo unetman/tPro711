@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_BET9cOoPEem6B9cRfDaYGA" name="Rev : RL Prospect Work Nbr Repeating Number Validity Dev" supplierDependency="_XQKO8O99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="(trim(work_number) is not null) &#xD;&#xA;and TRIM(work_number) != ' ' &#xD;&#xA;and (work_number like '000000000%'&#xD;&#xA;or work_number like '111111111%'&#xD;&#xA;or work_number like '222222222%'&#xD;&#xA;or work_number like '333333333%'&#xD;&#xA;or work_number like '444444444%'&#xD;&#xA;or work_number like '555555555%'&#xD;&#xA;or work_number like '666666666%'&#xD;&#xA;or work_number like '777777777%'&#xD;&#xA;or work_number like '888888888%'&#xD;&#xA;or work_number like '999999999%') ;">
+    <taggedValue xmi:id="_BET9ceoPEem6B9cRfDaYGA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_BET9cuoPEem6B9cRfDaYGA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_BET9c-oPEem6B9cRfDaYGA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_BET9dOoPEem6B9cRfDaYGA" tag="Description" value="% RL Prospect Work Number Repeating Number Validity : Check to see whether Residential Lending - Prospect's Work Number has repeating number, which is Invalid"/>
+    <taggedValue xmi:id="_BET9deoPEem6B9cRfDaYGA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_BET9duoPEem6B9cRfDaYGA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_BET9d-oPEem6B9cRfDaYGA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_XQKO8O99EemWeu8zCvaDhg" kind="Usage" supplier="_BET9cOoPEem6B9cRfDaYGA"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_-zBMgI-fEeqVfsmI0g4Khg" name="Rev : FBPB Customer Ind Marital Status Code Completeness" supplierDependency="_Zk_7EI-9Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="REC_TYP_CDE = 'I' and TRIM(mrtl_stat_cde) IS NULL">
+    <taggedValue xmi:id="_-zBMgY-fEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_-zBMgo-fEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_-zBMg4-fEeqVfsmI0g4Khg" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_-zBMhI-fEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Individual Marital Status Code Completeness : Check to see whether Marital Status Code is present for Individual FBPB Customers"/>
+    <taggedValue xmi:id="_-zBMhY-fEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-zBMho-fEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_-zBMh4-fEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Zk_7EI-9Eeq6MKifrC4neg" kind="Usage" supplier="_-zBMgI-fEeqVfsmI0g4Khg"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_dkcmwIloEequY4KwQ76_YQ" name="Rev : FBPB Customer Org NAICS Code Validity Dev" supplierDependency="__dKqUImMEeqhe5FGsRAHRg" criticalityLevel="1" whereExpression="trim(org_naics_cde) is not null and org_naics_cde NOT in (select rightpad(naics_code, 6, '0') from dv_ref_naics)  ">
+    <taggedValue xmi:id="_dkcmwYloEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_dkcmwoloEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_dkcmw4loEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_dkcmxIloEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Organization NAICS Code Validity : Check to see whether Customer Organization NAICS Code validity, for FBPB Customers"/>
+    <taggedValue xmi:id="_dkcmxYloEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_dkcmxoloEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_dkcmx4loEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__dKqUImMEeqhe5FGsRAHRg" kind="Usage" supplier="_dkcmwIloEequY4KwQ76_YQ"/>
+</xmi:XMI>

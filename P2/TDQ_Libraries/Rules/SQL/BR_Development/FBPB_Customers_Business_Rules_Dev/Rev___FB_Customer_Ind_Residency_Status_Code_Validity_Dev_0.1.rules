@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="__BgH4NaBEeqOGOz3OjX5Ng" name="Rev : FB Customer Ind Residency Status Code Validity Dev" criticalityLevel="1" whereExpression="trim(own_rent_cde) is not null and trim(own_rent_cde) not in (select dv_ref_residency_status_codes.residency_status_code from dv_ref_residency_status_codes)">
+  <taggedValue xmi:id="__BgH4daBEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="__BgH4taBEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="__BgH49aBEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="__BgH5NaBEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer Individual Residency Status Validity : Check to see whether Customer Residency Status Code is valid using Reference Table, for FB Customers"/>
+  <taggedValue xmi:id="__BgH5daBEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="__BgH5taBEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="__BgH59aBEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

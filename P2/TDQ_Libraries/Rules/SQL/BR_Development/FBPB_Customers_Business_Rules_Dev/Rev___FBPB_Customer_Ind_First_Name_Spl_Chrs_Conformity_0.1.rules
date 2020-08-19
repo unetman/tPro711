@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2BgF0I-aEeqVfsmI0g4Khg" name="Rev : FBPB Customer Ind First Name Spl Chrs Conformity" supplierDependency="_X99r0I-9Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="(REPLACE(cis_frst_nme,char(39),'')) REGEXP_LIKE '[^A-Z-%/ &quot;!:#0-9&amp;.-]'">
+    <taggedValue xmi:id="_2BgF0Y-aEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2BgF0o-aEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_2BgF04-aEeqVfsmI0g4Khg" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_2BgF1I-aEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Individual First Name Special Characters Conformity : Check whether Customer First Name has any non-allowed special characters, for FBPB Customers"/>
+    <taggedValue xmi:id="_2BgF1Y-aEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2BgF1o-aEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2BgF14-aEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_X99r0I-9Eeq6MKifrC4neg" kind="Usage" supplier="_2BgF0I-aEeqVfsmI0g4Khg"/>
+</xmi:XMI>

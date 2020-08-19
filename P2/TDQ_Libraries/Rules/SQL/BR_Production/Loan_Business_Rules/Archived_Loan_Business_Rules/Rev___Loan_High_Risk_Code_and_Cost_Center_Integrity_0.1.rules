@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_0VkQUF0sEemj9s3KLP4KwA" name="Rev : Loan High Risk Code and Cost Center Integrity" supplierDependency="_jDMV0HmuEeqCgOfbbhT6Gw" criticalityLevel="1" whereExpression="cst_cntr_nbr != 0 and high_risk_cde is not null and trim(high_risk_cde) || trim(cst_cntr_nbr) not in (select high_risk_cde || cst_cntr_nbr from dv_ref_ln_cst_cntr_high_risk_codes)">
+    <taggedValue xmi:id="_0VkQUV0sEemj9s3KLP4KwA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_0Vk3YF0sEemj9s3KLP4KwA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_0Vk3YV0sEemj9s3KLP4KwA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_0Vk3Yl0sEemj9s3KLP4KwA" tag="Description" value="% Loan High Risk Code and Cost Center Integrity : Check to see whether the Hight Risk Code and Cost Center Integrity is valid"/>
+    <taggedValue xmi:id="_0Vk3Y10sEemj9s3KLP4KwA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_0Vk3ZF0sEemj9s3KLP4KwA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_0Vk3ZV0sEemj9s3KLP4KwA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_jDMV0HmuEeqCgOfbbhT6Gw" kind="Usage" supplier="_0VkQUF0sEemj9s3KLP4KwA"/>
+</xmi:XMI>

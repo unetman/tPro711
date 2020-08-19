@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_aXyt8PDgEemdN5tOU9BUkA" name="Rev : RL Prospect Fax Forward Sequential Validity" supplierDependency="_OSOWUPG8EemeArsjLNyAig" criticalityLevel="1" whereExpression="(trim(fax) is not null) &#xD;&#xA;and TRIM(fax) != ' ' &#xD;&#xA;and (fax like '123456789%'&#xD;&#xA;or fax like '23456789%'&#xD;&#xA;or fax like '3456789012%'&#xD;&#xA;or fax like '4567890123%'&#xD;&#xA;or fax like '5678901234%'&#xD;&#xA;or fax like '6789012345%'&#xD;&#xA;or fax like '7890123456%'&#xD;&#xA;or fax like '8901234567%'&#xD;&#xA;or fax like '9012345678%') ;">
+    <taggedValue xmi:id="_aXyt8fDgEemdN5tOU9BUkA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_aXyt8vDgEemdN5tOU9BUkA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_aXyt8_DgEemdN5tOU9BUkA" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_aXyt9PDgEemdN5tOU9BUkA" tag="Description" value="% RL Prospect Fax Forward Sequential Validity : Check to see whether Residential Lending -Prospect's Fax has Forward Sequential Number, which is Invalid"/>
+    <taggedValue xmi:id="_aXyt9fDgEemdN5tOU9BUkA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_aXyt9vDgEemdN5tOU9BUkA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_aXyt9_DgEemdN5tOU9BUkA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_OSOWUPG8EemeArsjLNyAig" kind="Usage" supplier="_aXyt8PDgEemdN5tOU9BUkA"/>
+</xmi:XMI>

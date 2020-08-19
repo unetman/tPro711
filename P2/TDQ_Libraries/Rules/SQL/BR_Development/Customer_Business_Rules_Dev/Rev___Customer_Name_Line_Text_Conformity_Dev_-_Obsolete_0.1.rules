@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_9U-e4PlhEei0xu3Xsej7sQ" name="Rev : Customer Name Line Text Conformity Dev - Obsolete" supplierDependency="_0vTCYCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="trim(cis_nme_lne_txt) like '[a-z]'">
+    <taggedValue xmi:id="_9U-e4flhEei0xu3Xsej7sQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_9U-e4vlhEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_9U-e4_lhEei0xu3Xsej7sQ" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_9U-e5PlhEei0xu3Xsej7sQ" tag="Description" value="% Customer Name Line Text Conformity : Check to see whether Customer Name Line Text has Lower case characters"/>
+    <taggedValue xmi:id="_9U-e5flhEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_9U-e5vlhEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_9U-e5_lhEei0xu3Xsej7sQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0vTCYCu9EemUO5X_bnxflQ" kind="Usage" supplier="_9U-e4PlhEei0xu3Xsej7sQ"/>
+</xmi:XMI>

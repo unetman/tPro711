@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_kvLmsBUKEeqCq7mdZ8191g" name="Rev : Salesforce Household Role Completeness" criticalityLevel="1" whereExpression="trim(household_role) = '' ">
+  <taggedValue xmi:id="_kvLmsRUKEeqCq7mdZ8191g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_kvLmshUKEeqCq7mdZ8191g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_kvLmsxUKEeqCq7mdZ8191g" tag="Purpose" value="Completeness"/>
+  <taggedValue xmi:id="_kvLmtBUKEeqCq7mdZ8191g" tag="Description" value="% Salesforce Household Role Completeness : Check to see whether Salesforce Household Role is missing."/>
+  <taggedValue xmi:id="_kvLmtRUKEeqCq7mdZ8191g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_kvLmthUKEeqCq7mdZ8191g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_kvLmtxUKEeqCq7mdZ8191g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

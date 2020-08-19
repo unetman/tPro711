@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="__x0P8GUpEemYn-4n0xSN1g" name="Rev : Risk Rating Code Validity Dev bkup04122019" criticalityLevel="1" whereExpression="ln_cat_cde = 'C' and risk_rtg_cde not in ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10') ">
+  <taggedValue xmi:id="__x0P8WUpEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="__x0P8mUpEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="__x0P82UpEemYn-4n0xSN1g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="__x0P9GUpEemYn-4n0xSN1g" tag="Description" value="% Risk Rating Code Validity : Check to see whether Risk Rating Codes are valid for Category C Loans"/>
+  <taggedValue xmi:id="__x0P9WUpEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="__x0P9mUpEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="__x0P92UpEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

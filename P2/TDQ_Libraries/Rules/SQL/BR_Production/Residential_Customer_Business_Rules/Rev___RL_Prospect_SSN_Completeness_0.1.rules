@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_NuUTMNBDEeqI8r1yOzFdZg" name="Rev : RL Prospect SSN Completeness" supplierDependency="_0k3TwNBIEeqI8r1yOzFdZg" criticalityLevel="1" whereExpression="(social_security_number is null or social_security_number = ' ')">
+    <taggedValue xmi:id="_NuUTMdBDEeqI8r1yOzFdZg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_NuUTMtBDEeqI8r1yOzFdZg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_NuUTM9BDEeqI8r1yOzFdZg" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_NuUTNNBDEeqI8r1yOzFdZg" tag="Description" value="% RL Prospect Social Security Number Completeness : Check to see whether Residential Lending - Prospect Social Security Number is missing. "/>
+    <taggedValue xmi:id="_NuUTNdBDEeqI8r1yOzFdZg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_NuUTNtBDEeqI8r1yOzFdZg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_NuUTN9BDEeqI8r1yOzFdZg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_0k3TwNBIEeqI8r1yOzFdZg" kind="Usage" supplier="_NuUTMNBDEeqI8r1yOzFdZg"/>
+</xmi:XMI>

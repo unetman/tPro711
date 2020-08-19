@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_P3tIkJcdEeiN79hDk23PtQ" name="PRMY_OFFCR_NBR NULL" supplierDependency="_jDXPs5ceEeiN79hDk23PtQ" criticalityLevel="1" whereExpression="PRMY_OFFCR_NBR IS NULL">
+    <taggedValue xmi:id="_P3tIkZcdEeiN79hDk23PtQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_P3tIkpcdEeiN79hDk23PtQ" tag="Author" value="Kadhirvelu.Ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_P3tIk5cdEeiN79hDk23PtQ" tag="Purpose" value="Business Rule for Customers to check for Null on Primary Officer Number"/>
+    <taggedValue xmi:id="_P3tIlJcdEeiN79hDk23PtQ" tag="Description" value="Business Rule for Customers to check for Null on Primary Officer Number"/>
+    <taggedValue xmi:id="_P3tIlZcdEeiN79hDk23PtQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_P3tIlpcdEeiN79hDk23PtQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_P3tIl5cdEeiN79hDk23PtQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_jDXPs5ceEeiN79hDk23PtQ" kind="Usage" supplier="_P3tIkJcdEeiN79hDk23PtQ"/>
+</xmi:XMI>

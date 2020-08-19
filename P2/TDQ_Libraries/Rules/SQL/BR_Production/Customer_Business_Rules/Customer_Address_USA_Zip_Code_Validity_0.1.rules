@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_MrZ2sDuXEem0OtLaJU4itw" name="Customer Address USA Zip Code Validity" criticalityLevel="1" whereExpression="trim(cis_zip_5_cde) is not null and trim(cis_ctry_cde) = 'USA' and trim(cis_zip_5_cde) in (select zipcode from dv_ref_us_postal_codes)">
+  <taggedValue xmi:id="_MrZ2sTuXEem0OtLaJU4itw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_MrZ2sjuXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_MrZ2szuXEem0OtLaJU4itw" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_MrZ2tDuXEem0OtLaJU4itw" tag="Description" value="% Customer Address USA Zip Code Validity : Check to see whether USA Zip Codes are valid"/>
+  <taggedValue xmi:id="_MrZ2tTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_MrZ2tjuXEem0OtLaJU4itw" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_MrZ2tzuXEem0OtLaJU4itw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

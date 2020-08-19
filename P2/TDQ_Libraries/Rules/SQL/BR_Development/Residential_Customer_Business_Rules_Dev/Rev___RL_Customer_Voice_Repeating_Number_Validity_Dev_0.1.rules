@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_1HN3QLoUEemwNKvFfHKq8A" name="Rev : RL Customer Voice Repeating Number Validity Dev" supplierDependency="_NMLBgO99EemWeu8zCvaDhg" criticalityLevel="1" whereExpression="(trim(voice) is not null) &#xD;&#xA;and TRIM(voice) != ' ' &#xD;&#xA;and (voice like '000000000%'&#xD;&#xA;or voice like '111111111%'&#xD;&#xA;or voice like '222222222%'&#xD;&#xA;or voice like '333333333%'&#xD;&#xA;or voice like '444444444%'&#xD;&#xA;or voice like '555555555%'&#xD;&#xA;or voice like '666666666%'&#xD;&#xA;or voice like '777777777%'&#xD;&#xA;or voice like '888888888%'&#xD;&#xA;or voice like '999999999%') ;">
+    <taggedValue xmi:id="_1HN3QboUEemwNKvFfHKq8A" tag="Status" value="development"/>
+    <taggedValue xmi:id="_1HN3QroUEemwNKvFfHKq8A" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_1HN3Q7oUEemwNKvFfHKq8A" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_1HN3RLoUEemwNKvFfHKq8A" tag="Description" value="% RL Customer Voice Repeating Number Validity : Check to see whether Residential Lending - Customer's Voice has repeating number, which is Invalid"/>
+    <taggedValue xmi:id="_1HN3RboUEemwNKvFfHKq8A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_1HN3RroUEemwNKvFfHKq8A" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_1HN3R7oUEemwNKvFfHKq8A" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_NMLBgO99EemWeu8zCvaDhg" kind="Usage" supplier="_1HN3QLoUEemwNKvFfHKq8A"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__1ZQAF00Eemj9s3KLP4KwA" name="Rev : Ln Bkrptcy Dt and Bkrptcy Cde Integrity Dev" supplierDependency="_NN9EILrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="trim(bkrpt_cde) is not null and trim(bkrpt_cde) != 0 and bkrpt_fil_dte = '0001-01-01 00:00:00'">
+    <taggedValue xmi:id="__1ZQAV00Eemj9s3KLP4KwA" tag="Status" value="development"/>
+    <taggedValue xmi:id="__1ZQAl00Eemj9s3KLP4KwA" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="__1ZQA100Eemj9s3KLP4KwA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="__1ZQBF00Eemj9s3KLP4KwA" tag="Description" value="% Loan Bankruptcy Date and Bankruptcy Code Integrity: Check to see whether Bankruptcy Date is present when Bankruptcy Code is present"/>
+    <taggedValue xmi:id="__1ZQBV00Eemj9s3KLP4KwA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__1ZQBl00Eemj9s3KLP4KwA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__1ZQB100Eemj9s3KLP4KwA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_NN9EILrNEemDOqp3RrQ-hA" kind="Usage" supplier="__1ZQAF00Eemj9s3KLP4KwA"/>
+</xmi:XMI>

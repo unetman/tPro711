@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_XJXH4C-lEemPg4zHY71JtQ" name="Rev : Customer Ind First Name Trl or Prcd Blanks Validity Dev" supplierDependency="__iPCADIgEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(cis_frst_nme)is not null and LEN(cis_frst_nme) != LEN(TRIM(cis_frst_nme))">
+    <taggedValue xmi:id="_XJXH4S-lEemPg4zHY71JtQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_XJXH4i-lEemPg4zHY71JtQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_XJXH4y-lEemPg4zHY71JtQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_XJXH5C-lEemPg4zHY71JtQ" tag="Description" value="% Customer Individual First Name Trailing or Preceding Blanks Validity : Check to see whether Customer First Name has trailing or preceding blanks"/>
+    <taggedValue xmi:id="_XJXH5S-lEemPg4zHY71JtQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_XJXH5i-lEemPg4zHY71JtQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_XJXH5y-lEemPg4zHY71JtQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="__iPCADIgEeqLtr0qyEBgPA" kind="Usage" supplier="_XJXH4C-lEemPg4zHY71JtQ"/>
+</xmi:XMI>

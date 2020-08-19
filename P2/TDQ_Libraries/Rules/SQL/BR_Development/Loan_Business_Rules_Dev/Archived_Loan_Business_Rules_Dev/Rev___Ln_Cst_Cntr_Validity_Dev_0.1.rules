@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_2tXBoFoMEemfAI-V1n9dXw" name="Rev : Ln Cst Cntr Validity Dev" supplierDependency="_MZIU8LrNEemDOqp3RrQ-hA" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center where lower(cost_center_desc) like '%closed%')">
+    <taggedValue xmi:id="_2tXBoVoMEemfAI-V1n9dXw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2tXBoloMEemfAI-V1n9dXw" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
+    <taggedValue xmi:id="_2tXBo1oMEemfAI-V1n9dXw" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_2tXBpFoMEemfAI-V1n9dXw" tag="Description" value="% Loan Cost Center Validity : Check to see whether Loan Account has got valid cost center using Reference Table"/>
+    <taggedValue xmi:id="_2tXBpVoMEemfAI-V1n9dXw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2tXBploMEemfAI-V1n9dXw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_2tXBp1oMEemfAI-V1n9dXw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_MZIU8LrNEemDOqp3RrQ-hA" kind="Usage" supplier="_2tXBoFoMEemfAI-V1n9dXw"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_nRUuAIljEequY4KwQ76_YQ" name="Rev : FBPB Customer Address Line 5 Type and Text 5 Integrity Dev" supplierDependency="_x_Pw4J66Eeq18YfG5eKKNw" criticalityLevel="1" whereExpression="trim(cis_addr_lne_5_txt) is not null and trim(cis_lne_5_typ_cde) is null">
+    <taggedValue xmi:id="_nRUuAYljEequY4KwQ76_YQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_nRUuAoljEequY4KwQ76_YQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_nRUuA4ljEequY4KwQ76_YQ" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_nRUuBIljEequY4KwQ76_YQ" tag="Description" value="% FBPB Customer Address Line 5 Type and Text 5 Integrity : Check to see whether Customer Address Line 5 Type Code is null or blank if Address Line 5 Text has value, for FBPB Customers"/>
+    <taggedValue xmi:id="_nRUuBYljEequY4KwQ76_YQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_nRUuBoljEequY4KwQ76_YQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_nRUuB4ljEequY4KwQ76_YQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_x_Pw4J66Eeq18YfG5eKKNw" kind="Usage" supplier="_nRUuAIljEequY4KwQ76_YQ"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_q7wHUDn4EemNNKD-NCmLaw" name="Customer Ind Last Name Completeness" supplierDependency="_uPfe0PGpEemeArsjLNyAig" criticalityLevel="1" whereExpression="trim(cis_lst_nme) is not null ">
+    <taggedValue xmi:id="_q7wHUTn4EemNNKD-NCmLaw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_q7wHUjn4EemNNKD-NCmLaw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_q7wHUzn4EemNNKD-NCmLaw" tag="Purpose" value="Completeness"/>
+    <taggedValue xmi:id="_q7wHVDn4EemNNKD-NCmLaw" tag="Description" value="% Customer Individual Last Name Completeness : Check to see whether Individual Customer has Last Name"/>
+    <taggedValue xmi:id="_q7wHVTn4EemNNKD-NCmLaw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_q7wHVjn4EemNNKD-NCmLaw" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_q7wHVzn4EemNNKD-NCmLaw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_uPfe0PGpEemeArsjLNyAig" kind="Usage" supplier="_q7wHUDn4EemNNKD-NCmLaw"/>
+</xmi:XMI>

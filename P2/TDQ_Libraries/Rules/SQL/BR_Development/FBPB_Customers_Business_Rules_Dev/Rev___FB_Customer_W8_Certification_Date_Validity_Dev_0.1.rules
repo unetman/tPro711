@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_lWalkNaIEeqOGOz3OjX5Ng" name="Rev : FB Customer W8 Certification Date Validity Dev" criticalityLevel="1" whereExpression="w8_cert_dte is not null and w8_cert_dte != '0001-01-01' and ((current_date() - w8_cert_dte) /365) > 100">
+  <taggedValue xmi:id="_lWalkdaIEeqOGOz3OjX5Ng" tag="Status" value="development"/>
+  <taggedValue xmi:id="_lWalktaIEeqOGOz3OjX5Ng" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_lWalk9aIEeqOGOz3OjX5Ng" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_lWallNaIEeqOGOz3OjX5Ng" tag="Description" value="% FB Customer W8 Certification Date Validity : Check to see whether W8 Certification Date is valid, if present with non default, for FB Customers"/>
+  <taggedValue xmi:id="_lWalldaIEeqOGOz3OjX5Ng" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_lWalltaIEeqOGOz3OjX5Ng" tag="Validation_Status" value="true"/>
+  <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_lWall9aIEeqOGOz3OjX5Ng" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

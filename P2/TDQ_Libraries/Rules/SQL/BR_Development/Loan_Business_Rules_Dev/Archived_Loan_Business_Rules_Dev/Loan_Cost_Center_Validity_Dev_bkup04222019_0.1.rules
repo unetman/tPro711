@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_rHQ3AGUqEemYn-4n0xSN1g" name="Loan Cost Center Validity Dev bkup04222019" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center)">
+  <taggedValue xmi:id="_rHQ3AWUqEemYn-4n0xSN1g" tag="Status" value="development"/>
+  <taggedValue xmi:id="_rHQ3AmUqEemYn-4n0xSN1g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+  <taggedValue xmi:id="_rHQ3A2UqEemYn-4n0xSN1g" tag="Purpose" value="Validity"/>
+  <taggedValue xmi:id="_rHQ3BGUqEemYn-4n0xSN1g" tag="Description" value="% Loan Cost Center Validity : Check to see whether Loan Account has got valid cost center using Reference Table"/>
+  <taggedValue xmi:id="_rHQ3BWUqEemYn-4n0xSN1g" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_rHQ3BmUqEemYn-4n0xSN1g" tag="Validation_Status" value="true"/>
+  <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_rHQ3B2UqEemYn-4n0xSN1g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

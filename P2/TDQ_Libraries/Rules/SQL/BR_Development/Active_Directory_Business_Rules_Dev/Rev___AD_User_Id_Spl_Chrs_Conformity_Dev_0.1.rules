@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_7qw-MHsmEemyHpvMaVu4fA" name="Rev : AD User Id Spl Chrs Conformity Dev" supplierDependency="_RzuVcIumEemqveVA-Tnyjg" criticalityLevel="1" whereExpression="user_id REGEXP_LIKE '[^a-z_A-Z- 0-9-]'">
+    <taggedValue xmi:id="_7qw-MXsmEemyHpvMaVu4fA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_7qw-MnsmEemyHpvMaVu4fA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_7qw-M3smEemyHpvMaVu4fA" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="_7qw-NHsmEemyHpvMaVu4fA" tag="Description" value="% AD user Id Special Character Conformity : Check to see whether the Active Directory User Id has any special characters"/>
+    <taggedValue xmi:id="_7qw-NXsmEemyHpvMaVu4fA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_7qw-NnsmEemyHpvMaVu4fA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_7qw-N3smEemyHpvMaVu4fA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_RzuVcIumEemqveVA-Tnyjg" kind="Usage" supplier="_7qw-MHsmEemyHpvMaVu4fA"/>
+</xmi:XMI>

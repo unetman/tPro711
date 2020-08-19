@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="__Syz0HsxEemu-btWfnVaaA" name="Rev : HR Employee Phone Number Special Characters Conformity" supplierDependency="_c8xkYPGqEemeArsjLNyAig" criticalityLevel="1" whereExpression="phone REGEXP_LIKE '[^0-9]'">
+    <taggedValue xmi:id="__Syz0XsxEemu-btWfnVaaA" tag="Status" value="development"/>
+    <taggedValue xmi:id="__Syz0nsxEemu-btWfnVaaA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="__Syz03sxEemu-btWfnVaaA" tag="Purpose" value="Conformity"/>
+    <taggedValue xmi:id="__Syz1HsxEemu-btWfnVaaA" tag="Description" value="% HR Employee Phone Number Special Character Conformity : Check to see whether HR Employee Phone Number has any Special Characters"/>
+    <taggedValue xmi:id="__Syz1XsxEemu-btWfnVaaA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__Syz1nsxEemu-btWfnVaaA" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="__Syz13sxEemu-btWfnVaaA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_c8xkYPGqEemeArsjLNyAig" kind="Usage" supplier="__Syz0HsxEemu-btWfnVaaA"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_McWKYLq0EemFfc16fyufOQ" name="Rev : Ln All Liability Code Length Validity Dev" supplierDependency="_AxONwLq5EemFfc16fyufOQ" criticalityLevel="1" whereExpression="len(coll_cde) != 2">
+    <taggedValue xmi:id="_McWKYbq0EemFfc16fyufOQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_McWKYrq0EemFfc16fyufOQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_McWKY7q0EemFfc16fyufOQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_McWKZLq0EemFfc16fyufOQ" tag="Description" value="% Ln All Liability Code Length Validity : Check to see whether Loan Liability Code has valid length for All Customers. The valid length is 2."/>
+    <taggedValue xmi:id="_McWKZbq0EemFfc16fyufOQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_McWKZrq0EemFfc16fyufOQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_McWKZ7q0EemFfc16fyufOQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_AxONwLq5EemFfc16fyufOQ" kind="Usage" supplier="_McWKYLq0EemFfc16fyufOQ"/>
+</xmi:XMI>

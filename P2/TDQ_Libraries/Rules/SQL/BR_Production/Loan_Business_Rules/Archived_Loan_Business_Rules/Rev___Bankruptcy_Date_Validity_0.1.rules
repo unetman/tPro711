@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_d5WdwEc6Eemhuf5XDidYwQ" name="Rev : Bankruptcy Date Validity" supplierDependency="_g9hDQF08Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="bkrpt_fil_dte > current_date()">
+    <taggedValue xmi:id="_d5WdwUc6Eemhuf5XDidYwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_d5Wdwkc6Eemhuf5XDidYwQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_d5Wdw0c6Eemhuf5XDidYwQ" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_d5WdxEc6Eemhuf5XDidYwQ" tag="Description" value="% Bankruptcy Date Validity : Bankruptcy Date should not be future date"/>
+    <taggedValue xmi:id="_d5WdxUc6Eemhuf5XDidYwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_d5Wdxkc6Eemhuf5XDidYwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_d5Wdx0c6Eemhuf5XDidYwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_g9hDQF08Eemj9s3KLP4KwA" kind="Usage" supplier="_d5WdwEc6Eemhuf5XDidYwQ"/>
+</xmi:XMI>

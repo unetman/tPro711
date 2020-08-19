@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_SGdu8I-nEeqVfsmI0g4Khg" name="Rev : FBPB Customer Phn Rlt Resn Code 1 and Phn Nbr 1 Integrity" supplierDependency="_kDB1oI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="cis_ph_1_rlt_resn_cde is not null and trim(cis_ph_1_full_nbr) is null">
+    <taggedValue xmi:id="_SGdu8Y-nEeqVfsmI0g4Khg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_SGdu8o-nEeqVfsmI0g4Khg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_SGdu84-nEeqVfsmI0g4Khg" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_SGdu9I-nEeqVfsmI0g4Khg" tag="Description" value="% FBPB Customer Phone Rlt Resn Code 1 and Phone Number 1 Integrity : Check to see whether any Phone Rlt Resn Code exists without Phone 1 Number, for FBPB Customers"/>
+    <taggedValue xmi:id="_SGdu9Y-nEeqVfsmI0g4Khg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_SGdu9o-nEeqVfsmI0g4Khg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_SGdu94-nEeqVfsmI0g4Khg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_kDB1oI-8Eeq6MKifrC4neg" kind="Usage" supplier="_SGdu8I-nEeqVfsmI0g4Khg"/>
+</xmi:XMI>

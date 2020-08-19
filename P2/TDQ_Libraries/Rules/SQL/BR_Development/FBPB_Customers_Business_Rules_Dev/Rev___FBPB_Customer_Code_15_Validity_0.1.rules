@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_8A-jII8lEeq3kqhnn5_eCg" name="Rev : FBPB Customer Code 15 Validity" supplierDependency="_fTDfgI-8Eeq6MKifrC4neg" criticalityLevel="1" whereExpression="trim(cust_15_cde) is not null and CUST_15_CDE not IN (SELECT CUSTOMER_CD FROM DV_REF_CUSTOMER_CODES) ">
+    <taggedValue xmi:id="_8A-jIY8lEeq3kqhnn5_eCg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_8A-jIo8lEeq3kqhnn5_eCg" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_8A-jI48lEeq3kqhnn5_eCg" tag="Purpose" value="Validity"/>
+    <taggedValue xmi:id="_8A-jJI8lEeq3kqhnn5_eCg" tag="Description" value="% FBPB Customer Code 15 Validity : Check to see whether Customer code 15 is valid using Reference Table, for FBPB Customers"/>
+    <taggedValue xmi:id="_8A-jJY8lEeq3kqhnn5_eCg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_8A-jJo8lEeq3kqhnn5_eCg" tag="Validation_Status" value="true"/>
+    <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_8A-jJ48lEeq3kqhnn5_eCg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_fTDfgI-8Eeq6MKifrC4neg" kind="Usage" supplier="_8A-jII8lEeq3kqhnn5_eCg"/>
+</xmi:XMI>
