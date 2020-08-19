@@ -2,8 +2,8 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.rules:WhereRule xmi:id="_xqLDAHsmEemyHpvMaVu4fA" name="Rev : AD Contractor and Employee Number Integrity Dev" supplierDependency="_RcPpkIumEemqveVA-Tnyjg" criticalityLevel="1" whereExpression="trim(user_nm) like '1%' and trim(emp_num) is not null">
     <taggedValue xmi:id="_xqLDAXsmEemyHpvMaVu4fA" tag="Status" value="development"/>
-    <taggedValue xmi:id="_xqLDAnsmEemyHpvMaVu4fA" tag="Author" value="vivek.jayapalan@seacoastbank.com"/>
-    <taggedValue xmi:id="_xqLDA3smEemyHpvMaVu4fA" tag="Purpose" value="Integrity"/>
+    <taggedValue xmi:id="_xqLDAnsmEemyHpvMaVu4fA" tag="Author" value="b@b.cn"/>
+    <taggedValue xmi:id="_xqLDA3smEemyHpvMaVu4fA" tag="Purpose" value="Integrityff  "/>
     <taggedValue xmi:id="_xqLDBHsmEemyHpvMaVu4fA" tag="Description" value="% AD Contractor and Employee Number Integrity : Check to see whether contractors have Employee number"/>
     <taggedValue xmi:id="_xqLDBXsmEemyHpvMaVu4fA" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_xqLDBnsmEemyHpvMaVu4fA" tag="Validation_Status" value="true"/>
