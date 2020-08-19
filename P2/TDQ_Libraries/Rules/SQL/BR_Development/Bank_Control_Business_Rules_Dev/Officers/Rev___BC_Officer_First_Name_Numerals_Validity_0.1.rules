@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_DxC80PDbEemlzsRV_s27CA" name="Rev : BC Officer First Name Numerals Validity" supplierDependency="_3qrHMPGmEemeArsjLNyAig" criticalityLevel="1" whereExpression="trim(offcr_frst_nme) is not null and trim(offcr_frst_nme) regexp_like '[0-9]' and trim(offcr_frst_nme) not like 'ZZ%'">
+  <dataquality.rules:WhereRule xmi:id="_DxC80PDbEemlzsRV_s27CA" name="Rev : BC Officer First Name Numerals Validity" supplierDependency="_3qrHMPGmEemeArsjLNyAig" criticalityLevel="1" whereExpression="trim(offcr_frst_nme) is not null and trim(offcr_frst_nme) regexp_like '[0-9]' and trim(offcr_frst_nme) not like 'ZZ%'hkjjkhkj   ">
     <taggedValue xmi:id="_DxDj4PDbEemlzsRV_s27CA" tag="Status" value="development"/>
-    <taggedValue xmi:id="_DxDj4fDbEemlzsRV_s27CA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_DxDj4fDbEemlzsRV_s27CA" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_DxDj4vDbEemlzsRV_s27CA" tag="Purpose" value="Validity"/>
     <taggedValue xmi:id="_DxDj4_DbEemlzsRV_s27CA" tag="Description" value="% BC Officer First Name Numerals Validity : Check to see whether Bank Control Officer First Name has any numbers (since it is stored as string)"/>
     <taggedValue xmi:id="_DxDj5PDbEemlzsRV_s27CA" tag="Version" value="0.1"/>
