@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_EEq78PlgEei0xu3Xsej7sQ" name="Customer Email Indicator Validity Dev" criticalityLevel="1" whereExpression="email_ind in ('Y', 'N').    ">
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_EEq78PlgEei0xu3Xsej7sQ" name="Customer Email Indicator Validity Dev" criticalityLevel="1" whereExpression="email_ind in ('Y', 'N')">
   <taggedValue xmi:id="_EErjAPlgEei0xu3Xsej7sQ" tag="Status" value="development"/>
   <taggedValue xmi:id="_EErjAflgEei0xu3Xsej7sQ" tag="Author" value="b@b.cn"/>
   <taggedValue xmi:id="_EErjAvlgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
