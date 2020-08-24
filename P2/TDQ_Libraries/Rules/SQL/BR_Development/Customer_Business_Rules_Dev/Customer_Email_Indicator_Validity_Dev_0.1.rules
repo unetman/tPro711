@@ -3,7 +3,7 @@
   <taggedValue xmi:id="_EErjAPlgEei0xu3Xsej7sQ" tag="Status" value="development"/>
   <taggedValue xmi:id="_EErjAflgEei0xu3Xsej7sQ" tag="Author" value="b@b.cn"/>
   <taggedValue xmi:id="_EErjAvlgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
-  <taggedValue xmi:id="_EErjA_lgEei0xu3Xsej7sQ" tag="Description" value="% Customer Email Indicator Validity : Check to see whether Email Indicator has valid values. "/>
+  <taggedValue xmi:id="_EErjA_lgEei0xu3Xsej7sQ" tag="Description" value="% Customer Email Indicator Validity : Check to see whether Email Indicator has valid values.   "/>
   <taggedValue xmi:id="_EErjBPlgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
   <taggedValue xmi:id="_EErjBflgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
   <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
