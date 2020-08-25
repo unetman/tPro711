@@ -20,14 +20,71 @@
     <ownedElement label="view_customer" name="view_customer" tableType="VIEW" xmi:id="_0KSDYuarEeq8o69WdEN03A" xsi:type="relational:TdView">
       <taggedValue tag="Comment" value="VIEW" xmi:id="_0KSDY-arEeq8o69WdEN03A"/>
     </ownedElement>
+    <ownedElement id="_2Fa6YOarEeq8o69WdEN03A" label="TDQ18439" name="TDQ18439" tableType="TABLE" xmi:id="_2F7QsearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QsuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FcvkOarEeq8o69WdEN03A" label="company" name="company" tableType="TABLE" xmi:id="_2F7Qs-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QtOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FekwOarEeq8o69WdEN03A" label="company_unique" name="company_unique" tableType="TABLE" xmi:id="_2F7QtearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QtuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FgZ8OarEeq8o69WdEN03A" label="customer" name="customer" tableType="TABLE" xmi:id="_2F7Qt-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QuOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FiPIOarEeq8o69WdEN03A" label="customer_unique" name="customer_unique" tableType="TABLE" xmi:id="_2F7QuearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QuuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FkEUOarEeq8o69WdEN03A" label="customer_unique111" name="customer_unique111" tableType="TABLE" xmi:id="_2F7Qu-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QvOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FlScOarEeq8o69WdEN03A" label="customer_unique_0213" name="customer_unique_0213" tableType="TABLE" xmi:id="_2F7QvearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QvuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FnHoOarEeq8o69WdEN03A" label="customer_unique_2" name="customer_unique_2" tableType="TABLE" xmi:id="_2F7Qv-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QwOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2Fo80OarEeq8o69WdEN03A" label="customer_unique_3" name="customer_unique_3" tableType="TABLE" xmi:id="_2F7QwearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QwuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FqyAOarEeq8o69WdEN03A" label="customer_unique_4" name="customer_unique_4" tableType="TABLE" xmi:id="_2F7Qw-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QxOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FsnMOarEeq8o69WdEN03A" label="customer_unique_5" name="customer_unique_5" tableType="TABLE" xmi:id="_2F7QxearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QxuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FucYOarEeq8o69WdEN03A" label="customer_uniqueaa" name="customer_uniqueaa" tableType="TABLE" xmi:id="_2F7Qx-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QyOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FwRkOarEeq8o69WdEN03A" label="employee" name="employee" tableType="TABLE" xmi:id="_2F7QyearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QyuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2FyGwOarEeq8o69WdEN03A" label="matching_function" name="matching_function" tableType="TABLE" xmi:id="_2F7Qy-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QzOarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2Fz78OarEeq8o69WdEN03A" label="product" name="product" tableType="TABLE" xmi:id="_2F7QzearEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7QzuarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2F1xIOarEeq8o69WdEN03A" label="sales_fact" name="sales_fact" tableType="TABLE" xmi:id="_2F7Qz-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7Q0OarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2F3mUOarEeq8o69WdEN03A" label="speed" name="speed" tableType="TABLE" xmi:id="_2F7Q0earEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7Q0uarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2F5bgOarEeq8o69WdEN03A" label="time_by_day" name="time_by_day" tableType="TABLE" xmi:id="_2F7Q0-arEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7Q1OarEeq8o69WdEN03A"/>
+    </ownedElement>
+    <ownedElement id="_2F7QsOarEeq8o69WdEN03A" label="warehouse" name="warehouse" tableType="TABLE" xmi:id="_2F7Q1earEeq8o69WdEN03A" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="" xmi:id="_2F7Q1uarEeq8o69WdEN03A"/>
+    </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_21cf589f-4c9d-4033-8820-bf466f90c66c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PXu4wG4pQkq3TTKdbb6P4wHHWrM5l9Qp/cPZRSSTeebxNuLH3nhRyfgv1RZ27sulfKTNIIkH9c+x
-DQLP6EAekw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_25773ba0-a26b-407b-8f92-e5ef095ed490"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>92GbpoJL+4jW7lmyKuJhkFZNgP5Ga+c2iyPJa5wQ9enPkZwpDnYq0+70X7uC04YXoOfOkKaYmMMg
-gsLoSJyY7A==</DigestValue></Reference></SignedInfo><SignatureValue>gD8Syjxgv0sr0nPrgBE6Cblbw7en1KaG4+x+Vl1k3JYTeJCykKQlCCxzUGg2u1MrJzngL7eVmB8b
-d3TP9Es9LBjdz53ZIGTa6QFfMGGFOvGz5jhje/lzCodbwavZvSmKeMLbOFnifcnQmsvUmIsivsED
-P/t6sd8BXWw+vtyrTj8L/UAJAyviWFK8phZwMXtNC6YV5vKAxQjsEK/jJbKalLsEVhJ4V6Q/Li/R
-BrIyLvZXuc40fg+ai9QnIRJ6PPvvvSAiC8GGe+0Sl/LPEy/Ti4inDAa+MrOTDZIl8ly8uqMcSP9s
-knZcDW8MuHWDzHfq+IpfxTpyWXjpxwJEApo2nA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d0a361f-a8b6-410c-bb8b-0439ed432b8c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zCcaPf7q2aj96fOxHMNARYJsi0QR+L+5ASK+pAfYWgD9Ye7Dt6FfAmgU4kH/V0vZCAmdt7Nh1/+t
+yxCgyLD7hA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_85b0baed-f460-481d-9d5c-8938c6f4c8df"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Oxl5HD5C7rW30DRqKdKnzJyfV/P4OgWhF2/SdUD9I9MVNVwDYu5hzc9hNl6+zqVY4SWlG+N9hlCF
+4sxreM3f1Q==</DigestValue></Reference></SignedInfo><SignatureValue>PKiUgCcOFc8OhEBUpwKqQTn7EOTC2F19N2KcfIzcu9UCNj2K/UGPlI4U6mBzm0qRB5Q5dP5GH+eM
+MKYlRVZtLbKvYr72KpRewf1JfVvbpMsnhIqYiH7zaSd/FBzxJXdBp3LxqNu1gsaTetmoF0ayfrbE
+1jW7YG/yUJZbZJuFLZSarOWWe++aYo+IaQCqmi1VhRhpKTg9n40gQT18IbQd/9HAEwHZY3O/TNp0
+7Hobsm0FCoftnEbcZQaoapenddUB++wzJ012R65q7xYYb94bl1T7BYrEk5Gxl6e/ImfHFFVC3O9d
+rKKiy0YYqDFFJZuD4bjr9/kPIHPbIK4L67m90A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -51,4 +108,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_25773ba0-a26b-407b-8f92-e5ef095ed490" Target="#_21cf589f-4c9d-4033-8820-bf466f90c66c"><Timestamp>2020-08-25 08:20:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_85b0baed-f460-481d-9d5c-8938c6f4c8df" Target="#_0d0a361f-a8b6-410c-bb8b-0439ed432b8c"><Timestamp>2020-08-25 08:20:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
