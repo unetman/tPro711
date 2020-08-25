@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_-7nfAOarEeq8o69WdEN03A" name="a1" creationDate="2020-08-25T16:21:29.445+0800">
+  <taggedValue xmi:id="_-7nfAearEeq8o69WdEN03A" tag="Status" value="development"/>
+  <taggedValue xmi:id="_-7nfAuarEeq8o69WdEN03A" tag="Author" value="b@b.cn"/>
+  <taggedValue xmi:id="_-7nfA-arEeq8o69WdEN03A" tag="Purpose"/>
+  <taggedValue xmi:id="_-7nfBOarEeq8o69WdEN03A" tag="Description"/>
+  <taggedValue xmi:id="_-7nfBearEeq8o69WdEN03A" tag="Version" value="0.1"/>
+  <context xmi:id="_-7nfBuarEeq8o69WdEN03A"/>
+  <results xmi:id="_-7nfB-arEeq8o69WdEN03A">
+    <resultMetadata xmi:id="_-7nfCOarEeq8o69WdEN03A"/>
+  </results>
+  <parameters xmi:id="_-7nfCearEeq8o69WdEN03A" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
