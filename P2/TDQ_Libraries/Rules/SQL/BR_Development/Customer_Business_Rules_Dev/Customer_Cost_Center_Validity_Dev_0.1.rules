@@ -4,7 +4,7 @@
     <taggedValue xmi:id="_CZoWcflgEei0xu3Xsej7sQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_CZoWcvlgEei0xu3Xsej7sQ" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_CZoWc_lgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
-    <taggedValue xmi:id="_CZoWdPlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Cost Center Validity : Check to see whether Customer has got valid cost center using Reference Table"/>
+    <taggedValue xmi:id="_CZoWdPlgEei0xu3Xsej7sQ" tag="Description" value="% Customer Cost Center Validity : Check to see whether Customer has got valid cost center using Reference Table "/>
     <taggedValue xmi:id="_CZoWdflgEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_CZoWdvlgEei0xu3Xsej7sQ" tag="Validation_Status" value="true"/>
     <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
