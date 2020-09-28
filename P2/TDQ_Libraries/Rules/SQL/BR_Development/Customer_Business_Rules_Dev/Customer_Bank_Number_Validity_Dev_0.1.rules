@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_uR-rsPlfEei0xu3Xsej7sQ" name="Customer Bank Number Validity Dev" supplierDependency="_0AgpwCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="CUST_BASE_NBR IN  ('422', '508')">
+  <dataquality.rules:WhereRule xmi:id="_uR-rsPlfEei0xu3Xsej7sQ" name="Customer Bank Number Validity Dev" supplierDependency="_0AgpwCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="CUST_BASE_NBR IN  ('422', '508'). ">
     <taggedValue xmi:id="_uR-rsflfEei0xu3Xsej7sQ" tag="Status" value="development"/>
-    <taggedValue xmi:id="_uR-rsvlfEei0xu3Xsej7sQ" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_uR-rsvlfEei0xu3Xsej7sQ" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_uR-rs_lfEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
     <taggedValue xmi:id="_uR-rtPlfEei0xu3Xsej7sQ" tag="Description" value="% Customer Bank Number Validity : Check that Customer Bank Number is either 422 or 508"/>
     <taggedValue xmi:id="_uR-rtflfEei0xu3Xsej7sQ" tag="Version" value="0.1"/>
