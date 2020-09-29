@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_cgl_QF0sEemj9s3KLP4KwA" name="Loan Cost Center Validity" supplierDependency="_atHuIF06Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center)">
+  <dataquality.rules:WhereRule xmi:id="_cgl_QF0sEemj9s3KLP4KwA" name="Loan Cost Center Validity 123" supplierDependency="_atHuIF06Eemj9s3KLP4KwA" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center)">
     <taggedValue xmi:id="_cgl_QV0sEemj9s3KLP4KwA" tag="Status" value="development"/>
-    <taggedValue xmi:id="_cgl_Ql0sEemj9s3KLP4KwA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_cgl_Ql0sEemj9s3KLP4KwA" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_cgl_Q10sEemj9s3KLP4KwA" tag="Purpose" value="Validity"/>
-    <taggedValue xmi:id="_cgl_RF0sEemj9s3KLP4KwA" tag="Description" value="% Loan Cost Center Validity : Check to see whether Loan Account has got valid cost center using Reference Table"/>
+    <taggedValue xmi:id="_cgl_RF0sEemj9s3KLP4KwA" tag="Description" value="% Loan Cost Center Validity : Check to see whether Loan Account has got valid cost center using Reference Table 789"/>
     <taggedValue xmi:id="_cgl_RV0sEemj9s3KLP4KwA" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_cgl_Rl0sEemj9s3KLP4KwA" tag="Validation_Status" value="true"/>
     <categories href="../../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
