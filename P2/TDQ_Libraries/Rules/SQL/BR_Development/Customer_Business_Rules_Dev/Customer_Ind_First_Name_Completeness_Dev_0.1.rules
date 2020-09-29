@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_WzgvIDuXEem0OtLaJU4itw" name="Customer Ind First Name Completeness Dev" supplierDependency="_9ETuYDIdEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(cis_frst_nme) is not null ">
+  <dataquality.rules:WhereRule xmi:id="_WzgvIDuXEem0OtLaJU4itw" name="Customer Ind First Name Completeness Dev" supplierDependency="_9ETuYDIdEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(cis_frst_nme) is not null ksdfldksjfd">
     <taggedValue xmi:id="_WzgvITuXEem0OtLaJU4itw" tag="Status" value="development"/>
-    <taggedValue xmi:id="_WzgvIjuXEem0OtLaJU4itw" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_WzgvIjuXEem0OtLaJU4itw" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_WzgvIzuXEem0OtLaJU4itw" tag="Purpose" value="Completeness"/>
     <taggedValue xmi:id="_WzgvJDuXEem0OtLaJU4itw" tag="Description" value="% Customer Individual First Name Completeness : Check to see whether Individual Customer has First Name"/>
     <taggedValue xmi:id="_WzgvJTuXEem0OtLaJU4itw" tag="Version" value="0.1"/>
