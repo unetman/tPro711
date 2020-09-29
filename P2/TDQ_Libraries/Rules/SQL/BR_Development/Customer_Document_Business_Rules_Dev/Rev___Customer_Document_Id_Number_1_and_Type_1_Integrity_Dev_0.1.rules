@@ -4,7 +4,7 @@
     <taggedValue xmi:id="_eD6QUUKjEeqgnoLB8nCZ5Q" tag="Status" value="development"/>
     <taggedValue xmi:id="_eD6QUkKjEeqgnoLB8nCZ5Q" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_eD6QU0KjEeqgnoLB8nCZ5Q" tag="Purpose" value="Integrity"/>
-    <taggedValue xmi:id="_eD6QVEKjEeqgnoLB8nCZ5Q" tag="Description" value="% Customer Document Id Number 1 and Type 1 Integrity : Check to see whether Customer Document Type 1 is present while Id Number 1 is not present"/>
+    <taggedValue xmi:id="_eD6QVEKjEeqgnoLB8nCZ5Q" tag="Description" value="% Customer Document Id Number 1 and Type 1 Integrity : Check to see whether Customer Document Type 1 is present while Id Number 1 is not present.  "/>
     <taggedValue xmi:id="_eD6QVUKjEeqgnoLB8nCZ5Q" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_eD6QVkKjEeqgnoLB8nCZ5Q" tag="Validation_Status" value="true"/>
     <categories href="../../../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
