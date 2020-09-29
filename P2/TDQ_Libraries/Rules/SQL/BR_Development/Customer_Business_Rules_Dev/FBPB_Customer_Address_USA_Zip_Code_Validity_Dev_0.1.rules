@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_RatcgIliEequY4KwQ76_YQ" name="FB PB Customer Address USA Zip Code Validity_Dev" criticalityLevel="1" whereExpression="trim(cis_zip_5_cde) is not null and trim(cis_ctry_cde) = 'USA' and trim(cis_zip_5_cde) in (select zipcode from dv_ref_us_postal_codes)">
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_RatcgIliEequY4KwQ76_YQ" name="FBPB Customer Address USA Zip Code Validity_Dev" criticalityLevel="1" whereExpression="trim(cis_zip_5_cde) is not null and trim(cis_ctry_cde) = 'USA' and trim(cis_zip_5_cde) in (select zipcode from dv_ref_us_postal_codes)">
   <taggedValue xmi:id="_RatcgYliEequY4KwQ76_YQ" tag="Status" value="development"/>
   <taggedValue xmi:id="_RatcgoliEequY4KwQ76_YQ" tag="Author" value="b@b.cn"/>
   <taggedValue xmi:id="_Ratcg4liEequY4KwQ76_YQ" tag="Purpose" value="Validity"/>
