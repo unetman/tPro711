@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_gaE50D3qEequm5sdFaVv4g" name="Rev : WT Outgoing International Timeliness" supplierDependency="_8UfO4D3tEequm5sdFaVv4g" criticalityLevel="1" whereExpression="(GETTIMEINMILLIS(exportdatetime)-GETTIMEINMILLIS(origindatetime))/1000/60 > 90">
+  <dataquality.rules:WhereRule xmi:id="_gaE50D3qEequm5sdFaVv4g" name="Rev : WT Outgoing International Timeliness abc" supplierDependency="_8UfO4D3tEequm5sdFaVv4g" criticalityLevel="1" whereExpression="(GETTIMEINMILLIS(exportdatetime)-GETTIMEINMILLIS(origindatetime))/1000/60 > 90">
     <taggedValue xmi:id="_gaE50T3qEequm5sdFaVv4g" tag="Status" value="development"/>
-    <taggedValue xmi:id="_gaE50j3qEequm5sdFaVv4g" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_gaE50j3qEequm5sdFaVv4g" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_gaE50z3qEequm5sdFaVv4g" tag="Purpose" value="Timeliness"/>
     <taggedValue xmi:id="_gaE51D3qEequm5sdFaVv4g" tag="Description" value="% WT Outgoing International Timeliness : Check to see number of Outgoing International Wire Transfers taken more than 90 minutes"/>
     <taggedValue xmi:id="_gaE51T3qEequm5sdFaVv4g" tag="Version" value="0.1"/>
