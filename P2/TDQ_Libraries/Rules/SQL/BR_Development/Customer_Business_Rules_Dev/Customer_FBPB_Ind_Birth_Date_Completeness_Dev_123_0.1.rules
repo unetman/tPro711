@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_p86iwDJJEeqLtr0qyEBgPA" name="Customer FBPB Ind Birth Date Completeness Dev" supplierDependency="_HO5SQDJOEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(BRTH_DTE) IS NULL">
+  <dataquality.rules:WhereRule xmi:id="_p86iwDJJEeqLtr0qyEBgPA" name="Customer FBPB Ind Birth Date Completeness Dev 123" supplierDependency="_HO5SQDJOEeqLtr0qyEBgPA" criticalityLevel="1" whereExpression="trim(BRTH_DTE) IS NULL">
     <taggedValue xmi:id="_p86iwTJJEeqLtr0qyEBgPA" tag="Status" value="development"/>
-    <taggedValue xmi:id="_p86iwjJJEeqLtr0qyEBgPA" tag="Author" value="kadhirvelu.ratnasabapathi@seacoastbank.com"/>
+    <taggedValue xmi:id="_p86iwjJJEeqLtr0qyEBgPA" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_p86iwzJJEeqLtr0qyEBgPA" tag="Purpose" value="Completeness"/>
     <taggedValue xmi:id="_p86ixDJJEeqLtr0qyEBgPA" tag="Description" value="% Customer Individual Birth Date Completeness : Check the Individual Customer's Birth Date is missing"/>
     <taggedValue xmi:id="_p86ixTJJEeqLtr0qyEBgPA" tag="Version" value="0.1"/>
