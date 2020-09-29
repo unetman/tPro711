@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_CZoWcPlgEei0xu3Xsej7sQ" name="Customer Cost Center Validity Dev" supplierDependency="_0CowsCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center).  ">
+  <dataquality.rules:WhereRule xmi:id="_CZoWcPlgEei0xu3Xsej7sQ" name="Customer Cost Center Validity Dev" supplierDependency="_0CowsCu9EemUO5X_bnxflQ" criticalityLevel="1" whereExpression="cst_cntr_nbr in (SELECT COST_CENTER FROM DV_fn_gl_cost_center).      ">
     <taggedValue xmi:id="_CZoWcflgEei0xu3Xsej7sQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_CZoWcvlgEei0xu3Xsej7sQ" tag="Author" value="b@b.cn"/>
     <taggedValue xmi:id="_CZoWc_lgEei0xu3Xsej7sQ" tag="Purpose" value="Validity"/>
